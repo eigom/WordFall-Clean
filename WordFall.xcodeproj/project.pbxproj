@@ -173,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AB6C32F29D6BDA500A00872 /* Build configuration list for PBXNativeTarget "WordFall" */;
 			buildPhases = (
+				1AB6C3BC29D6CA1900A00872 /* SwiftLint */,
 				1AB6C31D29D6BDA300A00872 /* Sources */,
 				1AB6C31E29D6BDA300A00872 /* Frameworks */,
 				1AB6C31F29D6BDA300A00872 /* Resources */,
@@ -293,6 +294,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AB6C3BC29D6CA1900A00872 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1AB6C31D29D6BDA300A00872 /* Sources */ = {
