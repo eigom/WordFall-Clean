@@ -25,7 +25,7 @@
 		1AB6C42329D6D2D500A00872 /* SQLiteWordProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42229D6D2D500A00872 /* SQLiteWordProvider.swift */; };
 		1AB6C42529D6D6AC00A00872 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42429D6D6AC00A00872 /* Database.swift */; };
 		1AB6C42729D7070800A00872 /* QueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42629D7070800A00872 /* QueryParameter.swift */; };
-		1AB6C42929D7079A00A00872 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42829D7079A00A00872 /* Error.swift */; };
+		1AB6C42B29D713AA00A00872 /* QueryResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42A29D713AA00A00872 /* QueryResultSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +107,7 @@
 		1AB6C42229D6D2D500A00872 /* SQLiteWordProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteWordProvider.swift; sourceTree = "<group>"; };
 		1AB6C42429D6D6AC00A00872 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		1AB6C42629D7070800A00872 /* QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParameter.swift; sourceTree = "<group>"; };
-		1AB6C42829D7079A00A00872 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		1AB6C42A29D713AA00A00872 /* QueryResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryResultSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,7 +237,7 @@
 			children = (
 				1AB6C42429D6D6AC00A00872 /* Database.swift */,
 				1AB6C42629D7070800A00872 /* QueryParameter.swift */,
-				1AB6C42829D7079A00A00872 /* Error.swift */,
+				1AB6C42A29D713AA00A00872 /* QueryResultSet.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -504,7 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AB6C42929D7079A00A00872 /* Error.swift in Sources */,
+				1AB6C42B29D713AA00A00872 /* QueryResultSet.swift in Sources */,
 				1AB6C42529D6D6AC00A00872 /* Database.swift in Sources */,
 				1AB6C42729D7070800A00872 /* QueryParameter.swift in Sources */,
 				1AB6C42329D6D2D500A00872 /* SQLiteWordProvider.swift in Sources */,
