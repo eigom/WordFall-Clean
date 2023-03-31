@@ -1,5 +1,5 @@
 public protocol WordProvider {
-    func word(length: WordLength) -> Word
+    func nextWord(length: WordLength) -> Result<Word, Error>
 }
 
 public enum WordLength {
