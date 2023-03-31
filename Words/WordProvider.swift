@@ -1,4 +1,5 @@
 public protocol WordProvider {
+    var availableWordLengths: [Int] { get }
     func nextWord(length: WordLength) -> Result<Word, Error>
 }
 
