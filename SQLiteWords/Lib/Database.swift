@@ -22,22 +22,26 @@ class Database {
     }
 
     func close() throws {
-        let resultCode = sqlite3_close(connection)
-
-        guard resultCode == SQLITE_OK else {
-            throw Error.unableToClose(errorCode: resultCode)
+        try execSQLite(expect: SQLITE_OK) {
+            sqlite3_close(connection)
+        } orThrow: { errorCode in
+            Error.unableToClose(errorCode: errorCode)
         }
     }
 
-    func fetch<Result: Decodable & Collection>(query: String, parameters: Set<QueryParameter>) throws -> Result? {
+    func fetchSingle<Result: Decodable>(query: String, parameters: Set<QueryParameter>) throws -> Result? {
 
     }
 
-    func fetch<Result: Decodable>(query: String, parameters: Set<QueryParameter>) throws -> Result? {
+    func fetchMany<Result: Decodable>(query: String, parameters: Set<QueryParameter>) throws -> [Result] {
         var statement: OpaquePointer?
 
-        let prepareResult = sqlite3_prepare(connection, query, -1, &statement, nil)
-        guard prepareResult == SQLITE_OK else { throw Error.failedToPrepareQuery(query, errorCode: prepareResult) }
+        try execSQLite(expect: SQLITE_OK) {
+            sqlite3_prepare(connection, query, -1, &statement, nil)
+        } orThrow: { errorCode in
+            Error.failedToPrepareQuery(query, errorCode: errorCode)
+        }
+
         defer { sqlite3_finalize(statement) }
 
         while true {
@@ -51,5 +55,12 @@ class Database {
         return result
     }
 
+    private func fetch(query: String, parameters: Set<QueryParameter>) throws ->  {
 
+    }
+
+    private func execSQLite(expect successCode: Int32, statement: () -> Int32, orThrow error: (Int32) -> Error) throws {
+        let resultCode = statement()
+        guard resultCode == successCode else { throw error(resultCode) }
+    }
 }
