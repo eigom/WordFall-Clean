@@ -13,12 +13,26 @@
 		1AB6C32C29D6BDA500A00872 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6C32B29D6BDA500A00872 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1AB6C35129D6BF7E00A00872 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1AB6C32129D6BDA300A00872 /* WordFall-Clean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordFall-Clean.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB6C32429D6BDA300A00872 /* WordFall_CleanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFall_CleanApp.swift; sourceTree = "<group>"; };
 		1AB6C32629D6BDA300A00872 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1AB6C32829D6BDA500A00872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AB6C32B29D6BDA500A00872 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1AB6C35529D6C0AF00A00872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 		1AB6C32329D6BDA300A00872 /* WordFall-Clean */ = {
 			isa = PBXGroup;
 			children = (
+				1AB6C35529D6C0AF00A00872 /* Info.plist */,
 				1AB6C32429D6BDA300A00872 /* WordFall_CleanApp.swift */,
 				1AB6C32629D6BDA300A00872 /* ContentView.swift */,
 				1AB6C32829D6BDA500A00872 /* Assets.xcassets */,
@@ -77,6 +92,7 @@
 				1AB6C31D29D6BDA300A00872 /* Sources */,
 				1AB6C31E29D6BDA300A00872 /* Frameworks */,
 				1AB6C31F29D6BDA300A00872 /* Resources */,
+				1AB6C35129D6BF7E00A00872 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +286,7 @@
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WordFall-Clean/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +316,7 @@
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WordFall-Clean/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
