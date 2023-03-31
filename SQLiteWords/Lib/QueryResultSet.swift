@@ -1,10 +1,10 @@
-enum ResultValue {
-    case string(String)
-}
-
-typealias Row = [ResultValue]
-
 struct QueryResultSet {
+    enum ResultValue {
+        case string(String)
+    }
+
+    typealias Row = [ResultValue]
+    
     let columnNames: [String]
     var rows = [Row]()
 

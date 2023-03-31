@@ -95,6 +95,10 @@ class Database {
         }
     }
 
+    private func row(from statement: OpaquePointer?) -> QueryResultSet.Row {
+
+    }
+
     private func execSQLite(expect successCode: Int32, statement: () -> Int32, orThrow error: (Int32) -> Error) throws {
         let resultCode = statement()
         guard resultCode == successCode else { throw error(resultCode) }
