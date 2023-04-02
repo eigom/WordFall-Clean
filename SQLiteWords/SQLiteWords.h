@@ -1,10 +1,3 @@
-//
-//  SQLiteWords.h
-//  SQLiteWords
-//
-//  Created by Eigo Madaloja on 31.03.2023.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for SQLiteWords.
