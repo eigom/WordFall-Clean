@@ -1,7 +1,7 @@
-class Session {
+public final class Session {
     let connection: Connection
 
-    init(connection: Connection) {
+    public init(connection: Connection) {
         self.connection = connection
     }
 

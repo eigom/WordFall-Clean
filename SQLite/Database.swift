@@ -61,7 +61,7 @@ class Database {
         return result*/
     }
 
-    private func fetch(query: String, parameters: Set<QueryParameter>) throws -> QueryResultSet {
+    private func fetch(query: String, parameters: Set<QueryParameter>) throws -> ResultSet {
         var statement: OpaquePointer?
 
         try execSQLite(expect: SQLITE_OK) {
@@ -73,7 +73,7 @@ class Database {
         defer { sqlite3_finalize(statement) }
 
         let columnNames = try columnNames(in: statement)
-        let resultSet = QueryResultSet(columnNames: columnNames)
+        let resultSet = ResultSet(columnNames: columnNames)
 
         while true {
             let stepResult = sqlite3_step(statement)
@@ -95,7 +95,7 @@ class Database {
         }
     }
 
-    private func row(from statement: OpaquePointer?) -> QueryResultSet.Row {
+    private func row(from statement: OpaquePointer?) -> ResultSet.Row {
 
     }
 

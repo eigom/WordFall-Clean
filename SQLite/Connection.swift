@@ -1,6 +1,6 @@
 import SQLite3
 
-class Connection {
+public class Connection {
     public enum Error: Swift.Error {
         case unableToOpen(dbPath: String, errorCode: Int32)
         case unableToClose(errorCode: Int32)
@@ -8,7 +8,7 @@ class Connection {
 
     let handle: OpaquePointer?
 
-    init(dbPath: String) throws {
+    public init(dbPath: String) throws {
         var handle: OpaquePointer?
         let resultCode = sqlite3_open(dbPath, &handle)
 

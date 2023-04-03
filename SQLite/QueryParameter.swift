@@ -1,13 +1,23 @@
 struct QueryParameter {
-    enum ParameterType: Equatable {
+    enum ParameterValue: Equatable {
         case integer(Int64)
+
+        var stringValue: String {
+            switch self {
+            case .integer(let value):
+                return String(value)
+            }
+        }
     }
 
     let name: String
-    let type: ParameterType
+    let value: ParameterValue
+
+    var parameterString: String { ":\(name)" }
+    var valueString: String { value.stringValue }
 
     static func integer(_ value: Int64, name: String) -> QueryParameter {
-        return QueryParameter(name: name, type: .integer(value))
+        return QueryParameter(name: name, value: .integer(value))
     }
 }
 
