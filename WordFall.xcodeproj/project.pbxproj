@@ -37,6 +37,7 @@
 		1AB6C45929DAD25200A00872 /* ResultSetFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C45829DAD25200A00872 /* ResultSetFetcher.swift */; };
 		1AB6C45B29DAD63300A00872 /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C45A29DAD63300A00872 /* QueryBuilder.swift */; };
 		1AB6C45D29DADC0C00A00872 /* ResultSetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C45C29DADC0C00A00872 /* ResultSetBuilder.swift */; };
+		1AB6C45F29DAF06500A00872 /* SQLiteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C45E29DAF06500A00872 /* SQLiteType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		1AB6C45829DAD25200A00872 /* ResultSetFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSetFetcher.swift; sourceTree = "<group>"; };
 		1AB6C45A29DAD63300A00872 /* QueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
 		1AB6C45C29DADC0C00A00872 /* ResultSetBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSetBuilder.swift; sourceTree = "<group>"; };
+		1AB6C45E29DAF06500A00872 /* SQLiteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,9 +311,10 @@
 				1AB6C42C29D778D600A00872 /* Connection.swift */,
 				1AB6C45A29DAD63300A00872 /* QueryBuilder.swift */,
 				1AB6C42629D7070800A00872 /* QueryParameter.swift */,
-				1AB6C45C29DADC0C00A00872 /* ResultSetBuilder.swift */,
 				1AB6C45829DAD25200A00872 /* ResultSetFetcher.swift */,
+				1AB6C45C29DADC0C00A00872 /* ResultSetBuilder.swift */,
 				1AB6C42A29D713AA00A00872 /* ResultSet.swift */,
+				1AB6C45E29DAF06500A00872 /* SQLiteType.swift */,
 				1AB6C43029D77CD800A00872 /* SQLiteExec.swift */,
 				1AB6C42429D6D6AC00A00872 /* Database.swift */,
 				1AB6C43929D9A42600A00872 /* SQLite.h */,
@@ -679,6 +682,7 @@
 				1AB6C45B29DAD63300A00872 /* QueryBuilder.swift in Sources */,
 				1AB6C45229D9A44B00A00872 /* ResultSet.swift in Sources */,
 				1AB6C45429D9A44B00A00872 /* Session.swift in Sources */,
+				1AB6C45F29DAF06500A00872 /* SQLiteType.swift in Sources */,
 				1AB6C45629D9A44B00A00872 /* Database.swift in Sources */,
 				1AB6C45729D9A44B00A00872 /* QueryParameter.swift in Sources */,
 				1AB6C45D29DADC0C00A00872 /* ResultSetBuilder.swift in Sources */,
