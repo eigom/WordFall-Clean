@@ -1,18 +1,20 @@
 import SQLite3
 
 final class ResultSetFetcher {
+    private let query: String
     private let databaseHandle: OpaquePointer
 
-    init(databaseHandle: OpaquePointer) {
+    init(query: String, databaseHandle: OpaquePointer) {
+        self.query = query
         self.databaseHandle = databaseHandle
     }
 
-    func fetch(query: String) throws -> ResultSet {
+    func fetch() throws -> ResultSet {
         var statement: OpaquePointer?
 
         try SQLiteExec(expect: SQLITE_OK, databaseHandle: databaseHandle) {
             sqlite3_prepare_v2(databaseHandle, query, -1, &statement, nil)
-        } orThrow: { errorCode, errorMessage in
+        } orThrow: { _, errorMessage in
             SQLiteError.failedToPrepareQuery(query, errorMessage: errorMessage)
         }
 
@@ -21,7 +23,7 @@ final class ResultSetFetcher {
         guard let statement = statement else { throw SQLiteError.invalidStatementHandle }
 
         let resultBuilder = ResultSetBuilder(statement: statement, databaseHandle: databaseHandle)
-        
+
         return try resultBuilder.build()
     }
 }

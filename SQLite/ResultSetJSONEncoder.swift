@@ -10,7 +10,7 @@ final class ResultSetJSONEncoder {
             partialResult + [try encode(row)]
         }
 
-        return "{" + encodedRows.joined(separator: ", ") + "}"
+        return "[" + encodedRows.joined(separator: ", ") + "]"
     }
 
     private func encode(_ row: ResultSet.Row) throws -> String {
@@ -20,7 +20,7 @@ final class ResultSetJSONEncoder {
             return partialResult + ["\(name): \(value)"]
         }
 
-        return "[" + encodedValues.joined(separator: ", ") + "]"
+        return "{" + encodedValues.joined(separator: ", ") + "}"
     }
 
     private func encode(_ value: ResultSet.Value) throws -> String {

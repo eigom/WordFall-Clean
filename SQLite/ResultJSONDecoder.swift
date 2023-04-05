@@ -1,4 +1,4 @@
-final class ResultSetJSONDecoder {
+final class ResultJSONDecoder {
     private let jsonString: String
 
     init(jsonString: String) {

@@ -13,7 +13,7 @@ final class ResultSetBuilder {
         let columnCount = sqlite3_column_count(statement)
         let columnTypes = columnTypes(in: statement, columnCount: columnCount)
         let columnNames = try columnNames(in: statement, columnCount: columnCount)
-        
+
         var resultSet = ResultSet(columnNames: columnNames, rows: [])
 
         while true {
@@ -22,7 +22,7 @@ final class ResultSetBuilder {
 
             try SQLiteExec(expect: SQLITE_ROW, databaseHandle: databaseHandle) {
                 stepResult
-            } orThrow: { errorCode, errorMessage in
+            } orThrow: { _, errorMessage in
                 SQLiteError.failedToEvaluateQuery(errorMessage: errorMessage)
             }
 
@@ -33,9 +33,9 @@ final class ResultSetBuilder {
         return resultSet
     }
 
-    private func columnNames(in statement: OpaquePointer, columnCount: Int32) throws  -> [String] {
+    private func columnNames(in statement: OpaquePointer, columnCount: Int32) throws -> [String] {
         return try (0 ..< columnCount).reduce([String]()) { columnNames, index in
-            guard let name = sqlite3_column_name(statement, 0) else { throw SQLiteError.failedToGetColumnName }
+            guard let name = sqlite3_column_name(statement, index) else { throw SQLiteError.failedToGetColumnName }
             return columnNames + [String(cString: name)]
         }
     }

@@ -8,7 +8,7 @@ public final class Connection {
 
         try SQLiteExec(expect: SQLITE_OK, databaseHandle: handle) {
             sqlite3_open(dbPath, &handle)
-        } orThrow: { errorCode, errorMessage in
+        } orThrow: { _, errorMessage in
             sqlite3_close(handle)
             return SQLiteError.unableToOpen(dbPath: dbPath, errorMessage: errorMessage)
         }
@@ -25,7 +25,7 @@ public final class Connection {
     func close() throws {
         try SQLiteExec(expect: SQLITE_OK, databaseHandle: handle) {
             sqlite3_close(handle)
-        } orThrow: { errorCode, errorMessage in
+        } orThrow: { _, errorMessage in
             SQLiteError.unableToClose(errorMessage: errorMessage)
         }
     }

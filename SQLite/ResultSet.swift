@@ -7,7 +7,7 @@ struct ResultSet {
     }
 
     typealias Row = [Value]
-    
+
     let columnNames: [String]
     let rows: [Row]
 

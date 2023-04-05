@@ -39,7 +39,7 @@
 		1AB6C45F29DAF06500A00872 /* SQLiteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C45E29DAF06500A00872 /* SQLiteType.swift */; };
 		1AB6C46129DB6FB000A00872 /* ResultSetJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C46029DB6FB000A00872 /* ResultSetJSONEncoder.swift */; };
 		1AB6C46529DD84FB00A00872 /* SQLiteError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C46429DD84FB00A00872 /* SQLiteError.swift */; };
-		1AB6C46729DD8CB700A00872 /* ResultSetJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C46629DD8CB700A00872 /* ResultSetJSONDecoder.swift */; };
+		1AB6C46729DD8CB700A00872 /* ResultJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C46629DD8CB700A00872 /* ResultJSONDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,7 +156,7 @@
 		1AB6C45E29DAF06500A00872 /* SQLiteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteType.swift; sourceTree = "<group>"; };
 		1AB6C46029DB6FB000A00872 /* ResultSetJSONEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSetJSONEncoder.swift; sourceTree = "<group>"; };
 		1AB6C46429DD84FB00A00872 /* SQLiteError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteError.swift; sourceTree = "<group>"; };
-		1AB6C46629DD8CB700A00872 /* ResultSetJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSetJSONDecoder.swift; sourceTree = "<group>"; };
+		1AB6C46629DD8CB700A00872 /* ResultJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultJSONDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,7 +318,7 @@
 				1AB6C45829DAD25200A00872 /* ResultSetFetcher.swift */,
 				1AB6C45C29DADC0C00A00872 /* ResultSetBuilder.swift */,
 				1AB6C46029DB6FB000A00872 /* ResultSetJSONEncoder.swift */,
-				1AB6C46629DD8CB700A00872 /* ResultSetJSONDecoder.swift */,
+				1AB6C46629DD8CB700A00872 /* ResultJSONDecoder.swift */,
 				1AB6C42A29D713AA00A00872 /* ResultSet.swift */,
 				1AB6C45E29DAF06500A00872 /* SQLiteType.swift */,
 				1AB6C43029D77CD800A00872 /* SQLiteExec.swift */,
@@ -683,7 +683,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AB6C46729DD8CB700A00872 /* ResultSetJSONDecoder.swift in Sources */,
+				1AB6C46729DD8CB700A00872 /* ResultJSONDecoder.swift in Sources */,
 				1AB6C45929DAD25200A00872 /* ResultSetFetcher.swift in Sources */,
 				1AB6C46129DB6FB000A00872 /* ResultSetJSONEncoder.swift in Sources */,
 				1AB6C45329D9A44B00A00872 /* SQLiteExec.swift in Sources */,
