@@ -5,5 +5,16 @@ public final class Session {
         self.connection = connection
     }
 
-    //TODO fetch in separate thread
+    func fetchSingle<Result: Decodable>(query: String, parameters: [QueryParameter]) throws -> Result? {
+
+    }
+
+    func fetchMany<Result: Decodable>(query: String, parameters: [QueryParameter]) throws -> [Result] {
+        
+    }
 }
+
+/*
+ TODO: separate errors - higher level and SQLite (error code, message)
+
+ */

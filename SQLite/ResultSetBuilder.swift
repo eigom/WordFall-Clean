@@ -1,15 +1,12 @@
 import SQLite3
 
 final class ResultSetBuilder {
-    public enum Error: Swift.Error {
-        case failedToGetColumnName
-        case failedToEvaluateQuery(errorCode: Int32)
-    }
-
     private let statement: OpaquePointer
+    private let databaseHandle: OpaquePointer
 
-    init(statement: OpaquePointer) {
+    init(statement: OpaquePointer, databaseHandle: OpaquePointer) {
         self.statement = statement
+        self.databaseHandle = databaseHandle
     }
 
     func build() throws -> ResultSet {
@@ -22,7 +19,12 @@ final class ResultSetBuilder {
         while true {
             let stepResult = sqlite3_step(statement)
             guard stepResult != SQLITE_DONE else { return resultSet }
-            guard stepResult == SQLITE_ROW else { throw Error.failedToEvaluateQuery(errorCode: stepResult) }
+
+            try SQLiteExec(expect: SQLITE_ROW, databaseHandle: databaseHandle) {
+                stepResult
+            } orThrow: { errorCode, errorMessage in
+                SQLiteError.failedToEvaluateQuery(errorMessage: errorMessage)
+            }
 
             let row = row(from: statement, columnTypes: columnTypes)
             resultSet = resultSet.appending(row)
@@ -33,7 +35,7 @@ final class ResultSetBuilder {
 
     private func columnNames(in statement: OpaquePointer, columnCount: Int32) throws  -> [String] {
         return try (0 ..< columnCount).reduce([String]()) { columnNames, index in
-            guard let name = sqlite3_column_name(statement, 0) else { throw Error.failedToGetColumnName }
+            guard let name = sqlite3_column_name(statement, 0) else { throw SQLiteError.failedToGetColumnName }
             return columnNames + [String(cString: name)]
         }
     }

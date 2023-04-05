@@ -20,9 +20,3 @@ struct QueryParameter {
         return QueryParameter(name: name, value: .integer(value))
     }
 }
-
-extension QueryParameter: Hashable {
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(name)
-    }
-}

@@ -1,8 +1,8 @@
 final class QueryBuilder {
     private let query: String
-    private let parameters: Set<QueryParameter>
+    private let parameters: [QueryParameter]
 
-    init(query: String, parameters: Set<QueryParameter>) {
+    init(query: String, parameters: [QueryParameter]) {
         self.query = query
         self.parameters = parameters
     }

@@ -1,21 +1,19 @@
 import SQLite3
 
 public class Connection {
-    public enum Error: Swift.Error {
-        case unableToOpen(dbPath: String, errorCode: Int32)
-        case unableToClose(errorCode: Int32)
-    }
-
-    let handle: OpaquePointer?
+    let handle: OpaquePointer
 
     public init(dbPath: String) throws {
         var handle: OpaquePointer?
-        let resultCode = sqlite3_open(dbPath, &handle)
 
-        guard resultCode == SQLITE_OK else {
+        try SQLiteExec(expect: SQLITE_OK, databaseHandle: handle) {
+            sqlite3_open(dbPath, &handle)
+        } orThrow: { errorCode, errorMessage in
             sqlite3_close(handle)
-            throw Error.unableToOpen(dbPath: dbPath, errorCode: resultCode)
+            return SQLiteError.unableToOpen(dbPath: dbPath, errorMessage: errorMessage)
         }
+
+        guard let handle = handle else { throw SQLiteError.unexpectedNilHandle }
 
         self.handle = handle
     }
@@ -25,10 +23,10 @@ public class Connection {
     }
 
     func close() throws {
-        try SQLiteExec(expect: SQLITE_OK) {
+        try SQLiteExec(expect: SQLITE_OK, databaseHandle: handle) {
             sqlite3_close(handle)
-        } orThrow: { errorCode in
-            Error.unableToClose(errorCode: errorCode)
+        } orThrow: { errorCode, errorMessage in
+            SQLiteError.unableToClose(errorMessage: errorMessage)
         }
     }
 }
