@@ -6,7 +6,7 @@ public final class Session {
     }
 
     public func fetch<Result: Decodable>(
-        query: String,
+        _ query: String,
         parameters: [QueryParameter],
         resultTypes: [SQLiteType]
     ) throws -> Result {

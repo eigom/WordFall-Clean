@@ -33,7 +33,7 @@ final class SQLiteWordsTests: XCTestCase {
         let connection = try Connection(databasePath: dbPath)
         let session = Session(connection: connection)
         let words: [TestWord] = try session.fetch(
-            query: "SELECT word FROM Word WHERE id = :wordID",
+            "SELECT word FROM Word WHERE id = :wordID",
             parameters: [
                 .integer(1, name: "wordID")
             ],

@@ -1,11 +1,11 @@
 public protocol WordProvider {
-    var availableWordLengths: [Int] { get }
+    var availableWordLengths: Result<[UInt], Error> { get }
     func nextWord(length: WordLength) -> Result<Word, Error>
 }
 
 public enum WordLength {
     case fixed(length: UInt)
-    case any
+    case any(maxLength: UInt)
 }
 
 public struct Word {
