@@ -1,5 +1,5 @@
 public enum SQLiteError: Error {
-    case unableToOpen(dbPath: String, errorMessage: String)
+    case unableToOpen(databasePath: String, errorMessage: String)
     case unableToClose(errorMessage: String)
     case unexpectedNilHandle
 
@@ -12,5 +12,5 @@ public enum SQLiteError: Error {
     case unsupportedValueInResultSet
 
     case failedToConvertToData
-    case failedToConvertToJSON(Error)
+    case failedToDecodeJSON(json: String, error: Error)
 }

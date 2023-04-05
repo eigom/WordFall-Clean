@@ -2,16 +2,17 @@ import SQLite3
 
 final class ResultSetBuilder {
     private let statement: OpaquePointer
+    private let resultTypes: [SQLiteType]
     private let databaseHandle: OpaquePointer
 
-    init(statement: OpaquePointer, databaseHandle: OpaquePointer) {
+    init(statement: OpaquePointer, resultTypes: [SQLiteType], databaseHandle: OpaquePointer) {
         self.statement = statement
+        self.resultTypes = resultTypes
         self.databaseHandle = databaseHandle
     }
 
     func build() throws -> ResultSet {
         let columnCount = sqlite3_column_count(statement)
-        let columnTypes = columnTypes(in: statement, columnCount: columnCount)
         let columnNames = try columnNames(in: statement, columnCount: columnCount)
 
         var resultSet = ResultSet(columnNames: columnNames, rows: [])
@@ -26,7 +27,7 @@ final class ResultSetBuilder {
                 SQLiteError.failedToEvaluateQuery(errorMessage: errorMessage)
             }
 
-            let row = row(from: statement, columnTypes: columnTypes)
+            let row = row(from: statement, columnTypes: resultTypes)
             resultSet = resultSet.appending(row)
         }
 
@@ -37,13 +38,6 @@ final class ResultSetBuilder {
         return try (0 ..< columnCount).reduce([String]()) { columnNames, index in
             guard let name = sqlite3_column_name(statement, index) else { throw SQLiteError.failedToGetColumnName }
             return columnNames + [String(cString: name)]
-        }
-    }
-
-    private func columnTypes(in statement: OpaquePointer, columnCount: Int32) -> [SQLiteType] {
-        return (0 ..< columnCount).reduce([SQLiteType]()) { columnTypes, index in
-            let type = SQLiteType(sqlite3_column_type(statement, index))
-            return columnTypes + [type]
         }
     }
 

@@ -1,4 +1,4 @@
-struct QueryParameter {
+public struct QueryParameter {
     enum ParameterValue: Equatable {
         case integer(Int64)
 
@@ -16,7 +16,7 @@ struct QueryParameter {
     var parameterString: String { ":\(name)" }
     var valueString: String { value.stringValue }
 
-    static func integer(_ value: Int64, name: String) -> QueryParameter {
+    public static func integer(_ value: Int64, name: String) -> QueryParameter {
         return QueryParameter(name: name, value: .integer(value))
     }
 }

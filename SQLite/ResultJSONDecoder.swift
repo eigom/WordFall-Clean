@@ -11,7 +11,7 @@ final class ResultJSONDecoder {
         do {
             return try JSONDecoder().decode(T.self, from: data)
         } catch {
-            throw SQLiteError.failedToConvertToJSON(error)
+            throw SQLiteError.failedToDecodeJSON(json: jsonString, error: error)
         }
     }
 }

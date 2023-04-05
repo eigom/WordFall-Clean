@@ -2,10 +2,12 @@ import SQLite3
 
 final class ResultSetFetcher {
     private let query: String
+    private let resultTypes: [SQLiteType]
     private let databaseHandle: OpaquePointer
 
-    init(query: String, databaseHandle: OpaquePointer) {
+    init(query: String, resultTypes: [SQLiteType], databaseHandle: OpaquePointer) {
         self.query = query
+        self.resultTypes = resultTypes
         self.databaseHandle = databaseHandle
     }
 
@@ -22,7 +24,11 @@ final class ResultSetFetcher {
 
         guard let statement = statement else { throw SQLiteError.invalidStatementHandle }
 
-        let resultBuilder = ResultSetBuilder(statement: statement, databaseHandle: databaseHandle)
+        let resultBuilder = ResultSetBuilder(
+            statement: statement,
+            resultTypes: resultTypes,
+            databaseHandle: databaseHandle
+        )
 
         return try resultBuilder.build()
     }

@@ -7,6 +7,15 @@
 
 import XCTest
 @testable import SQLiteWords
+import SQLite
+
+enum Error: Swift.Error {
+    case databaseNotFound
+}
+
+struct TestWord: Decodable {
+    let word: String
+}
 
 final class SQLiteWordsTests: XCTestCase {
 
@@ -18,7 +27,22 @@ final class SQLiteWordsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {}
+    func testExample() throws {
+        let bundle = Bundle(for: SQLiteWordProvider.self)
+        guard let dbPath = bundle.path(forResource: "words", ofType: "sqlite") else { throw Error.databaseNotFound }
+        let connection = try Connection(databasePath: dbPath)
+        let session = Session(connection: connection)
+        let words: [TestWord] = try session.fetch(
+            query: "SELECT word FROM Word WHERE id = :wordID",
+            parameters: [
+                .integer(1, name: "wordID")
+            ],
+            resultTypes: [
+                .text
+            ]
+        )
+        print(words)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.

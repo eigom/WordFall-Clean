@@ -40,6 +40,7 @@
 		1AB6C46129DB6FB000A00872 /* ResultSetJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C46029DB6FB000A00872 /* ResultSetJSONEncoder.swift */; };
 		1AB6C46529DD84FB00A00872 /* SQLiteError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C46429DD84FB00A00872 /* SQLiteError.swift */; };
 		1AB6C46729DD8CB700A00872 /* ResultJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C46629DD8CB700A00872 /* ResultJSONDecoder.swift */; };
+		1AB6C46A29DD945200A00872 /* words.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6C46929DD945200A00872 /* words.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		1AB6C46029DB6FB000A00872 /* ResultSetJSONEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSetJSONEncoder.swift; sourceTree = "<group>"; };
 		1AB6C46429DD84FB00A00872 /* SQLiteError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteError.swift; sourceTree = "<group>"; };
 		1AB6C46629DD8CB700A00872 /* ResultJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultJSONDecoder.swift; sourceTree = "<group>"; };
+		1AB6C46929DD945200A00872 /* words.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = words.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,7 +288,7 @@
 		1AB6C40729D6D2AE00A00872 /* SQLiteWords */ = {
 			isa = PBXGroup;
 			children = (
-				1AB6C42129D6D2BF00A00872 /* Lib */,
+				1AB6C46829DD92F100A00872 /* Data */,
 				1AB6C42229D6D2D500A00872 /* SQLiteWordProvider.swift */,
 				1AB6C40829D6D2AE00A00872 /* SQLiteWords.h */,
 			);
@@ -299,13 +301,6 @@
 				1AB6C41429D6D2AE00A00872 /* SQLiteWordsTests.swift */,
 			);
 			path = SQLiteWordsTests;
-			sourceTree = "<group>";
-		};
-		1AB6C42129D6D2BF00A00872 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		1AB6C43829D9A42600A00872 /* SQLite */ = {
@@ -334,6 +329,14 @@
 				1AB6C44529D9A42700A00872 /* SQLiteTests.swift */,
 			);
 			path = SQLiteTests;
+			sourceTree = "<group>";
+		};
+		1AB6C46829DD92F100A00872 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1AB6C46929DD945200A00872 /* words.sqlite */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -589,6 +592,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB6C46A29DD945200A00872 /* words.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1010,7 +1014,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFallClean.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFallClean";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall";
 			};
 			name = Debug;
 		};
@@ -1028,7 +1032,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFallClean.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFallClean";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall";
 			};
 			name = Release;
 		};
