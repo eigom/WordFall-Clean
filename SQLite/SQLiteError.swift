@@ -10,4 +10,7 @@ public enum SQLiteError: Error {
     case failedToEvaluateQuery(errorMessage: String)
 
     case unsupportedValueInResultSet
+
+    case failedToConvertToData
+    case failedToConvertToJSON(Error)
 }

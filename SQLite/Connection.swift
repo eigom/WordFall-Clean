@@ -1,6 +1,6 @@
 import SQLite3
 
-public class Connection {
+public final class Connection {
     let handle: OpaquePointer
 
     public init(dbPath: String) throws {
