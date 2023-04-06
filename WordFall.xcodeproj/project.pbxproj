@@ -41,6 +41,8 @@
 		1AB6C46529DD84FB00A00872 /* SQLiteError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C46429DD84FB00A00872 /* SQLiteError.swift */; };
 		1AB6C46729DD8CB700A00872 /* ResultJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C46629DD8CB700A00872 /* ResultJSONDecoder.swift */; };
 		1AB6C46A29DD945200A00872 /* words.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6C46929DD945200A00872 /* words.sqlite */; };
+		1AB6C49029DEA1D600A00872 /* Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; };
+		1AB6C49129DEA20000A00872 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +193,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB6C49129DEA20000A00872 /* SQLite.framework in Frameworks */,
+				1AB6C49029DEA1D600A00872 /* Words.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +235,7 @@
 				1AB6C43829D9A42600A00872 /* SQLite */,
 				1AB6C44429D9A42700A00872 /* SQLiteTests */,
 				1AB6C32229D6BDA300A00872 /* Products */,
+				1AB6C48F29DEA1D600A00872 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -337,6 +342,13 @@
 				1AB6C46929DD945200A00872 /* words.sqlite */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		1AB6C48F29DEA1D600A00872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

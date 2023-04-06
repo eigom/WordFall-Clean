@@ -1,6 +1,6 @@
 public protocol WordProvider {
-    var availableWordLengths: Result<[UInt], Error> { get }
-    func nextWord(length: WordLength) -> Result<Word, Error>
+    var availableWordLengths: [UInt] { get throws }
+    func nextWord(length: WordLength) throws -> Word
 }
 
 public enum WordLength {
@@ -11,6 +11,11 @@ public enum WordLength {
 public struct Word {
     public let word: String
     public let definitions: [Definition]
+
+    public init(word: String, definitions: [Definition]) {
+        self.word = word
+        self.definitions = definitions
+    }
 }
 
 public struct Definition {
