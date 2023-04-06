@@ -28,20 +28,10 @@ final class SQLiteWordsTests: XCTestCase {
     }
 
     func testExample() throws {
-        let bundle = Bundle(for: SQLiteWordProvider.self)
-        guard let dbPath = bundle.path(forResource: "words", ofType: "sqlite") else { throw Error.databaseNotFound }
-        let connection = try Connection(databasePath: dbPath)
-        let session = Session(connection: connection)
-        let words: [TestWord] = try session.fetch(
-            "SELECT word FROM Word WHERE id = :wordID",
-            parameters: [
-                .integer(1, name: "wordID")
-            ],
-            resultTypes: [
-                .text
-            ]
-        )
-        print(words)
+        let wordProvider = try SQLiteWordProvider()
+        let wordLength = UInt.random(in: 3 ..< 10)
+        let word = try wordProvider.nextWord(length: .fixed(length: wordLength))
+        XCTAssertEqual(UInt(word.word.count), wordLength)
     }
 
     func testPerformanceExample() throws {

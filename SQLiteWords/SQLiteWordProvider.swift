@@ -19,7 +19,7 @@ public final class SQLiteWordProvider {
 
     private let session: Session
 
-    init() throws {
+    public init() throws {
         guard
             let databasePath = Bundle(for: Self.self).path(forResource: "words", ofType: "sqlite")
         else { throw Error.missingDatabase }
@@ -40,7 +40,7 @@ public final class SQLiteWordProvider {
         let result: [Word] = try session.fetch(
             """
             SELECT id, word FROM word WHERE id = (
-                SELECT abs(random() % (last_word_id - first_word_id)) AS wordID
+                SELECT first_word_id + abs(random() %  (last_word_id - first_word_id)) AS wordID
                 FROM word_length_ids
                 WHERE length = :length
             )
