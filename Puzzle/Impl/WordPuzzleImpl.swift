@@ -17,46 +17,45 @@ public struct WordPuzzleImpl: WordPuzzle {
     }
 
     public func tryNextLetter(_ letter: Character) -> (WordPuzzle, PuzzleUpdate) {
-        guard word != partialSolution else { return (self, .solved) }
-
         let newPartialSolution = partialSolution + String(letter)
 
         guard word.hasPrefix(newPartialSolution) else { return (self, .none) }
 
-        let newPuzzleLetters = puzzleLetters
-            .firstIndex(of: letter)
-            .map { puzzleLetters[..<$0] + puzzleLetters[($0+1)...] }
-            .map { Array($0) } ?? puzzleLetters
-
-        let newPuzzle = WordPuzzleImpl(
+        let updatedPuzzle = WordPuzzleImpl(
             word: word,
             partialSolutionWord: newPartialSolution,
-            puzzleLetters: newPuzzleLetters
+            puzzleLetters: puzzleLetters
         )
 
-        return (newPuzzle, .solvedLetter(letter, index: partialSolution.count))
+        let puzzleUpdate: PuzzleUpdate = .solvedLetter(
+            letter,
+            index: partialSolution.count,
+            isPuzzleSolved: newPartialSolution == word
+        )
+
+        return (updatedPuzzle, puzzleUpdate)
     }
 
     public func solve() -> (WordPuzzle, [PuzzleUpdate]) {
-        guard word != partialSolution else { return (self, [.solved]) }
-
-        let remainingSolution = word.suffix(
-            from: word.index(
-                word.startIndex,
-                offsetBy: partialSolution.count
-            )
-        )
-        let indexes = partialSolution.count ..< word.count
-
-        let updates: [PuzzleUpdate] = zip(remainingSolution, indexes)
-            .map { .solvedLetter($0, index: $1) } + [.solved]
+        let puzzleUpdates: [PuzzleUpdate] = word
+            .enumerated()
+            .filter { letter in
+                letter.offset >= partialSolution.count
+            }
+            .map { letter in
+                .solvedLetter(
+                    letter.element,
+                    index: letter.offset,
+                    isPuzzleSolved: letter.offset == word.count - 1
+                )
+            }
 
         let solvedPuzzle = WordPuzzleImpl(
             word: word,
             partialSolutionWord: word,
-            puzzleLetters: []
+            puzzleLetters: puzzleLetters
         )
 
-        return (solvedPuzzle, updates)
+        return (solvedPuzzle, puzzleUpdates)
     }
 }

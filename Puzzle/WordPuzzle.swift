@@ -9,6 +9,5 @@ public protocol WordPuzzle {
 
 public enum PuzzleUpdate {
     case none
-    case solved
-    case solvedLetter(Character, index: Int)
+    case solvedLetter(Character, index: Int, isPuzzleSolved: Bool)
 }

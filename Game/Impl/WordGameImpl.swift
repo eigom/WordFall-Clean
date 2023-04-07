@@ -9,29 +9,34 @@ public struct WordGameImpl: WordGame {
         puzzleLetters = puzzle.puzzleLetters
     }
 
-    public func tryNextLetter(at index: Int) -> GameUpdate {
+    private init(puzzle: WordPuzzle, puzzleLetters: [Character]) {
+        self.puzzle = puzzle
+        self.puzzleLetters = puzzleLetters
+    }
+
+    public func tryNextLetter(at index: Int) -> (WordGame, GameUpdate) {
         let letter = puzzleLetters[index]
-        let (updatedPuzzle, update) = puzzle.tryNextLetter(letter)
+        let (updatedPuzzle, puzzleUpdate) = puzzle.tryNextLetter(letter)
 
-        guard update != .none else { return .none }
-
-        puzzle = updatedPuzzle
-
-        switch update {
+        switch puzzleUpdate {
         case .none:
-            return .none
+            return (self, .none)
         case .solved:
-            return .wordSolved
+            let newGame = WordGameImpl(
+                puzzle: updatedPuzzle,
+                puzzleLetters: puzzleLetters
+            )
+            return (newGame, .puzzleSolved)
         case let .solvedLetter(letter, index: index):
             return
         }
     }
 
-    public func revealLetter(at index: Int) -> GameUpdate {
+    public func revealLetter(at index: Int) -> (WordGame, GameUpdate) {
         <#code#>
     }
 
-    public func solvePuzzle() -> [GameUpdate] {
+    public func solvePuzzle() -> (WordGame, [GameUpdate]) {
         <#code#>
     }
 }
