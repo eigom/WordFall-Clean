@@ -1,14 +1,14 @@
 //
-//  PuzzleTests.swift
-//  PuzzleTests
+//  GameTests.swift
+//  GameTests
 //
 //  Created by Eigo Madaloja on 07.04.2023.
 //
 
 import XCTest
-@testable import Puzzle
+@testable import Game
 
-final class PuzzleTests: XCTestCase {
+final class GameTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

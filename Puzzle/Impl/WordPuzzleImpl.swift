@@ -34,7 +34,7 @@ public struct WordPuzzleImpl: WordPuzzle {
             puzzleLetters: newPuzzleLetters
         )
 
-        return (newPuzzle, .solvedLetter(letter, index: UInt(partialSolution.count)))
+        return (newPuzzle, .solvedLetter(letter, index: partialSolution.count))
     }
 
     public func solve() -> (WordPuzzle, [PuzzleUpdate]) {
@@ -49,7 +49,7 @@ public struct WordPuzzleImpl: WordPuzzle {
         let indexes = partialSolution.count ..< word.count
 
         let updates: [PuzzleUpdate] = zip(remainingSolution, indexes)
-            .map { .solvedLetter($0, index: UInt($1)) } + [.solved]
+            .map { .solvedLetter($0, index: $1) } + [.solved]
 
         let solvedPuzzle = WordPuzzleImpl(
             word: word,
