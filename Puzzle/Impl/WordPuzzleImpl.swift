@@ -20,7 +20,7 @@ public struct WordPuzzleImpl: WordPuzzle {
         let newPartialSolution = partialSolution + String(letter)
 
         guard word.hasPrefix(newPartialSolution) else {
-            return PuzzleUpdate(puzzle: self, update: .none)
+            return PuzzleUpdate(updatedPuzzle: self, update: .none)
         }
 
         let updatedPuzzle = WordPuzzleImpl(
@@ -35,7 +35,7 @@ public struct WordPuzzleImpl: WordPuzzle {
             isPuzzleSolved: newPartialSolution == word
         )
 
-        return PuzzleUpdate(puzzle: updatedPuzzle, update: update)
+        return PuzzleUpdate(updatedPuzzle: updatedPuzzle, update: update)
     }
 
     public func solve() -> [PuzzleUpdate] {

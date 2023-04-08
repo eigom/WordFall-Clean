@@ -1,8 +1,9 @@
 import Puzzle
 
 public struct WordGameImpl: WordGame {
+    public let puzzleLetters: [Character]
+
     private var puzzle: WordPuzzle
-    private let puzzleLetters: [Character]
 
     public init(puzzle: WordPuzzle) {
         self.puzzle = puzzle
@@ -14,7 +15,7 @@ public struct WordGameImpl: WordGame {
         self.puzzleLetters = puzzleLetters
     }
 
-    public func tryNextLetter(at index: Int) -> (WordGame, GameUpdate) {
+    public func tryNextLetter(at index: Int) -> GameUpdate {
         let letter = puzzleLetters[index]
         let (updatedPuzzle, puzzleUpdate) = puzzle.tryNextLetter(letter)
 
@@ -32,11 +33,11 @@ public struct WordGameImpl: WordGame {
         }
     }
 
-    public func revealLetter(at index: Int) -> (WordGame, GameUpdate) {
+    public func revealLetter(at index: Int) -> GameUpdate {
         <#code#>
     }
 
-    public func solvePuzzle() -> (WordGame, [GameUpdate]) {
+    public func solvePuzzle() -> [GameUpdate] {
         <#code#>
     }
 }

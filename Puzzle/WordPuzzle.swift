@@ -8,7 +8,7 @@ public protocol WordPuzzle {
 }
 
 public struct PuzzleUpdate {
-    public let puzzle: WordPuzzle
+    public let updatedPuzzle: WordPuzzle
     public let update: Update
 }
 
