@@ -39,12 +39,8 @@ public struct WordPuzzleImpl: WordPuzzle {
     }
 
     public func solve() -> [PuzzleUpdate] {
-        guard partialSolution.count < word.count else {
-            return [PuzzleUpdate(puzzle: self, update: .none)]
-        }
-
         let remainingSolution = word.suffix(word.count - partialSolution.count)
-
+        
         let updates = remainingSolution.map {
             tryNextLetter($0)
         }
