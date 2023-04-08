@@ -3,7 +3,8 @@ public protocol WordPuzzle {
 
     var puzzleLetters: [Character] { get }
 
-    func tryNextLetter(_ letter: Character) -> PuzzleUpdate
+    func tryLetter(at index: Int) -> PuzzleUpdate
+    func revealLetter(at index: Int) -> PuzzleUpdate
     func solve() -> [PuzzleUpdate]
 }
 
@@ -15,4 +16,5 @@ public struct PuzzleUpdate {
 public enum Update {
     case none
     case solvedLetter(Character, index: Int, isPuzzleSolved: Bool)
+    case revealedLetter(Character, index: Int, isPuzzleSolved: Bool)
 }

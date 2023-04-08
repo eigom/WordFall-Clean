@@ -2,49 +2,79 @@ public struct WordPuzzleImpl: WordPuzzle {
     public let puzzleLetters: [Character]
 
     private let word: String
-    private let partialSolution: String
+    private let solutionLetters: [Character]
+    private let emptyLetter = Character(" ")
 
     public init(word: String) {
         self.word = word
-        partialSolution = ""
         puzzleLetters = word.shuffled()
+        solutionLetters = Array(
+            repeating: emptyLetter,
+            count: word.count
+        )
     }
 
-    private init(word: String, partialSolutionWord: String, puzzleLetters: [Character]) {
+    private init(word: String, puzzleLetters: [Character], solutionLetters: [Character]) {
         self.word = word
-        self.partialSolution = partialSolutionWord
         self.puzzleLetters = puzzleLetters
+        self.solutionLetters = solutionLetters
     }
 
-    public func tryNextLetter(_ letter: Character) -> PuzzleUpdate {
-        let newPartialSolution = partialSolution + String(letter)
+    public func tryLetter(at index: Int) -> PuzzleUpdate {
+        let puzzleLetter = puzzleLetters[index]
+        let wordLetter = word.element(at: index)
 
-        guard word.hasPrefix(newPartialSolution) else {
+        guard puzzleLetter == wordLetter else {
             return PuzzleUpdate(updatedPuzzle: self, update: .none)
         }
 
+        let newSolutionLetters = solutionLetters.replacingElement(at: index, with: wordLetter)
+
         let updatedPuzzle = WordPuzzleImpl(
             word: word,
-            partialSolutionWord: newPartialSolution,
-            puzzleLetters: puzzleLetters
+            puzzleLetters: puzzleLetters,
+            solutionLetters: newSolutionLetters
         )
 
         let update: Update = .solvedLetter(
-            letter,
-            index: partialSolution.count,
-            isPuzzleSolved: newPartialSolution == word
+            wordLetter,
+            index: index,
+            isPuzzleSolved: String(newSolutionLetters) == word
+        )
+
+        return PuzzleUpdate(updatedPuzzle: updatedPuzzle, update: update)
+    }
+
+    public func revealLetter(at index: Int) -> PuzzleUpdate {
+        let puzzleLetter = puzzleLetters[index]
+        let wordLetter = word.element(at: index)
+        let newSolutionLetters = solutionLetters.replacingElement(at: index, with: wordLetter)
+
+        let updatedPuzzle = WordPuzzleImpl(
+            word: word,
+            puzzleLetters: puzzleLetters,
+            solutionLetters: newSolutionLetters
+        )
+
+        let update: Update = .revealedLetter(
+            wordLetter,
+            index: index,
+            isPuzzleSolved: String(newSolutionLetters) == word
         )
 
         return PuzzleUpdate(updatedPuzzle: updatedPuzzle, update: update)
     }
 
     public func solve() -> [PuzzleUpdate] {
-        let remainingSolution = word.suffix(word.count - partialSolution.count)
+        let remainingLetterIndexes = solutionLetters
+            .enumerated()
+            .filter { $0.element != emptyLetter }
+            .map { $0.offset }
         
-        let updates = remainingSolution.map {
-            tryNextLetter($0)
+        let puzzleUpdates = remainingLetterIndexes.map {
+            revealLetter(at: $0)
         }
 
-        return updates
+        return puzzleUpdates
     }
 }
