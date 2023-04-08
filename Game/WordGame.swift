@@ -10,6 +10,5 @@ public protocol WordGame {
 
 public enum GameUpdate {
     case none
-    case puzzleSolved
-    case revealedLetter(Character, index: Int)
+    case revealedLetter(Character, index: Int, isGameFinished: Bool)
 }

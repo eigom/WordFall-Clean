@@ -16,10 +16,12 @@ public struct WordPuzzleImpl: WordPuzzle {
         self.puzzleLetters = puzzleLetters
     }
 
-    public func tryNextLetter(_ letter: Character) -> (WordPuzzle, PuzzleUpdate) {
+    public func tryNextLetter(_ letter: Character) -> PuzzleUpdate {
         let newPartialSolution = partialSolution + String(letter)
 
-        guard word.hasPrefix(newPartialSolution) else { return (self, .none) }
+        guard word.hasPrefix(newPartialSolution) else {
+            return PuzzleUpdate(puzzle: self, update: .none)
+        }
 
         let updatedPuzzle = WordPuzzleImpl(
             word: word,
@@ -27,35 +29,26 @@ public struct WordPuzzleImpl: WordPuzzle {
             puzzleLetters: puzzleLetters
         )
 
-        let puzzleUpdate: PuzzleUpdate = .solvedLetter(
+        let update: Update = .solvedLetter(
             letter,
             index: partialSolution.count,
             isPuzzleSolved: newPartialSolution == word
         )
 
-        return (updatedPuzzle, puzzleUpdate)
+        return PuzzleUpdate(puzzle: updatedPuzzle, update: update)
     }
 
-    public func solve() -> (WordPuzzle, [PuzzleUpdate]) {
-        let puzzleUpdates: [PuzzleUpdate] = word
-            .enumerated()
-            .filter { letter in
-                letter.offset >= partialSolution.count
-            }
-            .map { letter in
-                .solvedLetter(
-                    letter.element,
-                    index: letter.offset,
-                    isPuzzleSolved: letter.offset == word.count - 1
-                )
-            }
+    public func solve() -> [PuzzleUpdate] {
+        guard partialSolution.count < word.count else {
+            return [PuzzleUpdate(puzzle: self, update: .none)]
+        }
 
-        let solvedPuzzle = WordPuzzleImpl(
-            word: word,
-            partialSolutionWord: word,
-            puzzleLetters: puzzleLetters
-        )
+        let remainingSolution = word.suffix(word.count - partialSolution.count)
 
-        return (solvedPuzzle, puzzleUpdates)
+        let updates = remainingSolution.map {
+            tryNextLetter($0)
+        }
+
+        return updates
     }
 }

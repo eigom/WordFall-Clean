@@ -3,11 +3,16 @@ public protocol WordPuzzle {
 
     var puzzleLetters: [Character] { get }
 
-    func tryNextLetter(_ letter: Character) -> (WordPuzzle, PuzzleUpdate)
-    func solve() -> (WordPuzzle, [PuzzleUpdate])
+    func tryNextLetter(_ letter: Character) -> PuzzleUpdate
+    func solve() -> [PuzzleUpdate]
 }
 
-public enum PuzzleUpdate {
+public struct PuzzleUpdate {
+    public let puzzle: WordPuzzle
+    public let update: Update
+}
+
+public enum Update {
     case none
     case solvedLetter(Character, index: Int, isPuzzleSolved: Bool)
 }
