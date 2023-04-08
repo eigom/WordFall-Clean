@@ -59,6 +59,7 @@
 		1AB6C4F729E08B5F00A00872 /* Puzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4B529E047B400A00872 /* Puzzle.framework */; };
 		1AB6C4FA29E08CDE00A00872 /* WordGameImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4F929E08CDE00A00872 /* WordGameImpl.swift */; };
 		1AB6C4FD29E1E81A00A00872 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4FC29E1E81A00A00872 /* Collection+Extensions.swift */; };
+		1AB6C50029E203F600A00872 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4FF29E203F600A00872 /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,6 +235,7 @@
 		1AB6C4F529E08B4A00A00872 /* WordGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGame.swift; sourceTree = "<group>"; };
 		1AB6C4F929E08CDE00A00872 /* WordGameImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameImpl.swift; sourceTree = "<group>"; };
 		1AB6C4FC29E1E81A00A00872 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		1AB6C4FF29E203F600A00872 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -513,6 +515,7 @@
 		1AB6C4F829E08CC000A00872 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
+				1AB6C4FE29E203EA00A00872 /* Lib */,
 				1AB6C4F929E08CDE00A00872 /* WordGameImpl.swift */,
 			);
 			path = Impl;
@@ -522,6 +525,14 @@
 			isa = PBXGroup;
 			children = (
 				1AB6C4FC29E1E81A00A00872 /* Collection+Extensions.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		1AB6C4FE29E203EA00A00872 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1AB6C4FF29E203F600A00872 /* Timer.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -1059,6 +1070,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB6C50029E203F600A00872 /* Timer.swift in Sources */,
 				1AB6C4F629E08B4A00A00872 /* WordGame.swift in Sources */,
 				1AB6C4FA29E08CDE00A00872 /* WordGameImpl.swift in Sources */,
 			);

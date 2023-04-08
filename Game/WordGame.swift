@@ -1,21 +1,19 @@
 import Puzzle
 
 public protocol WordGame {
-    init(puzzle: WordPuzzle)
+    init(puzzle: WordPuzzle, onEvent: (WordGameEvent) -> Void)
 
-    var puzzleLetters: [Character] { get }
-
-    func tryNextLetter(at index: Int) -> GameUpdate
-    func revealLetter(at index: Int) -> GameUpdate
-    func solvePuzzle() -> [GameUpdate]
+    func play()
+    func pause()
+    func solve()
+    func tryLetter(at index: Int)
 }
 
-public struct GameUpdate {
-    public let updatedGame: WordGame
-    public let update: Update
+public struct WordGameLetter {
+    public let letter: Character
+    public let solvingTime: TimeInterval
 }
 
-public enum Update {
-    case none
-    case revealedLetter(Character, index: Int, isGameFinished: Bool)
+public enum WordGameEvent {
+
 }
