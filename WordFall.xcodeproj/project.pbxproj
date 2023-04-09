@@ -60,6 +60,9 @@
 		1AB6C4FA29E08CDE00A00872 /* WordGameImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4F929E08CDE00A00872 /* WordGameImpl.swift */; };
 		1AB6C4FD29E1E81A00A00872 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4FC29E1E81A00A00872 /* Collection+Extensions.swift */; };
 		1AB6C50029E203F600A00872 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4FF29E203F600A00872 /* Timer.swift */; };
+		1AB6C50229E331EC00A00872 /* WordPuzzleSolverImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50129E331EC00A00872 /* WordPuzzleSolverImpl.swift */; };
+		1AB6C50429E332F400A00872 /* WordPuzzleMakerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50329E332F400A00872 /* WordPuzzleMakerImpl.swift */; };
+		1AB6C50629E3390B00A00872 /* WordPuzzleRevealerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50529E3390B00A00872 /* WordPuzzleRevealerImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +239,9 @@
 		1AB6C4F929E08CDE00A00872 /* WordGameImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameImpl.swift; sourceTree = "<group>"; };
 		1AB6C4FC29E1E81A00A00872 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		1AB6C4FF29E203F600A00872 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		1AB6C50129E331EC00A00872 /* WordPuzzleSolverImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleSolverImpl.swift; sourceTree = "<group>"; };
+		1AB6C50329E332F400A00872 /* WordPuzzleMakerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleMakerImpl.swift; sourceTree = "<group>"; };
+		1AB6C50529E3390B00A00872 /* WordPuzzleRevealerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleRevealerImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -490,6 +496,9 @@
 			children = (
 				1AB6C4FB29E1E77800A00872 /* Lib */,
 				1AB6C4D329E049D400A00872 /* WordPuzzleImpl.swift */,
+				1AB6C50329E332F400A00872 /* WordPuzzleMakerImpl.swift */,
+				1AB6C50129E331EC00A00872 /* WordPuzzleSolverImpl.swift */,
+				1AB6C50529E3390B00A00872 /* WordPuzzleRevealerImpl.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -1052,7 +1061,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB6C50429E332F400A00872 /* WordPuzzleMakerImpl.swift in Sources */,
+				1AB6C50229E331EC00A00872 /* WordPuzzleSolverImpl.swift in Sources */,
 				1AB6C4D129E047C800A00872 /* WordPuzzle.swift in Sources */,
+				1AB6C50629E3390B00A00872 /* WordPuzzleRevealerImpl.swift in Sources */,
 				1AB6C4D429E049D400A00872 /* WordPuzzleImpl.swift in Sources */,
 				1AB6C4FD29E1E81A00A00872 /* Collection+Extensions.swift in Sources */,
 			);
