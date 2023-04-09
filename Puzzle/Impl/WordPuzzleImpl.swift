@@ -4,16 +4,6 @@ struct WordPuzzleImpl: WordPuzzle {
     let partialSolution: [Character?]
 }
 
-extension WordPuzzle {
-    func makeCopy(partialSolution: [Character?]) -> WordPuzzleImpl {
-        return .init(
-            wordLetters: wordLetters,
-            puzzleLetters: puzzleLetters,
-            partialSolution: partialSolution
-        )
-    }
-}
-
 /*public struct WordPuzzleImpl: WordPuzzle {
     public let puzzleLetters: [Character]
 

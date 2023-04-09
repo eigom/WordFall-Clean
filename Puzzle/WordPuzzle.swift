@@ -24,27 +24,3 @@ public protocol WordPuzzle {
     var puzzleLetters: [Character] { get }
     var partialSolution: [Character?] { get }
 }
-
-public protocol WordPuzzleMaker {
-    func makePuzzle(with word: String) -> WordPuzzle
-}
-
-public struct LetterTryingResult {
-    public let wasCorrectLetter: Bool
-    public let isPuzzleSolved: Bool
-    public let resultingPuzzle: WordPuzzle
-}
-
-public protocol WordPuzzleSolver {
-    func tryLetter(at puzzleLetterIndex: Int, in puzzle: WordPuzzle) -> LetterTryingResult
-    //func solve(_ puzzle: WordPuzzle) -> WordPuzzle
-}
-
-public struct LetterRevealingResult {
-    public let revealedLetter: Character
-    public let resultingPuzzle: WordPuzzle
-}
-
-public protocol WordPuzzleRevealer {
-    func revealLetter(at puzzleLetterIndex: Int, in puzzle: WordPuzzle) -> LetterRevealingResult
-}

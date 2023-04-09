@@ -1,5 +1,5 @@
 public struct WordPuzzleSolverImpl: WordPuzzleSolver {
-    public func tryLetter(at puzzleLetterIndex: Int, in puzzle: WordPuzzle) -> LetterTryingResult {
+    public func tryLetter(at puzzleLetterIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult {
         let puzzleLetter = puzzle.puzzleLetters[puzzleLetterIndex]
 
         guard
@@ -8,23 +8,38 @@ public struct WordPuzzleSolverImpl: WordPuzzleSolver {
                 .first(where: { $0.element == nil })?
                 .offset,
             puzzle.wordLetters[nextSolutionLetterIndex] == puzzleLetter
-        else {
-            return LetterTryingResult(
-                wasCorrectLetter: false,
-                isPuzzleSolved: puzzle.wordLetters == puzzle.partialSolution,
-                resultingPuzzle: puzzle
+        else { return .wrongLetter }
+
+        let newPartialSolution = puzzle.partialSolution
+            .replacingElement(
+                at: nextSolutionLetterIndex,
+                with: puzzleLetter
             )
-        }
+        let newPuzzle = puzzle.makeCopy(partialSolution: newPartialSolution)
+        let isPuzzleSolved = puzzle.wordLetters == puzzle.partialSolution
 
-        let newPartialSolution = puzzle.partialSolution.replacingElement(
-            at: nextSolutionLetterIndex,
-            with: puzzleLetter
+        return .correctLetter(
+            isPuzzleSolved: isPuzzleSolved,
+            resultingPuzzle: newPuzzle
         )
+    }
 
-        return LetterTryingResult(
-            wasCorrectLetter: true,
-            isPuzzleSolved: puzzle.wordLetters == puzzle.partialSolution,
-            resultingPuzzle: puzzle.makeCopy(partialSolution: newPartialSolution)
+    public func solve(_ puzzle: WordPuzzle) -> SolvePuzzleResult {
+        let revealedLetters = puzzle.partialSolution
+            .enumerated()
+            .filter { $0.element == nil }
+            .map {
+                let letter = puzzle.wordLetters[$0.offset]
+                return SolvePuzzleResult.RevealedLetter(
+                    letter: letter,
+                    index: $0.offset
+                )
+            }
+        let solvedPuzzle = puzzle.makeCopy(partialSolution: puzzle.wordLetters)
+
+        return SolvePuzzleResult(
+            revealedLetters: revealedLetters,
+            resultingPuzzle: solvedPuzzle
         )
     }
 }
