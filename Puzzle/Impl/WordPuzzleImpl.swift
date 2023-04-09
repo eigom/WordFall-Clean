@@ -47,8 +47,18 @@ public struct WordPuzzleImpl: WordPuzzle {
 
     public func revealLetter(at index: Int) -> PuzzleUpdate {
         let puzzleLetter = puzzleLetters[index]
-        let wordLetter = wordLetters[index]
-        let newSolutionLetters = solutionLetters.replacingElement(at: index, with: wordLetter)
+
+        guard
+            let wordLetterIndex = wordLetters
+                .enumerated()
+                .first(where: {
+                    $0.element == puzzleLetter && solutionLetters[$0.offset] == emptyLetter
+                })?
+                .offset
+        else { return PuzzleUpdate(updatedPuzzle: self, update: .none) }
+
+        let wordLetter = wordLetters[wordLetterIndex]
+        let newSolutionLetters = solutionLetters.replacingElement(at: wordLetterIndex, with: wordLetter)
 
         let updatedPuzzle = WordPuzzleImpl(
             wordLetters: wordLetters,
