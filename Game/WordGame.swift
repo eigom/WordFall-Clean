@@ -5,6 +5,7 @@ public protocol WordGame {
 
     func play()
     func pause()
+    func resume()
     func solve()
     func tryLetter(at index: Int)
 }
