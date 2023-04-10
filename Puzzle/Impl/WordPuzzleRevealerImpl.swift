@@ -12,10 +12,7 @@ public struct WordPuzzleRevealerImpl: WordPuzzleRevealer {
         else { return .none }
 
         let newPartialSolution = puzzle.partialSolution
-            .replacingElement(
-                at: solutionLetterIndex,
-                with: puzzleLetter
-            )
+            .replacingElement(at: solutionLetterIndex, with: puzzleLetter)
         let newPuzzle = puzzle.makeCopy(partialSolution: newPartialSolution)
         let isPuzzleSolved = puzzle.wordLetters == puzzle.partialSolution
 

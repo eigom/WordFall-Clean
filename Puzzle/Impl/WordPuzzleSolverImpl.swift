@@ -11,10 +11,7 @@ public struct WordPuzzleSolverImpl: WordPuzzleSolver {
         else { return .wrongLetter }
 
         let newPartialSolution = puzzle.partialSolution
-            .replacingElement(
-                at: nextSolutionLetterIndex,
-                with: puzzleLetter
-            )
+            .replacingElement(at: nextSolutionLetterIndex, with: puzzleLetter)
         let newPuzzle = puzzle.makeCopy(partialSolution: newPartialSolution)
         let isPuzzleSolved = puzzle.wordLetters == puzzle.partialSolution
 

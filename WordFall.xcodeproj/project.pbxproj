@@ -67,6 +67,8 @@
 		1AB6C50A29E34DAA00A00872 /* WordPuzzleSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50929E34DAA00A00872 /* WordPuzzleSolver.swift */; };
 		1AB6C50C29E34DBC00A00872 /* WordPuzzleMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50B29E34DBC00A00872 /* WordPuzzleMaker.swift */; };
 		1AB6C50E29E34E3100A00872 /* WordPuzzleRevealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50D29E34E3100A00872 /* WordPuzzleRevealer.swift */; };
+		1AB6C51029E3F2D500A00872 /* SolvingTimeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50F29E3F2D500A00872 /* SolvingTimeStrategy.swift */; };
+		1AB6C51429E41B6700A00872 /* RandomSolvingTimeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C51329E41B6700A00872 /* RandomSolvingTimeStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,6 +252,8 @@
 		1AB6C50929E34DAA00A00872 /* WordPuzzleSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleSolver.swift; sourceTree = "<group>"; };
 		1AB6C50B29E34DBC00A00872 /* WordPuzzleMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleMaker.swift; sourceTree = "<group>"; };
 		1AB6C50D29E34E3100A00872 /* WordPuzzleRevealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleRevealer.swift; sourceTree = "<group>"; };
+		1AB6C50F29E3F2D500A00872 /* SolvingTimeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvingTimeStrategy.swift; sourceTree = "<group>"; };
+		1AB6C51329E41B6700A00872 /* RandomSolvingTimeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSolvingTimeStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -517,6 +521,7 @@
 		1AB6C4DB29E08B3800A00872 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				1AB6C51129E41A2100A00872 /* SolvingTime */,
 				1AB6C4F829E08CC000A00872 /* Impl */,
 				1AB6C4F529E08B4A00A00872 /* WordGame.swift */,
 				1AB6C4DC29E08B3800A00872 /* Game.h */,
@@ -556,6 +561,23 @@
 				1AB6C4FF29E203F600A00872 /* Timer.swift */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		1AB6C51129E41A2100A00872 /* SolvingTime */ = {
+			isa = PBXGroup;
+			children = (
+				1AB6C51229E41B5900A00872 /* Impl */,
+				1AB6C50F29E3F2D500A00872 /* SolvingTimeStrategy.swift */,
+			);
+			path = SolvingTime;
+			sourceTree = "<group>";
+		};
+		1AB6C51229E41B5900A00872 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				1AB6C51329E41B6700A00872 /* RandomSolvingTimeStrategy.swift */,
+			);
+			path = Impl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1098,7 +1120,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB6C51029E3F2D500A00872 /* SolvingTimeStrategy.swift in Sources */,
 				1AB6C50029E203F600A00872 /* Timer.swift in Sources */,
+				1AB6C51429E41B6700A00872 /* RandomSolvingTimeStrategy.swift in Sources */,
 				1AB6C4F629E08B4A00A00872 /* WordGame.swift in Sources */,
 				1AB6C4FA29E08CDE00A00872 /* WordGameImpl.swift in Sources */,
 			);
