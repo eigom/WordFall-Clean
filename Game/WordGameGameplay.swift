@@ -5,6 +5,7 @@ public protocol WordGameGameplay {
         game: WordGame,
         solver: WordPuzzleSolver,
         revealer: WordPuzzleRevealer,
+        timer: Timer,
         onEvent: (WordGameEvent) -> Void
     )
 
@@ -19,38 +20,13 @@ public enum WordGameEvent {
     case gameStart
     case gamePause
     case gameEnd
-    case revealedLetter(Character, wordIndex: Int)
-    case solvedLetter
-    case solvedPuzzle
+    case revealedLetter(Letter)
+    case solvedLetter(Letter)
+    case solvedPuzzle(revealedLetter: [Letter])
 }
 
-/*public protocol WordGame {
-    init(setup: WordGameSetup, onEvent: (WordGameEvent) -> Void)
-
-    func play()
-    func pause()
-    //func resume()
-    func solve()
-    func tryLetter(at index: Int)
-}
-
-public struct WordGameSetup {
-    let puzzle: WordPuzzle
-    let solver: WordPuzzleSolver
-    let revealer: WordPuzzleRevealer
-    let solvingTimeStrategy: SolvingTimeStrategy
-}
-
-public struct PuzzleLetter {
+public struct Letter {
     public let letter: Character
-    public let solvingTime: TimeInterval
+    public let wordLetterIndex: Int
+    public let puzzleLetterIndex: Int
 }
-
-public enum WordGameEvent {
-    case gameStart
-    case gamePause
-    case gameEnd
-    case revealedLetter(Character, wordIndex: Int)
-    case solvedLetter
-    case solvedPuzzle
-}*/
