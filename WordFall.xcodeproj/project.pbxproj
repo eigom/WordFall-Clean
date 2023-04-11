@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A60A02E29E5BDFF0006FC10 /* WordGameGameplayMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60A02D29E5BDFF0006FC10 /* WordGameGameplayMaker.swift */; };
+		1A60A03029E5BED10006FC10 /* WordGameGameplayMakerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60A02F29E5BED10006FC10 /* WordGameGameplayMakerImpl.swift */; };
 		1AB6C32529D6BDA300A00872 /* WordFallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C32429D6BDA300A00872 /* WordFallApp.swift */; };
 		1AB6C32729D6BDA300A00872 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C32629D6BDA300A00872 /* ContentView.swift */; };
 		1AB6C32929D6BDA500A00872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6C32829D6BDA500A00872 /* Assets.xcassets */; };
@@ -220,6 +222,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A60A02D29E5BDFF0006FC10 /* WordGameGameplayMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameGameplayMaker.swift; sourceTree = "<group>"; };
+		1A60A02F29E5BED10006FC10 /* WordGameGameplayMakerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameGameplayMakerImpl.swift; sourceTree = "<group>"; };
 		1AB6C32129D6BDA300A00872 /* WordFall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordFall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB6C32429D6BDA300A00872 /* WordFallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFallApp.swift; sourceTree = "<group>"; };
 		1AB6C32629D6BDA300A00872 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -552,6 +556,7 @@
 				1AB6C4F529E08B4A00A00872 /* WordGame.swift */,
 				1AB6C51529E4427500A00872 /* WordGameMaker.swift */,
 				1AB6C51729E442C600A00872 /* WordGameGameplay.swift */,
+				1A60A02D29E5BDFF0006FC10 /* WordGameGameplayMaker.swift */,
 				1AB6C4DC29E08B3800A00872 /* Game.h */,
 			);
 			path = Game;
@@ -571,6 +576,7 @@
 				1AB6C4F929E08CDE00A00872 /* WordGameImpl.swift */,
 				1AB6C51E29E4465D00A00872 /* WordGameMakerImpl.swift */,
 				1AB6C52329E53F3900A00872 /* WordGameGameplayImpl.swift */,
+				1A60A02F29E5BED10006FC10 /* WordGameGameplayMakerImpl.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -1151,10 +1157,12 @@
 			files = (
 				1AB6C51029E3F2D500A00872 /* SolvingTimeStrategy.swift in Sources */,
 				1AB6C51F29E4465D00A00872 /* WordGameMakerImpl.swift in Sources */,
+				1A60A03029E5BED10006FC10 /* WordGameGameplayMakerImpl.swift in Sources */,
 				1AB6C51429E41B6700A00872 /* RandomSolvingTimeStrategy.swift in Sources */,
 				1AB6C4F629E08B4A00A00872 /* WordGame.swift in Sources */,
 				1AB6C51629E4427500A00872 /* WordGameMaker.swift in Sources */,
 				1AB6C4FA29E08CDE00A00872 /* WordGameImpl.swift in Sources */,
+				1A60A02E29E5BDFF0006FC10 /* WordGameGameplayMaker.swift in Sources */,
 				1AB6C51829E442C600A00872 /* WordGameGameplay.swift in Sources */,
 				1AB6C52229E4A49300A00872 /* Timer.swift in Sources */,
 				1AB6C52429E53F3900A00872 /* WordGameGameplayImpl.swift in Sources */,
