@@ -1,7 +1,15 @@
 import Puzzle
 
-struct WordGameImpl: WordGame {
+public struct WordGameImpl: WordGame {
     public let puzzle: WordPuzzle
-    public let totalSolvingTime: TimeInterval
-    public let letterSolvingTimes: [TimeInterval]
+    public let totalSolvingTimeSeconds: TimeInterval
+    public let letterSolvingTimeSeconds: [TimeInterval]
+
+    public func makeCopy(updatingPuzzle newPuzzle: WordPuzzle) -> WordGame {
+        return WordGameImpl(
+            puzzle: newPuzzle,
+            totalSolvingTimeSeconds: totalSolvingTimeSeconds,
+            letterSolvingTimeSeconds: letterSolvingTimeSeconds
+        )
+    }
 }

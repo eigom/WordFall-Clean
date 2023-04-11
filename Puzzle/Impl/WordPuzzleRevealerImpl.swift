@@ -13,7 +13,7 @@ public struct WordPuzzleRevealerImpl: WordPuzzleRevealer {
 
         let newPartialSolution = puzzle.partialSolution
             .replacingElement(at: solutionLetterIndex, with: puzzleLetter)
-        let newPuzzle = puzzle.makeCopy(partialSolution: newPartialSolution)
+        let newPuzzle = puzzle.makeCopy(updatingPartialSolution: newPartialSolution)
         let isPuzzleSolved = puzzle.wordLetters == puzzle.partialSolution
 
         return .revealedLetter(

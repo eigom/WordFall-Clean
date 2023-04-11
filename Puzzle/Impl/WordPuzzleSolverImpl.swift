@@ -12,7 +12,7 @@ public struct WordPuzzleSolverImpl: WordPuzzleSolver {
 
         let newPartialSolution = puzzle.partialSolution
             .replacingElement(at: nextSolutionLetterIndex, with: puzzleLetter)
-        let newPuzzle = puzzle.makeCopy(partialSolution: newPartialSolution)
+        let newPuzzle = puzzle.makeCopy(updatingPartialSolution: newPartialSolution)
         let isPuzzleSolved = puzzle.wordLetters == puzzle.partialSolution
 
         return .correctLetter(
@@ -32,7 +32,7 @@ public struct WordPuzzleSolverImpl: WordPuzzleSolver {
                     index: $0.offset
                 )
             }
-        let solvedPuzzle = puzzle.makeCopy(partialSolution: puzzle.wordLetters)
+        let solvedPuzzle = puzzle.makeCopy(updatingPartialSolution: puzzle.wordLetters)
 
         return SolvePuzzleResult(
             revealedLetters: revealedLetters,

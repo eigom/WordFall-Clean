@@ -6,7 +6,7 @@ public protocol WordGameGameplay {
         solver: WordPuzzleSolver,
         revealer: WordPuzzleRevealer,
         timer: Timer,
-        onEvent: (WordGameEvent) -> Void
+        onEvent: @escaping (WordGameEvent) -> Void
     )
 
     func play()

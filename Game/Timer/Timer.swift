@@ -1,7 +1,5 @@
 public protocol Timer {
-    init(durationSeconds: TimeInterval, onUpdate: (TimeInterval) -> Void)
-
-    func start()
+    func start(durationSeconds: TimeInterval, onUpdate: (TimeInterval) -> Void)
     func pause()
     func resume()
 }
