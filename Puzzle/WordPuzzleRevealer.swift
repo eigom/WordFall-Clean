@@ -1,8 +1,12 @@
 public protocol WordPuzzleRevealer {
-    func revealLetter(at puzzleLetterIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult
+    func revealLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult
 }
 
 public enum LetterRevealResult {
     case none
-    case revealedLetter(Character, isPuzzleSolved: Bool, resultingPuzzle: WordPuzzle)
+    case revealedLetter(
+        Character,
+        wordIndex: Int,
+        resultingPuzzle: WordPuzzle
+    )
 }

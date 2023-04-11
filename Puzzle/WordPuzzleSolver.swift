@@ -1,17 +1,22 @@
 public protocol WordPuzzleSolver {
-    func tryLetter(at puzzleLetterIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult
+    func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult
     func solve(_ puzzle: WordPuzzle) -> SolvePuzzleResult
+    func isSolved(_ puzzle: WordPuzzle) -> Bool
 }
 
 public enum LetterTryResult {
     case wrongLetter
-    case correctLetter(isPuzzleSolved: Bool, resultingPuzzle: WordPuzzle)
+    case correctLetter(
+        Character,
+        wordIndex: Int,
+        resultingPuzzle: WordPuzzle
+    )
 }
 
 public struct SolvePuzzleResult {
     public struct RevealedLetter {
         public let letter: Character
-        public let index: Int
+        public let wordIndex: Int
     }
 
     public let revealedLetters: [RevealedLetter]

@@ -1,6 +1,6 @@
 public struct WordPuzzleSolverImpl: WordPuzzleSolver {
-    public func tryLetter(at puzzleLetterIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult {
-        let puzzleLetter = puzzle.puzzleLetters[puzzleLetterIndex]
+    public func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult {
+        let puzzleLetter = puzzle.puzzleLetters[puzzleIndex]
 
         guard
             let nextSolutionLetterIndex = puzzle.partialSolution
@@ -13,10 +13,10 @@ public struct WordPuzzleSolverImpl: WordPuzzleSolver {
         let newPartialSolution = puzzle.partialSolution
             .replacingElement(at: nextSolutionLetterIndex, with: puzzleLetter)
         let newPuzzle = puzzle.makeCopy(updatingPartialSolution: newPartialSolution)
-        let isPuzzleSolved = puzzle.wordLetters == puzzle.partialSolution
 
         return .correctLetter(
-            isPuzzleSolved: isPuzzleSolved,
+            puzzleLetter,
+            wordIndex: nextSolutionLetterIndex,
             resultingPuzzle: newPuzzle
         )
     }
@@ -26,10 +26,9 @@ public struct WordPuzzleSolverImpl: WordPuzzleSolver {
             .enumerated()
             .filter { $0.element == nil }
             .map {
-                let letter = puzzle.wordLetters[$0.offset]
-                return SolvePuzzleResult.RevealedLetter(
-                    letter: letter,
-                    index: $0.offset
+                SolvePuzzleResult.RevealedLetter(
+                    letter: puzzle.wordLetters[$0.offset],
+                    wordIndex: $0.offset
                 )
             }
         let solvedPuzzle = puzzle.makeCopy(updatingPartialSolution: puzzle.wordLetters)
@@ -38,5 +37,9 @@ public struct WordPuzzleSolverImpl: WordPuzzleSolver {
             revealedLetters: revealedLetters,
             resultingPuzzle: solvedPuzzle
         )
+    }
+
+    public func isSolved(_ puzzle: WordPuzzle) -> Bool {
+        return puzzle.wordLetters == puzzle.partialSolution
     }
 }

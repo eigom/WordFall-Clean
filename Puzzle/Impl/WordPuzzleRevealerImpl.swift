@@ -1,6 +1,6 @@
 public struct WordPuzzleRevealerImpl: WordPuzzleRevealer {
-    public func revealLetter(at puzzleLetterIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult {
-        let puzzleLetter = puzzle.puzzleLetters[puzzleLetterIndex]
+    public func revealLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult {
+        let puzzleLetter = puzzle.puzzleLetters[puzzleIndex]
 
         guard
             let solutionLetterIndex = puzzle.partialSolution
@@ -14,11 +14,10 @@ public struct WordPuzzleRevealerImpl: WordPuzzleRevealer {
         let newPartialSolution = puzzle.partialSolution
             .replacingElement(at: solutionLetterIndex, with: puzzleLetter)
         let newPuzzle = puzzle.makeCopy(updatingPartialSolution: newPartialSolution)
-        let isPuzzleSolved = puzzle.wordLetters == puzzle.partialSolution
 
         return .revealedLetter(
             puzzleLetter,
-            isPuzzleSolved: isPuzzleSolved,
+            wordIndex: solutionLetterIndex,
             resultingPuzzle: newPuzzle
         )
     }

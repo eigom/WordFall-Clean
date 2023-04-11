@@ -40,12 +40,12 @@ public final class WordGameGameplayImpl: WordGameGameplay {
     }
 
     public func tryLetter(at index: Int) {
-        let result = solver.tryLetter(at: index, in: game.puzzle)
+        let tryResult = solver.tryLetter(at: index, in: game.puzzle)
 
-        switch result {
+        switch tryResult {
         case .wrongLetter:
             break
-        case .correctLetter(let isPuzzleSolved, let resultingPuzzle):
+        case let .correctLetter(letter, wordIndex: wordIndex, resultingPuzzle: resultingPuzzle):
             game = game.makeCopy(updatingPuzzle: resultingPuzzle)
         }
     }
