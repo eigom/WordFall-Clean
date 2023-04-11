@@ -5,7 +5,7 @@ public final class WordGameGameplayImpl: WordGameGameplay {
     private let solver: WordPuzzleSolver
     private let revealer: WordPuzzleRevealer
     private let timer: Timer
-    private let onEvent: (WordGameEvent) -> Void
+    private let eventListener: (WordGameEvent) -> Void
 
     public init(
         game: WordGame,
@@ -18,14 +18,14 @@ public final class WordGameGameplayImpl: WordGameGameplay {
         self.solver = solver
         self.revealer = revealer
         self.timer = timer
-        self.onEvent = onEvent
+        self.eventListener = onEvent
     }
 
     public func play() {
         timer.start(durationSeconds: game.totalSolvingTimeSeconds) { elapsedSeconds in
             revealExpiredLetters(elapsedSeconds: elapsedSeconds)
         } onFinished: {
-            onEvent(.gameEnded)
+            eventListener(.gameEnded)
         }
     }
 
@@ -42,8 +42,8 @@ public final class WordGameGameplayImpl: WordGameGameplay {
         game = game.makeCopy(newPuzzle: solveResult.resultingPuzzle)
         let revealedLetters: [(Character, wordIndex: Int)] = solveResult.revealedLetters
             .map { ($0.letter, $0.wordIndex) }
-        onEvent(.solvedPuzzle(revealedLetters: revealedLetters))
-        onEvent(.gameEnded)
+        eventListener(.solvedPuzzle(revealedLetters: revealedLetters))
+        eventListener(.gameEnded)
     }
 
     public func tryLetter(at puzzleIndex: Int) {
@@ -59,10 +59,10 @@ public final class WordGameGameplayImpl: WordGameGameplay {
                 puzzleIndex: puzzleIndex,
                 wordIndex: wordIndex
             )
-            onEvent(event)
+            eventListener(event)
 
             if solver.isSolved(game.puzzle) {
-                onEvent(.gameEnded)
+                eventListener(.gameEnded)
             }
         }
     }
@@ -82,10 +82,10 @@ public final class WordGameGameplayImpl: WordGameGameplay {
                     puzzleIndex: index,
                     wordIndex: wordIndex
                 )
-                onEvent(event)
+                eventListener(event)
 
                 if solver.isSolved(game.puzzle) {
-                    onEvent(.gameEnded)
+                    eventListener(.gameEnded)
                 }
             }
         }
