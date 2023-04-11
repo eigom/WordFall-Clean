@@ -36,17 +36,32 @@ public final class WordGameGameplayImpl: WordGameGameplay {
     }
 
     public func solve() {
-        <#code#>
+        let solveResult = solver.solve(game.puzzle)
+        game = game.makeCopy(updatingPuzzle: solveResult.resultingPuzzle)
+        let revealedLetters: [(Character, wordIndex: Int)] = solveResult.revealedLetters
+            .map { ($0.letter, $0.wordIndex) }
+        onEvent(.solvedPuzzle(revealedLetters: revealedLetters))
+        onEvent(.gameEnd)
     }
 
-    public func tryLetter(at index: Int) {
-        let tryResult = solver.tryLetter(at: index, in: game.puzzle)
+    public func tryLetter(at puzzleIndex: Int) {
+        let tryResult = solver.tryLetter(at: puzzleIndex, in: game.puzzle)
 
         switch tryResult {
         case .wrongLetter:
             break
         case let .correctLetter(letter, wordIndex: wordIndex, resultingPuzzle: resultingPuzzle):
             game = game.makeCopy(updatingPuzzle: resultingPuzzle)
+            let event: WordGameEvent = .solvedLetter(
+                letter,
+                puzzleIndex: puzzleIndex,
+                wordIndex: wordIndex
+            )
+            onEvent(event)
+
+            if solver.isSolved(game.puzzle) {
+                onEvent(.gameEnd)
+            }
         }
     }
 }

@@ -13,20 +13,14 @@ public protocol WordGameGameplay {
     func pause()
     func resume()
     func solve()
-    func tryLetter(at index: Int)
+    func tryLetter(at puzzleIndex: Int)
 }
 
 public enum WordGameEvent {
     case gameStart
     case gamePause
     case gameEnd
-    case revealedLetter(Letter)
-    case solvedLetter(Letter)
-    case solvedPuzzle(revealedLetter: [Letter])
-}
-
-public struct Letter {
-    public let letter: Character
-    public let wordLetterIndex: Int
-    public let puzzleLetterIndex: Int
+    case revealedLetter(Character, puzzleIndex: Int, wordIndex: Int)
+    case solvedLetter(Character, puzzleIndex: Int, wordIndex: Int)
+    case solvedPuzzle(revealedLetters: [(Character, wordIndex: Int)])
 }
