@@ -5,7 +5,7 @@ public struct WordGameImpl: WordGame {
     public let totalSolvingTimeSeconds: TimeInterval
     public let letterSolvingTimeSeconds: [TimeInterval]
 
-    public func makeCopy(updatingPuzzle newPuzzle: WordPuzzle) -> WordGame {
+    public func makeCopy(newPuzzle: WordPuzzle) -> WordGame {
         return WordGameImpl(
             puzzle: newPuzzle,
             totalSolvingTimeSeconds: totalSolvingTimeSeconds,

@@ -23,7 +23,7 @@ public final class WordGameGameplayImpl: WordGameGameplay {
 
     public func play() {
         timer.start(durationSeconds: game.totalSolvingTimeSeconds) { elapsedSeconds in
-            
+            revealExpiredLetters(elapsedSeconds: elapsedSeconds)
         } onFinished: {
             onEvent(.gameEnded)
         }
@@ -39,7 +39,7 @@ public final class WordGameGameplayImpl: WordGameGameplay {
 
     public func solve() {
         let solveResult = solver.solve(game.puzzle)
-        game = game.makeCopy(updatingPuzzle: solveResult.resultingPuzzle)
+        game = game.makeCopy(newPuzzle: solveResult.resultingPuzzle)
         let revealedLetters: [(Character, wordIndex: Int)] = solveResult.revealedLetters
             .map { ($0.letter, $0.wordIndex) }
         onEvent(.solvedPuzzle(revealedLetters: revealedLetters))
@@ -53,7 +53,7 @@ public final class WordGameGameplayImpl: WordGameGameplay {
         case .wrongLetter:
             break
         case let .correctLetter(letter, wordIndex: wordIndex, resultingPuzzle: resultingPuzzle):
-            game = game.makeCopy(updatingPuzzle: resultingPuzzle)
+            game = game.makeCopy(newPuzzle: resultingPuzzle)
             let event: WordGameEvent = .solvedLetter(
                 letter,
                 puzzleIndex: puzzleIndex,
@@ -65,5 +65,39 @@ public final class WordGameGameplayImpl: WordGameGameplay {
                 onEvent(.gameEnded)
             }
         }
+    }
+
+    private func revealExpiredLetters(elapsedSeconds: TimeInterval) {
+        let revealPuzzleLetterIndexes = expiredPuzzleLetterIndexes(elapsedSeconds: elapsedSeconds)
+        revealPuzzleLetterIndexes.forEach { index in
+            let revealResult = revealer.revealLetter(at: index, in: game.puzzle)
+
+            switch revealResult {
+            case .none:
+                break
+            case let .revealedLetter(letter, wordIndex: wordIndex, resultingPuzzle: resultingPuzzle):
+                game = game.makeCopy(newPuzzle: resultingPuzzle)
+                let event: WordGameEvent = .revealedLetter(
+                    letter,
+                    puzzleIndex: index,
+                    wordIndex: wordIndex
+                )
+                onEvent(event)
+
+                if solver.isSolved(game.puzzle) {
+                    onEvent(.gameEnded)
+                }
+            }
+        }
+    }
+
+    private func expiredPuzzleLetterIndexes(elapsedSeconds: TimeInterval) -> [Int] {
+        return game.puzzle.puzzleLetters
+            .enumerated()
+            .compactMap { indexedLetter in
+                guard indexedLetter.element != nil else { return nil }
+                let solvingTimeSeconds = game.letterSolvingTimeSeconds[indexedLetter.offset]
+                return solvingTimeSeconds < elapsedSeconds ? nil : indexedLetter.offset
+            }
     }
 }

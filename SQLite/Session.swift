@@ -11,7 +11,7 @@ public final class Session {
         resultTypes: [SQLiteType]
     ) throws -> Result {
         let query = QueryBuilder(query: query, parameters: parameters).build()
-        
+
         let resultSet = try ResultSetFetcher(
             query: query,
             resultTypes: resultTypes,

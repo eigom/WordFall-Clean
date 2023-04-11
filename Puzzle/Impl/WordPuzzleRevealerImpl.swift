@@ -1,9 +1,8 @@
 public struct WordPuzzleRevealerImpl: WordPuzzleRevealer {
     public func revealLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult {
-        let puzzleLetter = puzzle.puzzleLetters[puzzleIndex]
-
         guard
-            let solutionLetterIndex = puzzle.partialSolution
+            let puzzleLetter = puzzle.puzzleLetters[puzzleIndex],
+            let solutionLetterIndex = puzzle.solutionLetters
                 .enumerated()
                 .first(where: {
                     $0.element == nil && puzzle.wordLetters[$0.offset] == puzzleLetter

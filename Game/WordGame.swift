@@ -5,5 +5,5 @@ public protocol WordGame {
     var totalSolvingTimeSeconds: TimeInterval { get }
     var letterSolvingTimeSeconds: [TimeInterval] { get }
 
-    func makeCopy(updatingPuzzle: WordPuzzle) -> WordGame
+    func makeCopy(newPuzzle: WordPuzzle) -> WordGame
 }
