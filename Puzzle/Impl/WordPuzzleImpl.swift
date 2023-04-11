@@ -1,13 +1,16 @@
 public struct WordPuzzleImpl: WordPuzzle {
     public let wordLetters: [Character]
-    public let puzzleLetters: [Character]
-    public let partialSolution: [Character?]
+    public let puzzleLetters: [Character?]
+    public let solutionLetters: [Character?]
 
-    public func makeCopy(updatingPartialSolution newPartialSolution: [Character?]) -> WordPuzzle {
+    public func makeCopy(
+        newPuzzleLetters: [Character?],
+        newSolutionLetters: [Character?]
+    ) -> WordPuzzle {
         return WordPuzzleImpl(
             wordLetters: wordLetters,
-            puzzleLetters: puzzleLetters,
-            partialSolution: newPartialSolution
+            puzzleLetters: newPuzzleLetters,
+            solutionLetters: newSolutionLetters
         )
     }
 }

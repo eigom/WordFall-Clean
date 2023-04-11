@@ -3,7 +3,7 @@ public struct WordPuzzleMakerImpl: WordPuzzleMaker {
         return WordPuzzleImpl(
             wordLetters: Array(word),
             puzzleLetters: word.shuffled(),
-            partialSolution: Array(repeating: nil, count: word.count)
+            solutionLetters: Array(repeating: nil, count: word.count)
         )
     }
 }

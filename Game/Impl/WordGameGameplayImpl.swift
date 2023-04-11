@@ -23,7 +23,9 @@ public final class WordGameGameplayImpl: WordGameGameplay {
 
     public func play() {
         timer.start(durationSeconds: game.totalSolvingTimeSeconds) { elapsedSeconds in
-
+            
+        } onFinished: {
+            onEvent(.gameEnded)
         }
     }
 
@@ -41,7 +43,7 @@ public final class WordGameGameplayImpl: WordGameGameplay {
         let revealedLetters: [(Character, wordIndex: Int)] = solveResult.revealedLetters
             .map { ($0.letter, $0.wordIndex) }
         onEvent(.solvedPuzzle(revealedLetters: revealedLetters))
-        onEvent(.gameEnd)
+        onEvent(.gameEnded)
     }
 
     public func tryLetter(at puzzleIndex: Int) {
@@ -60,7 +62,7 @@ public final class WordGameGameplayImpl: WordGameGameplay {
             onEvent(event)
 
             if solver.isSolved(game.puzzle) {
-                onEvent(.gameEnd)
+                onEvent(.gameEnded)
             }
         }
     }

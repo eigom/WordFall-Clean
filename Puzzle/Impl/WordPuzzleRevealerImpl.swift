@@ -11,9 +11,14 @@ public struct WordPuzzleRevealerImpl: WordPuzzleRevealer {
                 .offset
         else { return .none }
 
-        let newPartialSolution = puzzle.partialSolution
+        let newPuzzleLetters = puzzle.puzzleLetters
+            .replacingElement(at: puzzleIndex, with: nil)
+        let newSolutionLetters = puzzle.solutionLetters
             .replacingElement(at: solutionLetterIndex, with: puzzleLetter)
-        let newPuzzle = puzzle.makeCopy(updatingPartialSolution: newPartialSolution)
+        let newPuzzle = puzzle.makeCopy(
+            newPuzzleLetters: newPuzzleLetters,
+            newSolutionLetters: newSolutionLetters
+        )
 
         return .revealedLetter(
             puzzleLetter,

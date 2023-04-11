@@ -1,18 +1,22 @@
 public struct WordPuzzleSolverImpl: WordPuzzleSolver {
     public func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult {
-        let puzzleLetter = puzzle.puzzleLetters[puzzleIndex]
-
         guard
-            let nextSolutionLetterIndex = puzzle.partialSolution
+            let puzzleLetter = puzzle.puzzleLetters[puzzleIndex],
+            let nextSolutionLetterIndex = puzzle.solutionLetters
                 .enumerated()
                 .first(where: { $0.element == nil })?
                 .offset,
             puzzle.wordLetters[nextSolutionLetterIndex] == puzzleLetter
         else { return .wrongLetter }
 
-        let newPartialSolution = puzzle.partialSolution
+        let newPuzzleLetters = puzzle.puzzleLetters
+            .replacingElement(at: puzzleIndex, with: nil)
+        let newSolutionLetters = puzzle.solutionLetters
             .replacingElement(at: nextSolutionLetterIndex, with: puzzleLetter)
-        let newPuzzle = puzzle.makeCopy(updatingPartialSolution: newPartialSolution)
+        let newPuzzle = puzzle.makeCopy(
+            newPuzzleLetters: newPuzzleLetters,
+            newSolutionLetters: newSolutionLetters
+        )
 
         return .correctLetter(
             puzzleLetter,
@@ -22,7 +26,7 @@ public struct WordPuzzleSolverImpl: WordPuzzleSolver {
     }
 
     public func solve(_ puzzle: WordPuzzle) -> SolvePuzzleResult {
-        let revealedLetters = puzzle.partialSolution
+        let revealedLetters = puzzle.solutionLetters
             .enumerated()
             .filter { $0.element == nil }
             .map {
@@ -31,7 +35,12 @@ public struct WordPuzzleSolverImpl: WordPuzzleSolver {
                     wordIndex: $0.offset
                 )
             }
-        let solvedPuzzle = puzzle.makeCopy(updatingPartialSolution: puzzle.wordLetters)
+        let newPuzzleLetters = puzzle.puzzleLetters.map { _ -> Character? in nil }
+        let newSolutionLetters = puzzle.wordLetters
+        let solvedPuzzle = puzzle.makeCopy(
+            newPuzzleLetters: newPuzzleLetters,
+            newSolutionLetters: newSolutionLetters
+        )
 
         return SolvePuzzleResult(
             revealedLetters: revealedLetters,
@@ -40,6 +49,6 @@ public struct WordPuzzleSolverImpl: WordPuzzleSolver {
     }
 
     public func isSolved(_ puzzle: WordPuzzle) -> Bool {
-        return puzzle.wordLetters == puzzle.partialSolution
+        return puzzle.wordLetters == puzzle.solutionLetters
     }
 }

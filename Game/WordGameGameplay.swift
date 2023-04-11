@@ -17,9 +17,9 @@ public protocol WordGameGameplay {
 }
 
 public enum WordGameEvent {
-    case gameStart
-    case gamePause
-    case gameEnd
+    case gameStarted
+    case gamePaused
+    case gameEnded
     case revealedLetter(Character, puzzleIndex: Int, wordIndex: Int)
     case solvedLetter(Character, puzzleIndex: Int, wordIndex: Int)
     case solvedPuzzle(revealedLetters: [(Character, wordIndex: Int)])
