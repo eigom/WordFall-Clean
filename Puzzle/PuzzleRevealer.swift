@@ -1,4 +1,4 @@
-public protocol WordPuzzleRevealer {
+public protocol PuzzleRevealer {
     func revealLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult
 }
 

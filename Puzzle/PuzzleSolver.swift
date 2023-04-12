@@ -1,4 +1,4 @@
-public protocol WordPuzzleSolver {
+public protocol PuzzleSolver {
     func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult
     func solve(_ puzzle: WordPuzzle) -> SolvePuzzleResult
     func isSolved(_ puzzle: WordPuzzle) -> Bool

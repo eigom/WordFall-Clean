@@ -1,5 +1,5 @@
 import Puzzle
 
-public protocol WordGameMaker {
+public protocol GameMaker {
     func makeGame(puzzle: WordPuzzle, solvingTimeStrategy: SolvingTimeStrategy) -> WordGame
 }

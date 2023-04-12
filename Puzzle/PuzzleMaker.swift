@@ -1,3 +1,3 @@
-public protocol WordPuzzleMaker {
+public protocol PuzzleMaker {
     func makePuzzle(with word: String) -> WordPuzzle
 }

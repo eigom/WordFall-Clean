@@ -1,12 +1,12 @@
 import Puzzle
 
-public protocol WordGameGameplay {
+public protocol Gameplay {
     init(
         game: WordGame,
-        solver: WordPuzzleSolver,
-        revealer: WordPuzzleRevealer,
+        solver: PuzzleSolver,
+        revealer: PuzzleRevealer,
         timer: Timer,
-        onEvent: @escaping (WordGameEvent) -> Void
+        onEvent: @escaping (GameplayEvent) -> Void
     )
 
     func play()
@@ -16,7 +16,7 @@ public protocol WordGameGameplay {
     func tryLetter(at puzzleIndex: Int)
 }
 
-public enum WordGameEvent {
+public enum GameplayEvent {
     case gameStarted
     case gamePaused
     case gameEnded

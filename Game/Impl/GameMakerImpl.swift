@@ -1,6 +1,6 @@
 import Puzzle
 
-public struct WordGameMakerImpl: WordGameMaker {
+public struct GameMakerImpl: GameMaker {
     public func makeGame(puzzle: WordPuzzle, solvingTimeStrategy: SolvingTimeStrategy) -> WordGame {
         return WordGameImpl(
             puzzle: puzzle,

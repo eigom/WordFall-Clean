@@ -1,4 +1,4 @@
-public struct WordPuzzleSolverImpl: WordPuzzleSolver {
+public struct PuzzleSolverImpl: PuzzleSolver {
     public func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult {
         guard
             let puzzleLetter = puzzle.puzzleLetters[puzzleIndex],

@@ -1,18 +1,18 @@
 import Puzzle
 
-public final class WordGameGameplayImpl: WordGameGameplay {
+public final class GameplayImpl: Gameplay {
     private var game: WordGame
-    private let solver: WordPuzzleSolver
-    private let revealer: WordPuzzleRevealer
+    private let solver: PuzzleSolver
+    private let revealer: PuzzleRevealer
     private let timer: Timer
-    private let eventListener: (WordGameEvent) -> Void
+    private let eventListener: (GameplayEvent) -> Void
 
     public init(
         game: WordGame,
-        solver: WordPuzzleSolver,
-        revealer: WordPuzzleRevealer,
+        solver: PuzzleSolver,
+        revealer: PuzzleRevealer,
         timer: Timer,
-        onEvent: @escaping (WordGameEvent) -> Void
+        onEvent: @escaping (GameplayEvent) -> Void
     ) {
         self.game = game
         self.solver = solver
@@ -54,7 +54,7 @@ public final class WordGameGameplayImpl: WordGameGameplay {
             break
         case let .correctLetter(letter, wordIndex: wordIndex, resultingPuzzle: resultingPuzzle):
             game = game.makeCopy(newPuzzle: resultingPuzzle)
-            let event: WordGameEvent = .solvedLetter(
+            let event: GameplayEvent = .solvedLetter(
                 letter,
                 puzzleIndex: puzzleIndex,
                 wordIndex: wordIndex
@@ -77,7 +77,7 @@ public final class WordGameGameplayImpl: WordGameGameplay {
                 break
             case let .revealedLetter(letter, wordIndex: wordIndex, resultingPuzzle: resultingPuzzle):
                 game = game.makeCopy(newPuzzle: resultingPuzzle)
-                let event: WordGameEvent = .revealedLetter(
+                let event: GameplayEvent = .revealedLetter(
                     letter,
                     puzzleIndex: index,
                     wordIndex: wordIndex

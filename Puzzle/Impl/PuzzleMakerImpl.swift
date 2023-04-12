@@ -1,4 +1,4 @@
-public struct WordPuzzleMakerImpl: WordPuzzleMaker {
+public struct PuzzleMakerImpl: PuzzleMaker {
     public func makePuzzle(with word: String) -> WordPuzzle {
         return WordPuzzleImpl(
             wordLetters: Array(word),
