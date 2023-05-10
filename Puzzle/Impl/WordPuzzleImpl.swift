@@ -4,13 +4,13 @@ public struct WordPuzzleImpl: WordPuzzle {
     public let solutionLetters: [Character?]
 
     public func makeCopy(
-        newPuzzleLetters: [Character?],
-        newSolutionLetters: [Character?]
+        puzzleLetters: [Character?],
+        solutionLetters: [Character?]
     ) -> WordPuzzle {
         return WordPuzzleImpl(
             wordLetters: wordLetters,
-            puzzleLetters: newPuzzleLetters,
-            solutionLetters: newSolutionLetters
+            puzzleLetters: puzzleLetters,
+            solutionLetters: solutionLetters
         )
     }
 }

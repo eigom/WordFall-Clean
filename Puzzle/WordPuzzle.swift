@@ -25,7 +25,7 @@ public protocol WordPuzzle {
     var solutionLetters: [Character?] { get }
 
     func makeCopy(
-        newPuzzleLetters: [Character?],
-        newSolutionLetters: [Character?]
+        puzzleLetters: [Character?],
+        solutionLetters: [Character?]
     ) -> WordPuzzle
 }
