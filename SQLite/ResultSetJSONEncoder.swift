@@ -30,6 +30,4 @@ struct ResultSetJSONEncoder {
             throw SQLiteError.unsupportedValueInResultSet
         }
     }
-
-    private init() {}
 }

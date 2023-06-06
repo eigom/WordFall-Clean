@@ -8,6 +8,4 @@ struct ResultJSONDecoder {
             throw SQLiteError.failedToDecodeJSON(json: jsonString, error: error)
         }
     }
-
-    private init() {}
 }

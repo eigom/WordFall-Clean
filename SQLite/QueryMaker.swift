@@ -4,6 +4,4 @@ struct QueryMaker {
             partialQuery.replacing(parameter.parameterString, with: parameter.valueString)
         }
     }
-
-    private init() {}
 }

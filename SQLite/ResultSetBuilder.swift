@@ -56,6 +56,4 @@ struct ResultSetBuilder {
             return .unsupported
         }
     }
-
-    private init() {}
 }

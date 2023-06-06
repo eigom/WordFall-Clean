@@ -24,6 +24,4 @@ struct ResultSetFetcher {
             databaseHandle: databaseHandle
         )
     }
-
-    private init() {}
 }
