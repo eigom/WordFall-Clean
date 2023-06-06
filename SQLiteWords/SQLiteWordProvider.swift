@@ -1,12 +1,11 @@
-import Words
 import SQLite
 
-private struct Word: Decodable {
+struct Word: Decodable {
     let id: Int64
     let word: String
 }
 
-private struct Definition: Decodable {
+struct Definition: Decodable {
     let type: String
     let definition: String
 }
@@ -27,7 +26,7 @@ public final class SQLiteWordProvider {
         connection = try Connection(databasePath: databasePath)
     }
 
-    private func fetchWordLengths() throws -> [UInt] {
+    func fetchWordLengths() throws -> [UInt] {
         return try Database.fetch(
             "SELECT length FROM word_length_ids ORDER BY length",
             parameters: [],
@@ -36,7 +35,7 @@ public final class SQLiteWordProvider {
         )
     }
 
-    private func fetchRandomWord(length: UInt) throws -> Word {
+    func fetchRandomWord(length: UInt) throws -> Word {
         let result: [Word] = try Database.fetch(
             """
             SELECT id, word FROM word WHERE id = (
@@ -55,7 +54,7 @@ public final class SQLiteWordProvider {
         return word
     }
 
-    private func fetchDefinitions(wordID: Int64) throws -> [Definition] {
+    func fetchDefinitions(wordID: Int64) throws -> [Definition] {
         return try Database.fetch(
             """
             SELECT type, definition from definition
@@ -66,42 +65,5 @@ public final class SQLiteWordProvider {
             resultTypes: [.text, .text],
             using: connection
         )
-    }
-}
-
-extension SQLiteWordProvider: WordProvider {
-    public var availableWordLengths: [UInt] {
-        get throws { try fetchWordLengths() }
-    }
-
-    public func nextWord(length: WordLength) throws -> Words.Word {
-        let wordLength = try wordLength(for: length)
-        let word = try fetchRandomWord(length: wordLength)
-        let definitions = try fetchDefinitions(wordID: word.id)
-
-        return Words.Word(word: word, definitions: definitions)
-    }
-
-    private func wordLength(for length: WordLength) throws -> UInt {
-        switch length {
-        case .fixed(let length):
-            return length
-        case .any(let maxLength):
-            return try availableWordLengths
-                .filter { $0 <= maxLength }
-                .randomElement() ?? 0
-        }
-    }
-}
-
-private extension Words.Word {
-    init(word: Word, definitions: [Definition]) {
-        self.init(word: word.word, definitions: definitions.map { .init(definition: $0) })
-    }
-}
-
-private extension Words.Definition {
-    init(definition: Definition) {
-        self.init(type: definition.type, definition: definition.definition)
     }
 }
