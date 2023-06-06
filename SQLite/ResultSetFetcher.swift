@@ -1,17 +1,11 @@
 import SQLite3
 
-final class ResultSetFetcher {
-    private let query: String
-    private let resultTypes: [SQLiteType]
-    private let databaseHandle: OpaquePointer
-
-    init(query: String, resultTypes: [SQLiteType], databaseHandle: OpaquePointer) {
-        self.query = query
-        self.resultTypes = resultTypes
-        self.databaseHandle = databaseHandle
-    }
-
-    func fetch() throws -> ResultSet {
+struct ResultSetFetcher {
+    static func fetch(
+        query: String,
+        resultTypes: [SQLiteType],
+        databaseHandle: OpaquePointer
+    ) throws -> ResultSet {
         var statement: OpaquePointer?
 
         try SQLiteExec(expect: SQLITE_OK, databaseHandle: databaseHandle) {
@@ -24,12 +18,12 @@ final class ResultSetFetcher {
 
         guard let statement = statement else { throw SQLiteError.invalidStatementHandle }
 
-        let resultBuilder = ResultSetBuilder(
+        return try ResultSetBuilder.build(
             statement: statement,
             resultTypes: resultTypes,
             databaseHandle: databaseHandle
         )
-
-        return try resultBuilder.build()
     }
+
+    private init() {}
 }

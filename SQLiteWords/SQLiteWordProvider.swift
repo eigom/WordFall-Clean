@@ -17,27 +17,27 @@ public final class SQLiteWordProvider {
         case wordNotFound
     }
 
-    private let session: Session
+    private let connection: Connection
 
     public init() throws {
         guard
             let databasePath = Bundle(for: Self.self).path(forResource: "words", ofType: "sqlite")
         else { throw Error.missingDatabase }
 
-        let connection = try Connection(databasePath: databasePath)
-        session = Session(connection: connection)
+        connection = try Connection(databasePath: databasePath)
     }
 
     private func fetchWordLengths() throws -> [UInt] {
-        return try session.fetch(
+        return try Database.fetch(
             "SELECT length FROM word_length_ids ORDER BY length",
             parameters: [],
-            resultTypes: [.integer]
+            resultTypes: [.integer],
+            using: connection
         )
     }
 
     private func fetchRandomWord(length: UInt) throws -> Word {
-        let result: [Word] = try session.fetch(
+        let result: [Word] = try Database.fetch(
             """
             SELECT id, word FROM word WHERE id = (
                 SELECT first_word_id + abs(random() %  (last_word_id - first_word_id)) AS wordID
@@ -46,7 +46,8 @@ public final class SQLiteWordProvider {
             )
             """,
             parameters: [.integer(Int64(length), name: "length")],
-            resultTypes: [.integer, .text]
+            resultTypes: [.integer, .text],
+            using: connection
         )
 
         guard let word = result.first else { throw Error.wordNotFound }
@@ -55,14 +56,15 @@ public final class SQLiteWordProvider {
     }
 
     private func fetchDefinitions(wordID: Int64) throws -> [Definition] {
-        return try session.fetch(
+        return try Database.fetch(
             """
             SELECT type, definition from definition
             INNER JOIN word_definition ON definition.id = word_definition.definition_id
             WHERE word_definition.word_id = :wordID
             """,
             parameters: [.integer(wordID, name: "wordID")],
-            resultTypes: [.text, .text]
+            resultTypes: [.text, .text],
+            using: connection
         )
     }
 }

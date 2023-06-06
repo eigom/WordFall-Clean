@@ -32,11 +32,11 @@
 		1AB6C44B29D9A42700A00872 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AB6C45229D9A44B00A00872 /* ResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42A29D713AA00A00872 /* ResultSet.swift */; };
 		1AB6C45329D9A44B00A00872 /* SQLiteExec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C43029D77CD800A00872 /* SQLiteExec.swift */; };
-		1AB6C45429D9A44B00A00872 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42E29D778EA00A00872 /* Session.swift */; };
+		1AB6C45429D9A44B00A00872 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42E29D778EA00A00872 /* Database.swift */; };
 		1AB6C45529D9A44B00A00872 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42C29D778D600A00872 /* Connection.swift */; };
 		1AB6C45729D9A44B00A00872 /* QueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42629D7070800A00872 /* QueryParameter.swift */; };
 		1AB6C45929DAD25200A00872 /* ResultSetFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C45829DAD25200A00872 /* ResultSetFetcher.swift */; };
-		1AB6C45B29DAD63300A00872 /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C45A29DAD63300A00872 /* QueryBuilder.swift */; };
+		1AB6C45B29DAD63300A00872 /* QueryMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C45A29DAD63300A00872 /* QueryMaker.swift */; };
 		1AB6C45D29DADC0C00A00872 /* ResultSetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C45C29DADC0C00A00872 /* ResultSetBuilder.swift */; };
 		1AB6C45F29DAF06500A00872 /* SQLiteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C45E29DAF06500A00872 /* SQLiteType.swift */; };
 		1AB6C46129DB6FB000A00872 /* ResultSetJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C46029DB6FB000A00872 /* ResultSetJSONEncoder.swift */; };
@@ -243,14 +243,14 @@
 		1AB6C42629D7070800A00872 /* QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParameter.swift; sourceTree = "<group>"; };
 		1AB6C42A29D713AA00A00872 /* ResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSet.swift; sourceTree = "<group>"; };
 		1AB6C42C29D778D600A00872 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
-		1AB6C42E29D778EA00A00872 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		1AB6C42E29D778EA00A00872 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		1AB6C43029D77CD800A00872 /* SQLiteExec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteExec.swift; sourceTree = "<group>"; };
 		1AB6C43729D9A42600A00872 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB6C43929D9A42600A00872 /* SQLite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
 		1AB6C43E29D9A42700A00872 /* SQLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB6C44529D9A42700A00872 /* SQLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteTests.swift; sourceTree = "<group>"; };
 		1AB6C45829DAD25200A00872 /* ResultSetFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSetFetcher.swift; sourceTree = "<group>"; };
-		1AB6C45A29DAD63300A00872 /* QueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
+		1AB6C45A29DAD63300A00872 /* QueryMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryMaker.swift; sourceTree = "<group>"; };
 		1AB6C45C29DADC0C00A00872 /* ResultSetBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSetBuilder.swift; sourceTree = "<group>"; };
 		1AB6C45E29DAF06500A00872 /* SQLiteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteType.swift; sourceTree = "<group>"; };
 		1AB6C46029DB6FB000A00872 /* ResultSetJSONEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSetJSONEncoder.swift; sourceTree = "<group>"; };
@@ -474,9 +474,9 @@
 		1AB6C43829D9A42600A00872 /* SQLite */ = {
 			isa = PBXGroup;
 			children = (
-				1AB6C42E29D778EA00A00872 /* Session.swift */,
+				1AB6C42E29D778EA00A00872 /* Database.swift */,
 				1AB6C42C29D778D600A00872 /* Connection.swift */,
-				1AB6C45A29DAD63300A00872 /* QueryBuilder.swift */,
+				1AB6C45A29DAD63300A00872 /* QueryMaker.swift */,
 				1AB6C42629D7070800A00872 /* QueryParameter.swift */,
 				1AB6C45829DAD25200A00872 /* ResultSetFetcher.swift */,
 				1AB6C45C29DADC0C00A00872 /* ResultSetBuilder.swift */,
@@ -1108,10 +1108,10 @@
 				1AB6C45929DAD25200A00872 /* ResultSetFetcher.swift in Sources */,
 				1AB6C46129DB6FB000A00872 /* ResultSetJSONEncoder.swift in Sources */,
 				1AB6C45329D9A44B00A00872 /* SQLiteExec.swift in Sources */,
-				1AB6C45B29DAD63300A00872 /* QueryBuilder.swift in Sources */,
+				1AB6C45B29DAD63300A00872 /* QueryMaker.swift in Sources */,
 				1AB6C46529DD84FB00A00872 /* SQLiteError.swift in Sources */,
 				1AB6C45229D9A44B00A00872 /* ResultSet.swift in Sources */,
-				1AB6C45429D9A44B00A00872 /* Session.swift in Sources */,
+				1AB6C45429D9A44B00A00872 /* Database.swift in Sources */,
 				1AB6C45F29DAF06500A00872 /* SQLiteType.swift in Sources */,
 				1AB6C45729D9A44B00A00872 /* QueryParameter.swift in Sources */,
 				1AB6C45D29DADC0C00A00872 /* ResultSetBuilder.swift in Sources */,

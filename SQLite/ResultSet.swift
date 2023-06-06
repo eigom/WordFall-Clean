@@ -11,9 +11,9 @@ struct ResultSet {
     let columnNames: [String]
     let rows: [Row]
 
+    static let empty = ResultSet(columnNames: [], rows: [])
+
     func appending(_ row: Row) -> ResultSet {
         return ResultSet(columnNames: columnNames, rows: rows + [row])
     }
-
-    static let empty = ResultSet(columnNames: [], rows: [])
 }

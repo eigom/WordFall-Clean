@@ -1,11 +1,5 @@
-final class ResultJSONDecoder {
-    private let jsonString: String
-
-    init(jsonString: String) {
-        self.jsonString = jsonString
-    }
-
-    func decode<T: Decodable>() throws -> T {
+struct ResultJSONDecoder {
+    static func decode<T: Decodable>(jsonString: String) throws -> T {
         guard let data = jsonString.data(using: .utf8) else { throw SQLiteError.failedToConvertToData }
 
         do {
@@ -14,4 +8,6 @@ final class ResultJSONDecoder {
             throw SQLiteError.failedToDecodeJSON(json: jsonString, error: error)
         }
     }
+
+    private init() {}
 }
