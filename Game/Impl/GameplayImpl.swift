@@ -39,7 +39,7 @@ public final class GameplayImpl: Gameplay {
 
     public func solve() {
         let solveResult = solver.solve(game.puzzle)
-        game = game.makeCopy(puzzle: solveResult.resultingPuzzle)
+        game = game.copy(puzzle: solveResult.resultingPuzzle)
         let revealedLetters: [(Character, wordIndex: Int)] = solveResult.revealedLetters
             .map { ($0.letter, $0.wordIndex) }
         eventListener(.solvedPuzzle(revealedLetters: revealedLetters))
@@ -53,7 +53,7 @@ public final class GameplayImpl: Gameplay {
         case .wrongLetter:
             break
         case let .correctLetter(letter, wordIndex: wordIndex, resultingPuzzle: resultingPuzzle):
-            game = game.makeCopy(puzzle: resultingPuzzle)
+            game = game.copy(puzzle: resultingPuzzle)
             let event: GameplayEvent = .solvedLetter(
                 letter,
                 puzzleIndex: puzzleIndex,
@@ -76,7 +76,7 @@ public final class GameplayImpl: Gameplay {
             case .none:
                 break
             case let .revealedLetter(letter, wordIndex: wordIndex, resultingPuzzle: resultingPuzzle):
-                game = game.makeCopy(puzzle: resultingPuzzle)
+                game = game.copy(puzzle: resultingPuzzle)
                 let event: GameplayEvent = .revealedLetter(
                     letter,
                     puzzleIndex: index,

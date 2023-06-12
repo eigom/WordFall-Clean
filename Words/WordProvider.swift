@@ -1,6 +1,8 @@
+import Common
+
 public protocol WordProvider {
-    var availableWordLengths: [UInt] { get throws }
-    func nextWord(length: WordLength) throws -> Word
+    var availableWordLengths: Try<[UInt]> { get }
+    func nextWord(length: WordLength) -> Try<Word>
 }
 
 public enum WordLength {

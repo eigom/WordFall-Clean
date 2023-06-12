@@ -13,7 +13,7 @@ public struct PuzzleSolverImpl: PuzzleSolver {
             .replacingElement(at: puzzleIndex, with: nil)
         let newSolutionLetters = puzzle.solutionLetters
             .replacingElement(at: nextSolutionLetterIndex, with: puzzleLetter)
-        let newPuzzle = puzzle.makeCopy(
+        let newPuzzle = puzzle.copy(
             puzzleLetters: newPuzzleLetters,
             solutionLetters: newSolutionLetters
         )
@@ -37,7 +37,7 @@ public struct PuzzleSolverImpl: PuzzleSolver {
             }
         let newPuzzleLetters = puzzle.puzzleLetters.map { _ -> Character? in nil }
         let newSolutionLetters = puzzle.wordLetters
-        let solvedPuzzle = puzzle.makeCopy(
+        let solvedPuzzle = puzzle.copy(
             puzzleLetters: newPuzzleLetters,
             solutionLetters: newSolutionLetters
         )

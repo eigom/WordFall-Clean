@@ -14,7 +14,7 @@ public struct PuzzleRevealerImpl: PuzzleRevealer {
             .replacingElement(at: puzzleIndex, with: nil)
         let newSolutionLetters = puzzle.solutionLetters
             .replacingElement(at: solutionLetterIndex, with: puzzleLetter)
-        let newPuzzle = puzzle.makeCopy(
+        let newPuzzle = puzzle.copy(
             puzzleLetters: newPuzzleLetters,
             solutionLetters: newSolutionLetters
         )
