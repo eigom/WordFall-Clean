@@ -1,7 +1,7 @@
 public struct Database {
     public static func fetch<Result: Decodable>(
         _ query: String,
-        parameters: [QueryParameter],
+        parameters: [QueryParameter] = [],
         resultTypes: [SQLiteType],
         using connection: Connection
     ) throws -> Result {

@@ -29,7 +29,6 @@ public final class SQLiteWordProvider {
     func fetchWordLengths() throws -> [UInt] {
         return try Database.fetch(
             "SELECT length FROM word_length_ids ORDER BY length",
-            parameters: [],
             resultTypes: [.integer],
             using: connection
         )
