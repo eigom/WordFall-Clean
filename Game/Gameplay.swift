@@ -1,26 +1,19 @@
-import Puzzle
-
-public protocol Gameplay {
-    init(
-        game: WordGame,
-        solver: PuzzleSolver,
-        revealer: PuzzleRevealer,
-        timer: Timer,
-        onEvent: @escaping (GameplayEvent) -> Void
-    )
-
-    func play()
-    func pause()
-    func resume()
-    func solve()
-    func tryLetter(at puzzleIndex: Int)
+public enum WordGameAction {
+    case tryLetter(index: Int)
+    case solve
 }
 
-public enum GameplayEvent {
-    case gameStarted
-    case gamePaused
-    case gameEnded
-    case revealedLetter(Character, puzzleIndex: Int, wordIndex: Int)
-    case solvedLetter(Character, puzzleIndex: Int, wordIndex: Int)
-    case solvedPuzzle(revealedLetters: [(Character, wordIndex: Int)])
+public struct WordGameDiff {
+    public struct Letter {
+        public let index: UInt
+        public let character: Character
+    }
+
+    public let solvedLetters: [Letter]
+    public let revealedLetters: [Letter]
+}
+
+public protocol Gameplay {
+    func applyElapsedSeconds(_ seconds: Float, to game: WordGame) -> (WordGame, WordGameDiff)
+    func applyGameAction(_ action: WordGameAction, to game: WordGame) -> (WordGame, WordGameDiff)
 }
