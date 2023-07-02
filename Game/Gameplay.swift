@@ -5,7 +5,8 @@ public enum WordGameAction {
 
 public struct WordGameDiff {
     public struct Letter {
-        public let index: UInt
+        public let puzzleIndex: UInt
+        public let solutionIndex: UInt
         public let character: Character
     }
 
