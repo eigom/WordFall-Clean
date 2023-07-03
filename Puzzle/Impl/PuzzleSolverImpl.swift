@@ -1,5 +1,5 @@
-public struct PuzzleSolverImpl: PuzzleSolver {
-    public func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult {
+public enum PuzzleSolverImpl: PuzzleSolver {
+    public static func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult {
         guard
             let puzzleLetter = puzzle.puzzleLetters[puzzleIndex],
             let nextSolutionLetterIndex = puzzle.solutionLetters
@@ -25,7 +25,7 @@ public struct PuzzleSolverImpl: PuzzleSolver {
         )
     }
 
-    public func solve(_ puzzle: WordPuzzle) -> SolvePuzzleResult {
+    public static func solve(_ puzzle: WordPuzzle) -> SolvePuzzleResult {
         let revealedLetters = puzzle.solutionLetters
             .enumerated()
             .filter { $0.element == nil }
@@ -48,7 +48,7 @@ public struct PuzzleSolverImpl: PuzzleSolver {
         )
     }
 
-    public func isSolved(_ puzzle: WordPuzzle) -> Bool {
+    public static func isSolved(_ puzzle: WordPuzzle) -> Bool {
         return puzzle.wordLetters == puzzle.solutionLetters
     }
 }

@@ -1,5 +1,5 @@
 public protocol PuzzleRevealer {
-    func revealLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult
+    static func revealLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult
 }
 
 public enum LetterRevealResult {

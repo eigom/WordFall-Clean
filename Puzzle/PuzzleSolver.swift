@@ -1,7 +1,7 @@
 public protocol PuzzleSolver {
-    func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult
-    func solve(_ puzzle: WordPuzzle) -> SolvePuzzleResult
-    func isSolved(_ puzzle: WordPuzzle) -> Bool
+    static func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult
+    static func solve(_ puzzle: WordPuzzle) -> SolvePuzzleResult
+    static func isSolved(_ puzzle: WordPuzzle) -> Bool
 }
 
 public enum LetterTryResult {

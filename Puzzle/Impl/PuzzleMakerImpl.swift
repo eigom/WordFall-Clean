@@ -1,5 +1,5 @@
-public struct PuzzleMakerImpl: PuzzleMaker {
-    public func makePuzzle(with word: String) -> WordPuzzle {
+public enum PuzzleMakerImpl: PuzzleMaker {
+    public static func makePuzzle(with word: String) -> WordPuzzle {
         return WordPuzzleImpl(
             wordLetters: Array(word),
             puzzleLetters: word.shuffled(),

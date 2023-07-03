@@ -13,7 +13,6 @@
 		1A4982842A3727220057828E /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
 		1A4982852A3727220057828E /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A49828E2A37273B0057828E /* Try.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A49828D2A37273B0057828E /* Try.swift */; };
-		1A60A03029E5BED10006FC10 /* GameplayMakerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60A02F29E5BED10006FC10 /* GameplayMakerImpl.swift */; };
 		1A8610162A2FD8F300CEE805 /* SQLiteWordProvider+WordProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8610152A2FD8F300CEE805 /* SQLiteWordProvider+WordProvider.swift */; };
 		1AB6C32529D6BDA300A00872 /* WordFallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C32429D6BDA300A00872 /* WordFallApp.swift */; };
 		1AB6C32729D6BDA300A00872 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C32629D6BDA300A00872 /* ContentView.swift */; };
@@ -80,6 +79,7 @@
 		1AB6C51A29E4440500A00872 /* Puzzle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4B529E047B400A00872 /* Puzzle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AB6C51F29E4465D00A00872 /* GameMakerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C51E29E4465D00A00872 /* GameMakerImpl.swift */; };
 		1AB6C52429E53F3900A00872 /* GameplayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C52329E53F3900A00872 /* GameplayImpl.swift */; };
+		1AD46C182A52B338005C54DD /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +216,13 @@
 			remoteGlobalIDString = 1AB6C4B429E047B400A00872;
 			remoteInfo = Puzzle;
 		};
+		1AD46C1A2A52B338005C54DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A4982702A3727210057828E;
+			remoteInfo = Common;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -254,7 +261,6 @@
 		1A4982782A3727210057828E /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A49827F2A3727220057828E /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		1A49828D2A37273B0057828E /* Try.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try.swift; sourceTree = "<group>"; };
-		1A60A02F29E5BED10006FC10 /* GameplayMakerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayMakerImpl.swift; sourceTree = "<group>"; };
 		1A8610152A2FD8F300CEE805 /* SQLiteWordProvider+WordProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SQLiteWordProvider+WordProvider.swift"; sourceTree = "<group>"; };
 		1AB6C32129D6BDA300A00872 /* WordFall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordFall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB6C32429D6BDA300A00872 /* WordFallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFallApp.swift; sourceTree = "<group>"; };
@@ -349,6 +355,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD46C182A52B338005C54DD /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,7 +658,6 @@
 				1AB6C4F929E08CDE00A00872 /* WordGameImpl.swift */,
 				1AB6C51E29E4465D00A00872 /* GameMakerImpl.swift */,
 				1AB6C52329E53F3900A00872 /* GameplayImpl.swift */,
-				1A60A02F29E5BED10006FC10 /* GameplayMakerImpl.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -809,6 +815,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1AD46C1B2A52B338005C54DD /* PBXTargetDependency */,
 			);
 			name = Words;
 			productName = Words;
@@ -1311,7 +1318,6 @@
 			files = (
 				1AB6C51029E3F2D500A00872 /* SolvingTimeStrategy.swift in Sources */,
 				1AB6C51F29E4465D00A00872 /* GameMakerImpl.swift in Sources */,
-				1A60A03029E5BED10006FC10 /* GameplayMakerImpl.swift in Sources */,
 				1AB6C51429E41B6700A00872 /* RandomSolvingTimeStrategy.swift in Sources */,
 				1AB6C4F629E08B4A00A00872 /* WordGame.swift in Sources */,
 				1AB6C51629E4427500A00872 /* GameMaker.swift in Sources */,
@@ -1426,6 +1432,11 @@
 			isa = PBXTargetDependency;
 			target = 1AB6C4B429E047B400A00872 /* Puzzle */;
 			targetProxy = 1AB6C51B29E4440500A00872 /* PBXContainerItemProxy */;
+		};
+		1AD46C1B2A52B338005C54DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A4982702A3727210057828E /* Common */;
+			targetProxy = 1AD46C1A2A52B338005C54DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

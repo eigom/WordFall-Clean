@@ -1,5 +1,5 @@
-public struct PuzzleRevealerImpl: PuzzleRevealer {
-    public func revealLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult {
+public enum PuzzleRevealerImpl: PuzzleRevealer {
+    public static func revealLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult {
         guard
             let puzzleLetter = puzzle.puzzleLetters[puzzleIndex],
             let solutionLetterIndex = puzzle.solutionLetters
