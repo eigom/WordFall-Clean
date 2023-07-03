@@ -1,27 +1,28 @@
 public struct PuzzleLetterTrierImpl: PuzzleLetterTrier {
-    public func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult {
+    public func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> (WordPuzzle, PuzzleLetter?) {
         guard
             let puzzleLetter = puzzle.puzzleLetters[puzzleIndex],
-            let nextSolutionLetterIndex = puzzle.solutionLetters
+            let solutionLetterIndex = puzzle.solutionLetters
                 .enumerated()
                 .first(where: { $0.element == nil })?
                 .offset,
-            puzzle.wordLetters[nextSolutionLetterIndex] == puzzleLetter
-        else { return .wrongLetter }
+            puzzle.wordLetters[solutionLetterIndex] == puzzleLetter
+        else { return (puzzle, nil) }
 
         let newPuzzleLetters = puzzle.puzzleLetters
             .replacingElement(at: puzzleIndex, with: nil)
         let newSolutionLetters = puzzle.solutionLetters
-            .replacingElement(at: nextSolutionLetterIndex, with: puzzleLetter)
+            .replacingElement(at: solutionLetterIndex, with: puzzleLetter)
         let newPuzzle = puzzle.copy(
             puzzleLetters: newPuzzleLetters,
             solutionLetters: newSolutionLetters
         )
-
-        return .correctLetter(
-            puzzleLetter,
-            solutionLetterIndex: nextSolutionLetterIndex,
-            resultingPuzzle: newPuzzle
+        let solvedLetter = PuzzleLetter(
+            letter: puzzleLetter,
+            puzzleIndex: puzzleIndex,
+            solutionIndex: solutionLetterIndex
         )
+
+        return (newPuzzle, solvedLetter)
     }
 }

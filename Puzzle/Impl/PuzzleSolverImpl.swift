@@ -1,6 +1,12 @@
 public struct PuzzleSolverImpl: PuzzleSolver {
-    public func solve(_ puzzle: WordPuzzle) -> SolvePuzzleResult {
-        let revealedLetters = puzzle.solutionLetters
+    public func solve(_ puzzle: WordPuzzle, using letterRevealer: PuzzleLetterRevealer) -> (WordPuzzle, [PuzzleLetter]) {
+        puzzle.puzzleLetters.reduce(<#T##initialResult: Result##Result#>, <#T##nextPartialResult: (Result, Character?) throws -> Result##(Result, Character?) throws -> Result##(_ partialResult: Result, Character?) throws -> Result#>)
+
+        let revealed = puzzle.puzzleLetters
+            .enumerated()
+            .map { letterRevealer.revealLetter(at: <#T##Int#>, in: <#T##WordPuzzle#>) }
+
+        /*let revealedLetters = puzzle.solutionLetters
             .enumerated()
             .filter { $0.element == nil }
             .map {
@@ -19,7 +25,7 @@ public struct PuzzleSolverImpl: PuzzleSolver {
         return SolvePuzzleResult(
             revealedLetters: revealedLetters,
             resultingPuzzle: solvedPuzzle
-        )
+        )*/
     }
 
     public func isSolved(_ puzzle: WordPuzzle) -> Bool {

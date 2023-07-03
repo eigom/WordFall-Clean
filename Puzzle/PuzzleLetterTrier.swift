@@ -1,12 +1,4 @@
 public protocol PuzzleLetterTrier {
-    func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterTryResult
+    func tryLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> (WordPuzzle, PuzzleLetter?)
 }
 
-public enum LetterTryResult {
-    case wrongLetter
-    case correctLetter(
-        Character,
-        solutionLetterIndex: Int,
-        resultingPuzzle: WordPuzzle
-    )
-}

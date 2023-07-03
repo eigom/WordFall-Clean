@@ -1,5 +1,5 @@
-public struct PuzzleRevealerImpl: PuzzleLetterRevealer {
-    public func revealLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> LetterRevealResult {
+public struct PuzzleLetterRevealerImpl: PuzzleLetterRevealer {
+    public func revealLetter(at puzzleIndex: Int, in puzzle: WordPuzzle) -> (WordPuzzle, PuzzleLetter?) {
         guard
             let puzzleLetter = puzzle.puzzleLetters[puzzleIndex],
             let solutionLetterIndex = puzzle.solutionLetters
@@ -8,7 +8,7 @@ public struct PuzzleRevealerImpl: PuzzleLetterRevealer {
                     $0.element == nil && puzzle.wordLetters[$0.offset] == puzzleLetter
                 })?
                 .offset
-        else { return .none }
+        else { return (puzzle, nil) }
 
         let newPuzzleLetters = puzzle.puzzleLetters
             .replacingElement(at: puzzleIndex, with: nil)
@@ -18,11 +18,12 @@ public struct PuzzleRevealerImpl: PuzzleLetterRevealer {
             puzzleLetters: newPuzzleLetters,
             solutionLetters: newSolutionLetters
         )
-
-        return .revealedLetter(
-            puzzleLetter,
-            wordIndex: solutionLetterIndex,
-            resultingPuzzle: newPuzzle
+        let revealedLetter = PuzzleLetter(
+            letter: puzzleLetter,
+            puzzleIndex: puzzleIndex,
+            solutionIndex: solutionLetterIndex
         )
+
+        return (newPuzzle, revealedLetter)
     }
 }
