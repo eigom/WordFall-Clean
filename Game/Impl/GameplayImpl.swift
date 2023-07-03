@@ -1,3 +1,24 @@
+import Puzzle
+
+public struct GameplayImpl: Gameplay {
+    public func applyElapsedSeconds(_ seconds: Float, to game: WordGame) -> (WordGame, WordGameDiff) {
+
+    }
+
+    public func tryLetter(at puzzleLetterIndex: UInt, in game: WordGame, using letterTrier: PuzzleLetterTrier) -> (WordGame, WordGameDiff) {
+
+    }
+
+    public func solve(_ game: WordGame, using solver: PuzzleSolver) -> (WordGame, WordGameDiff) {
+        let solveResult = solver.solve(game.puzzle)
+        game = game.copy(puzzle: solveResult.resultingPuzzle)
+        let revealedLetters: [(Character, wordIndex: Int)] = solveResult.revealedLetters
+            .map { ($0.letter, $0.wordIndex) }
+        eventListener(.solvedPuzzle(revealedLetters: revealedLetters))
+        eventListener(.gameEnded)
+    }
+}
+
 /*import Puzzle
 
 public final class GameplayImpl: Gameplay {

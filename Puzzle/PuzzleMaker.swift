@@ -1,3 +1,3 @@
 public protocol PuzzleMaker {
-    static func makePuzzle(with word: String) -> WordPuzzle
+    func makePuzzle(with word: String) -> WordPuzzle
 }

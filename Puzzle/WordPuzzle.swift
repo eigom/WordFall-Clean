@@ -1,10 +1,18 @@
-public protocol WordPuzzle {
-    var wordLetters: [Character] { get }
-    var puzzleLetters: [Character?] { get }
-    var solutionLetters: [Character?] { get }
+public struct WordPuzzle {
+    public let wordLetters: [Character]
+    public let puzzleLetters: [Character?]
+    public let solutionLetters: [Character?]
+}
 
+extension WordPuzzle {
     func copy(
         puzzleLetters: [Character?],
         solutionLetters: [Character?]
-    ) -> WordPuzzle
+    ) -> WordPuzzle {
+        return WordPuzzle(
+            wordLetters: wordLetters,
+            puzzleLetters: puzzleLetters,
+            solutionLetters: solutionLetters
+        )
+    }
 }
