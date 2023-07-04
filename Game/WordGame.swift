@@ -14,4 +14,12 @@ extension WordGame {
             letterSolvingTimeSeconds: letterSolvingTimeSeconds
         )
     }
+
+    func copy(letterSolvingTimeSeconds: [TimeInterval]) -> WordGame {
+        return WordGame(
+            puzzle: puzzle,
+            totalSolvingTimeSeconds: totalSolvingTimeSeconds,
+            letterSolvingTimeSeconds: letterSolvingTimeSeconds
+        )
+    }
 }

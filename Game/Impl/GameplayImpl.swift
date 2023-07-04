@@ -1,8 +1,14 @@
 import Puzzle
 
 public struct GameplayImpl: Gameplay {
-    public func applyElapsedSeconds(_ seconds: Float, to game: WordGame) -> (WordGame, WordGameDiff) {
+    public func applyElapsedSeconds(_ elapsedSeconds: TimeInterval, to game: WordGame, letterRevealer: PuzzleLetterRevealer) -> (WordGame, WordGameDiff) {
+        let newLetterSolvingTimeSeconds = game.letterSolvingTimeSeconds
+            .map { max($0 - elapsedSeconds, 0) }
+        let revealedLetters = newLetterSolvingTimeSeconds
+            .enumerated()
+            .map {  }
 
+        // reveal letters where letterSolvingTimeSeconds == 0
     }
 
     public func tryLetter(at puzzleLetterIndex: Int, in game: WordGame, using letterTrier: PuzzleLetterTrier) -> (WordGame, WordGameDiff) {

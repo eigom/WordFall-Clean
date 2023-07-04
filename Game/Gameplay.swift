@@ -1,7 +1,7 @@
 import Puzzle
 
 public protocol Gameplay {
-    func applyElapsedSeconds(_ seconds: Float, to game: WordGame) -> (WordGame, WordGameDiff)
+    func applyElapsedSeconds(_ elapsedSeconds: TimeInterval, to game: WordGame, letterRevealer: PuzzleLetterRevealer) -> (WordGame, WordGameDiff)
     func tryLetter(at puzzleLetterIndex: Int, in game: WordGame, using letterTrier: PuzzleLetterTrier) -> (WordGame, WordGameDiff)
     func solve(_ game: WordGame, using solver: PuzzleSolver, letterRevealer: PuzzleLetterRevealer) -> (WordGame, WordGameDiff)
 }

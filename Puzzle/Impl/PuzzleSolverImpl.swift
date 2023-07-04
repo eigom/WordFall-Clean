@@ -1,5 +1,6 @@
 public struct PuzzleSolverImpl: PuzzleSolver {
     public func solve(_ puzzle: WordPuzzle, using letterRevealer: PuzzleLetterRevealer) -> (WordPuzzle, [PuzzleLetter]) {
+        // TODO: use revealLetters()
         puzzle.puzzleLetters
             .reduce((puzzle, [PuzzleLetter]())) { partialResult, _ in
                 let (puzzle, letters) = partialResult
