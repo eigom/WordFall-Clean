@@ -28,12 +28,10 @@ public struct PuzzleLetterRevealerImpl: PuzzleLetterRevealer {
     }
 
     public func revealLetters(at puzzleLetterIndexes: [Int], in puzzle: WordPuzzle) -> (WordPuzzle, [PuzzleLetter]) {
-        
-        puzzle.puzzleLetters
-            .reduce((puzzle, [PuzzleLetter]())) { partialResult, _ in
-                let (puzzle, letters) = partialResult
-                let (newPuzzle, revealedLetter) = letterRevealer.revealLetter(at: letters.count, in: puzzle)
-                return (newPuzzle, letters + [revealedLetter].compactMap { $0 })
-            }
+        return puzzleLetterIndexes.reduce((puzzle, [PuzzleLetter]())) { partialResult, index in
+            let (puzzle, letters) = partialResult
+            let (newPuzzle, revealedLetter) = revealLetter(at: index, in: puzzle)
+            return (newPuzzle, letters + [revealedLetter].compactMap { $0 })
+        }
     }
 }

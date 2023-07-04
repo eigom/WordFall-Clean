@@ -1,12 +1,6 @@
 public struct PuzzleSolverImpl: PuzzleSolver {
     public func solve(_ puzzle: WordPuzzle, using letterRevealer: PuzzleLetterRevealer) -> (WordPuzzle, [PuzzleLetter]) {
-        // TODO: use revealLetters()
-        puzzle.puzzleLetters
-            .reduce((puzzle, [PuzzleLetter]())) { partialResult, _ in
-                let (puzzle, letters) = partialResult
-                let (newPuzzle, revealedLetter) = letterRevealer.revealLetter(at: letters.count, in: puzzle)
-                return (newPuzzle, letters + [revealedLetter].compactMap { $0 })
-            }
+        return letterRevealer.revealLetters(at: Array(0 ..< puzzle.puzzleLetters.count), in: puzzle)
     }
 
     public func isSolved(_ puzzle: WordPuzzle) -> Bool {
