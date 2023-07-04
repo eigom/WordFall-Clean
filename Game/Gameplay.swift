@@ -5,27 +5,17 @@ public protocol Gameplay {
         _ elapsedSeconds: TimeInterval,
         to game: WordGame,
         letterRevealer: PuzzleLetterRevealer
-    ) -> (WordGame, WordGameDiff)
+    ) -> (WordGame, revealedLetters: [PuzzleLetter])
 
     func tryLetter(
         at puzzleLetterIndex: Int,
         in game: WordGame,
         using letterTrier: PuzzleLetterTrier
-    ) -> (WordGame, WordGameDiff)
+    ) -> (WordGame, solvedLetter: PuzzleLetter?)
 
     func solve(
         _ game: WordGame,
         using solver: PuzzleSolver,
         letterRevealer: PuzzleLetterRevealer
-    ) -> (WordGame, WordGameDiff)
-}
-
-public struct WordGameDiff {
-    public let solvedLetters: [PuzzleLetter]
-    public let revealedLetters: [PuzzleLetter]
-
-    init(solvedLetters: [PuzzleLetter] = [], revealedLetters: [PuzzleLetter] = []) {
-        self.solvedLetters = solvedLetters
-        self.revealedLetters = revealedLetters
-    }
+    ) -> (WordGame, revealedLetters: [PuzzleLetter])
 }
