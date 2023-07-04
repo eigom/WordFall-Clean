@@ -13,7 +13,10 @@ public struct GameplayImpl: Gameplay {
             .filter { $0.element == 0 }
             .map { $0.offset }
         let (newPuzzle, revealedLetters) = letterRevealer.revealLetters(at: expiredLetterIndexes, in: game.puzzle)
-        let newGame = game.copy(puzzle: newPuzzle, letterSolvingTimeSeconds: newLetterSolvingTimeSeconds)
+        let newGame = game.copy(
+            puzzle: newPuzzle,
+            letterSolvingTimeSeconds: newLetterSolvingTimeSeconds
+        )
 
         return (newGame, revealedLetters: revealedLetters)
     }
@@ -24,7 +27,17 @@ public struct GameplayImpl: Gameplay {
         using letterTrier: PuzzleLetterTrier
     ) -> (WordGame, solvedLetter: PuzzleLetter?) {
         let (newPuzzle, solvedLetter) = letterTrier.tryLetter(at: puzzleLetterIndex, in: game.puzzle)
-        let newGame = game.copy(puzzle: newPuzzle)
+        let newLetterSolvingTimeSeconds = newPuzzle.puzzleLetters
+            .enumerated()
+            .map {
+                $0.offset == solvedLetter?.puzzleIndex
+                    ? TimeInterval(0)
+                    : game.letterSolvingTimeSeconds[$0.offset]
+            }
+        let newGame = game.copy(
+            puzzle: newPuzzle,
+            letterSolvingTimeSeconds: newLetterSolvingTimeSeconds
+        )
 
         return (newGame, solvedLetter: solvedLetter)
     }
@@ -35,7 +48,12 @@ public struct GameplayImpl: Gameplay {
         letterRevealer: PuzzleLetterRevealer
     ) -> (WordGame, revealedLetters: [PuzzleLetter]) {
         let (newPuzzle, revealedLetters) = solver.solve(game.puzzle, using: letterRevealer)
-        let newGame = game.copy(puzzle: newPuzzle)
+        let newLetterSolvingTimeSeconds = newPuzzle.puzzleLetters
+            .map { _ in TimeInterval(0) }
+        let newGame = game.copy(
+            puzzle: newPuzzle,
+            letterSolvingTimeSeconds: newLetterSolvingTimeSeconds
+        )
 
         return (newGame, revealedLetters: revealedLetters)
     }

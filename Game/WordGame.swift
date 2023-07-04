@@ -7,22 +7,6 @@ public struct WordGame {
 }
 
 extension WordGame {
-    func copy(puzzle: WordPuzzle) -> WordGame {
-        return WordGame(
-            puzzle: puzzle,
-            totalSolvingTimeSeconds: totalSolvingTimeSeconds,
-            letterSolvingTimeSeconds: letterSolvingTimeSeconds
-        )
-    }
-
-    func copy(letterSolvingTimeSeconds: [TimeInterval]) -> WordGame {
-        return WordGame(
-            puzzle: puzzle,
-            totalSolvingTimeSeconds: totalSolvingTimeSeconds,
-            letterSolvingTimeSeconds: letterSolvingTimeSeconds
-        )
-    }
-
     func copy(puzzle: WordPuzzle, letterSolvingTimeSeconds: [TimeInterval]) -> WordGame {
         return WordGame(
             puzzle: puzzle,
