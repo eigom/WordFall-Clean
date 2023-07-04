@@ -13,9 +13,8 @@ public protocol Gameplay {
         using letterTrier: PuzzleLetterTrier
     ) -> (WordGame, solvedLetter: PuzzleLetter?)
 
-    func solve(
-        _ game: WordGame,
-        using solver: PuzzleSolver,
-        letterRevealer: PuzzleLetterRevealer
+    func revealAllLetters(
+        in game: WordGame,
+        using letterRevealer: PuzzleLetterRevealer
     ) -> (WordGame, revealedLetters: [PuzzleLetter])
 }

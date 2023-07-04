@@ -34,4 +34,8 @@ public struct PuzzleLetterRevealerImpl: PuzzleLetterRevealer {
             return (newPuzzle, letters + [revealedLetter].compactMap { $0 })
         }
     }
+
+    public func revealAllLetters(in puzzle: WordPuzzle) -> (WordPuzzle, [PuzzleLetter]) {
+        return revealLetters(at: Array(0 ..< puzzle.puzzleLetters.count), in: puzzle)
+    }
 }

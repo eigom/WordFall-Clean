@@ -42,12 +42,11 @@ public struct GameplayImpl: Gameplay {
         return (newGame, solvedLetter: solvedLetter)
     }
 
-    public func solve(
-        _ game: WordGame,
-        using solver: PuzzleSolver,
-        letterRevealer: PuzzleLetterRevealer
+    public func revealAllLetters(
+        in game: WordGame,
+        using letterRevealer: PuzzleLetterRevealer
     ) -> (WordGame, revealedLetters: [PuzzleLetter]) {
-        let (newPuzzle, revealedLetters) = solver.solve(game.puzzle, using: letterRevealer)
+        let (newPuzzle, revealedLetters) = letterRevealer.revealAllLetters(in: game.puzzle)
         let newLetterSolvingTimeSeconds = newPuzzle.puzzleLetters
             .map { _ in TimeInterval(0) }
         let newGame = game.copy(

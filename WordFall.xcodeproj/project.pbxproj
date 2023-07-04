@@ -63,10 +63,8 @@
 		1AB6C4EE29E08B3900A00872 /* Game.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4DA29E08B3800A00872 /* Game.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AB6C4F629E08B4A00A00872 /* WordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4F529E08B4A00A00872 /* WordGame.swift */; };
 		1AB6C4FD29E1E81A00A00872 /* Collection+Replacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4FC29E1E81A00A00872 /* Collection+Replacing.swift */; };
-		1AB6C50229E331EC00A00872 /* PuzzleSolverImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50129E331EC00A00872 /* PuzzleSolverImpl.swift */; };
 		1AB6C50429E332F400A00872 /* PuzzleMakerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50329E332F400A00872 /* PuzzleMakerImpl.swift */; };
 		1AB6C50629E3390B00A00872 /* PuzzleLetterRevealerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50529E3390B00A00872 /* PuzzleLetterRevealerImpl.swift */; };
-		1AB6C50A29E34DAA00A00872 /* PuzzleSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50929E34DAA00A00872 /* PuzzleSolver.swift */; };
 		1AB6C50C29E34DBC00A00872 /* PuzzleMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50B29E34DBC00A00872 /* PuzzleMaker.swift */; };
 		1AB6C50E29E34E3100A00872 /* PuzzleLetterRevealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50D29E34E3100A00872 /* PuzzleLetterRevealer.swift */; };
 		1AB6C51029E3F2D500A00872 /* SolvingTimeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50F29E3F2D500A00872 /* SolvingTimeStrategy.swift */; };
@@ -307,10 +305,8 @@
 		1AB6C4E829E08B3900A00872 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		1AB6C4F529E08B4A00A00872 /* WordGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGame.swift; sourceTree = "<group>"; };
 		1AB6C4FC29E1E81A00A00872 /* Collection+Replacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Replacing.swift"; sourceTree = "<group>"; };
-		1AB6C50129E331EC00A00872 /* PuzzleSolverImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleSolverImpl.swift; sourceTree = "<group>"; };
 		1AB6C50329E332F400A00872 /* PuzzleMakerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleMakerImpl.swift; sourceTree = "<group>"; };
 		1AB6C50529E3390B00A00872 /* PuzzleLetterRevealerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleLetterRevealerImpl.swift; sourceTree = "<group>"; };
-		1AB6C50929E34DAA00A00872 /* PuzzleSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleSolver.swift; sourceTree = "<group>"; };
 		1AB6C50B29E34DBC00A00872 /* PuzzleMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleMaker.swift; sourceTree = "<group>"; };
 		1AB6C50D29E34E3100A00872 /* PuzzleLetterRevealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleLetterRevealer.swift; sourceTree = "<group>"; };
 		1AB6C50F29E3F2D500A00872 /* SolvingTimeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvingTimeStrategy.swift; sourceTree = "<group>"; };
@@ -609,7 +605,6 @@
 				1AB6C50B29E34DBC00A00872 /* PuzzleMaker.swift */,
 				1AD46C1D2A52FAA3005C54DD /* PuzzleLetterTrier.swift */,
 				1AB6C50D29E34E3100A00872 /* PuzzleLetterRevealer.swift */,
-				1AB6C50929E34DAA00A00872 /* PuzzleSolver.swift */,
 				1AB6C4B729E047B400A00872 /* Puzzle.h */,
 			);
 			path = Puzzle;
@@ -630,7 +625,6 @@
 				1AB6C50329E332F400A00872 /* PuzzleMakerImpl.swift */,
 				1AD46C1F2A52FB06005C54DD /* PuzzleLetterTrierImpl.swift */,
 				1AB6C50529E3390B00A00872 /* PuzzleLetterRevealerImpl.swift */,
-				1AB6C50129E331EC00A00872 /* PuzzleSolverImpl.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -1296,9 +1290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AB6C50429E332F400A00872 /* PuzzleMakerImpl.swift in Sources */,
-				1AB6C50229E331EC00A00872 /* PuzzleSolverImpl.swift in Sources */,
 				1AD46C202A52FB06005C54DD /* PuzzleLetterTrierImpl.swift in Sources */,
-				1AB6C50A29E34DAA00A00872 /* PuzzleSolver.swift in Sources */,
 				1AB6C50E29E34E3100A00872 /* PuzzleLetterRevealer.swift in Sources */,
 				1AD46C1E2A52FAA3005C54DD /* PuzzleLetterTrier.swift in Sources */,
 				1AB6C4D129E047C800A00872 /* WordPuzzle.swift in Sources */,
