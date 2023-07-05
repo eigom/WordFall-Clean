@@ -1114,6 +1114,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				1AB92FF62A55C0E700F82E54 /* WordFall_iOS */,
+				1AB930052A55C0E900F82E54 /* WordFall_iOSTests */,
+				1AB9300F2A55C0ED00F82E54 /* WordFall_iOSUITests */,
 				1AB6C39E29D6C4A300A00872 /* Words */,
 				1AB6C3A529D6C4A400A00872 /* WordsTests */,
 				1AB6C40529D6D2AE00A00872 /* SQLiteWords */,
@@ -1126,9 +1129,6 @@
 				1AB6C4E029E08B3800A00872 /* GameTests */,
 				1A4982702A3727210057828E /* Common */,
 				1A4982772A3727210057828E /* CommonTests */,
-				1AB92FF62A55C0E700F82E54 /* WordFall_iOS */,
-				1AB930052A55C0E900F82E54 /* WordFall_iOSTests */,
-				1AB9300F2A55C0ED00F82E54 /* WordFall_iOSUITests */,
 			);
 		};
 /* End PBXProject section */
