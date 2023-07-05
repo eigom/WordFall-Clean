@@ -10,31 +10,19 @@
 		1A4982792A3727210057828E /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
 		1A4982802A3727220057828E /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A49827F2A3727220057828E /* CommonTests.swift */; };
 		1A4982812A3727220057828E /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4982732A3727210057828E /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A4982842A3727220057828E /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
-		1A4982852A3727220057828E /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A49828E2A37273B0057828E /* Try.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A49828D2A37273B0057828E /* Try.swift */; };
 		1A8610162A2FD8F300CEE805 /* SQLiteWordProvider+WordProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8610152A2FD8F300CEE805 /* SQLiteWordProvider+WordProvider.swift */; };
-		1AB6C32529D6BDA300A00872 /* WordFallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C32429D6BDA300A00872 /* WordFallApp.swift */; };
-		1AB6C32729D6BDA300A00872 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C32629D6BDA300A00872 /* ContentView.swift */; };
-		1AB6C32929D6BDA500A00872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6C32829D6BDA500A00872 /* Assets.xcassets */; };
-		1AB6C32C29D6BDA500A00872 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6C32B29D6BDA500A00872 /* Preview Assets.xcassets */; };
 		1AB6C3A729D6C4A400A00872 /* Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; };
 		1AB6C3AE29D6C4A400A00872 /* WordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C3AD29D6C4A400A00872 /* WordsTests.swift */; };
 		1AB6C3AF29D6C4A400A00872 /* Words.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB6C3A129D6C4A300A00872 /* Words.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AB6C3B229D6C4A400A00872 /* Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; };
-		1AB6C3B329D6C4A400A00872 /* Words.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AB6C3BB29D6C4B400A00872 /* WordProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C3BA29D6C4B400A00872 /* WordProvider.swift */; };
 		1AB6C40E29D6D2AE00A00872 /* SQLiteWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C40629D6D2AE00A00872 /* SQLiteWords.framework */; };
 		1AB6C41529D6D2AE00A00872 /* SQLiteWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C41429D6D2AE00A00872 /* SQLiteWordsTests.swift */; };
 		1AB6C41629D6D2AE00A00872 /* SQLiteWords.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB6C40829D6D2AE00A00872 /* SQLiteWords.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AB6C41929D6D2AE00A00872 /* SQLiteWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C40629D6D2AE00A00872 /* SQLiteWords.framework */; };
-		1AB6C41A29D6D2AE00A00872 /* SQLiteWords.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C40629D6D2AE00A00872 /* SQLiteWords.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AB6C42329D6D2D500A00872 /* SQLiteWordProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42229D6D2D500A00872 /* SQLiteWordProvider.swift */; };
 		1AB6C43F29D9A42700A00872 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; };
 		1AB6C44629D9A42700A00872 /* SQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C44529D9A42700A00872 /* SQLiteTests.swift */; };
 		1AB6C44729D9A42700A00872 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB6C43929D9A42600A00872 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AB6C44A29D9A42700A00872 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; };
-		1AB6C44B29D9A42700A00872 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AB6C45229D9A44B00A00872 /* ResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42A29D713AA00A00872 /* ResultSet.swift */; };
 		1AB6C45329D9A44B00A00872 /* SQLiteExec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C43029D77CD800A00872 /* SQLiteExec.swift */; };
 		1AB6C45429D9A44B00A00872 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42E29D778EA00A00872 /* Database.swift */; };
@@ -53,14 +41,10 @@
 		1AB6C4BD29E047B500A00872 /* Puzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4B529E047B400A00872 /* Puzzle.framework */; };
 		1AB6C4C429E047B500A00872 /* PuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4C329E047B500A00872 /* PuzzleTests.swift */; };
 		1AB6C4C529E047B500A00872 /* Puzzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB6C4B729E047B400A00872 /* Puzzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AB6C4C829E047B500A00872 /* Puzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4B529E047B400A00872 /* Puzzle.framework */; };
-		1AB6C4C929E047B500A00872 /* Puzzle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4B529E047B400A00872 /* Puzzle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AB6C4D129E047C800A00872 /* WordPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4D029E047C800A00872 /* WordPuzzle.swift */; };
 		1AB6C4E229E08B3800A00872 /* Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4DA29E08B3800A00872 /* Game.framework */; };
 		1AB6C4E929E08B3900A00872 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4E829E08B3900A00872 /* GameTests.swift */; };
 		1AB6C4EA29E08B3900A00872 /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB6C4DC29E08B3800A00872 /* Game.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AB6C4ED29E08B3900A00872 /* Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4DA29E08B3800A00872 /* Game.framework */; };
-		1AB6C4EE29E08B3900A00872 /* Game.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4DA29E08B3800A00872 /* Game.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AB6C4F629E08B4A00A00872 /* WordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4F529E08B4A00A00872 /* WordGame.swift */; };
 		1AB6C4FD29E1E81A00A00872 /* Collection+Replacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C4FC29E1E81A00A00872 /* Collection+Replacing.swift */; };
 		1AB6C50429E332F400A00872 /* PuzzleMakerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C50329E332F400A00872 /* PuzzleMakerImpl.swift */; };
@@ -75,6 +59,25 @@
 		1AB6C51A29E4440500A00872 /* Puzzle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4B529E047B400A00872 /* Puzzle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AB6C51F29E4465D00A00872 /* GameMakerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C51E29E4465D00A00872 /* GameMakerImpl.swift */; };
 		1AB6C52429E53F3900A00872 /* GameplayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C52329E53F3900A00872 /* GameplayImpl.swift */; };
+		1AB92FFA2A55C0E800F82E54 /* WordFall_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB92FF92A55C0E800F82E54 /* WordFall_iOSApp.swift */; };
+		1AB92FFC2A55C0E800F82E54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB92FFB2A55C0E800F82E54 /* ContentView.swift */; };
+		1AB92FFE2A55C0E900F82E54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB92FFD2A55C0E900F82E54 /* Assets.xcassets */; };
+		1AB930012A55C0E900F82E54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB930002A55C0E900F82E54 /* Preview Assets.xcassets */; };
+		1AB9300B2A55C0EC00F82E54 /* WordFall_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB9300A2A55C0EC00F82E54 /* WordFall_iOSTests.swift */; };
+		1AB930152A55C0EF00F82E54 /* WordFall_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB930142A55C0EF00F82E54 /* WordFall_iOSUITests.swift */; };
+		1AB930172A55C0EF00F82E54 /* WordFall_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB930162A55C0EF00F82E54 /* WordFall_iOSUITestsLaunchTests.swift */; };
+		1AB930212A55C18C00F82E54 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
+		1AB930222A55C18C00F82E54 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AB930252A55C18C00F82E54 /* Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4DA29E08B3800A00872 /* Game.framework */; };
+		1AB930262A55C18C00F82E54 /* Game.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4DA29E08B3800A00872 /* Game.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AB930292A55C18C00F82E54 /* Puzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4B529E047B400A00872 /* Puzzle.framework */; };
+		1AB9302A2A55C18C00F82E54 /* Puzzle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C4B529E047B400A00872 /* Puzzle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AB9302D2A55C18C00F82E54 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; };
+		1AB9302E2A55C18C00F82E54 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AB930312A55C18C00F82E54 /* SQLiteWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C40629D6D2AE00A00872 /* SQLiteWords.framework */; };
+		1AB930322A55C18C00F82E54 /* SQLiteWords.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C40629D6D2AE00A00872 /* SQLiteWords.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AB930352A55C18C00F82E54 /* Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; };
+		1AB930362A55C18C00F82E54 /* Words.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AD46C182A52B338005C54DD /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
 		1AD46C1E2A52FAA3005C54DD /* PuzzleLetterTrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD46C1D2A52FAA3005C54DD /* PuzzleLetterTrier.swift */; };
 		1AD46C202A52FB06005C54DD /* PuzzleLetterTrierImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD46C1F2A52FB06005C54DD /* PuzzleLetterTrierImpl.swift */; };
@@ -89,35 +92,7 @@
 			remoteGlobalIDString = 1A4982702A3727210057828E;
 			remoteInfo = Common;
 		};
-		1A49827C2A3727220057828E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C32029D6BDA300A00872;
-			remoteInfo = WordFall;
-		};
-		1A4982822A3727220057828E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A4982702A3727210057828E;
-			remoteInfo = Common;
-		};
 		1AB6C3A829D6C4A400A00872 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C39E29D6C4A300A00872;
-			remoteInfo = Words;
-		};
-		1AB6C3AA29D6C4A400A00872 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C32029D6BDA300A00872;
-			remoteInfo = "WordFall-Clean";
-		};
-		1AB6C3B029D6C4A400A00872 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
 			proxyType = 1;
@@ -131,35 +106,7 @@
 			remoteGlobalIDString = 1AB6C40529D6D2AE00A00872;
 			remoteInfo = SQLiteWords;
 		};
-		1AB6C41129D6D2AE00A00872 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C32029D6BDA300A00872;
-			remoteInfo = WordFall;
-		};
-		1AB6C41729D6D2AE00A00872 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C40529D6D2AE00A00872;
-			remoteInfo = SQLiteWords;
-		};
 		1AB6C44029D9A42700A00872 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C43629D9A42600A00872;
-			remoteInfo = SQLite;
-		};
-		1AB6C44229D9A42700A00872 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C32029D6BDA300A00872;
-			remoteInfo = WordFall;
-		};
-		1AB6C44829D9A42700A00872 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
 			proxyType = 1;
@@ -173,35 +120,7 @@
 			remoteGlobalIDString = 1AB6C4B429E047B400A00872;
 			remoteInfo = Puzzle;
 		};
-		1AB6C4C029E047B500A00872 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C32029D6BDA300A00872;
-			remoteInfo = WordFall;
-		};
-		1AB6C4C629E047B500A00872 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C4B429E047B400A00872;
-			remoteInfo = Puzzle;
-		};
 		1AB6C4E329E08B3800A00872 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C4D929E08B3700A00872;
-			remoteInfo = Game;
-		};
-		1AB6C4E529E08B3800A00872 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB6C32029D6BDA300A00872;
-			remoteInfo = WordFall;
-		};
-		1AB6C4EB29E08B3900A00872 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
 			proxyType = 1;
@@ -215,6 +134,62 @@
 			remoteGlobalIDString = 1AB6C4B429E047B400A00872;
 			remoteInfo = Puzzle;
 		};
+		1AB930072A55C0EB00F82E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB92FF62A55C0E700F82E54;
+			remoteInfo = WordFall_iOS;
+		};
+		1AB930112A55C0EE00F82E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB92FF62A55C0E700F82E54;
+			remoteInfo = WordFall_iOS;
+		};
+		1AB930232A55C18C00F82E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A4982702A3727210057828E;
+			remoteInfo = Common;
+		};
+		1AB930272A55C18C00F82E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB6C4D929E08B3700A00872;
+			remoteInfo = Game;
+		};
+		1AB9302B2A55C18C00F82E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB6C4B429E047B400A00872;
+			remoteInfo = Puzzle;
+		};
+		1AB9302F2A55C18C00F82E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB6C43629D9A42600A00872;
+			remoteInfo = SQLite;
+		};
+		1AB930332A55C18C00F82E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB6C40529D6D2AE00A00872;
+			remoteInfo = SQLiteWords;
+		};
+		1AB930372A55C18C00F82E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB6C39E29D6C4A300A00872;
+			remoteInfo = Words;
+		};
 		1AD46C1A2A52B338005C54DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
@@ -225,22 +200,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1AB6C35129D6BF7E00A00872 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1AB6C4EE29E08B3900A00872 /* Game.framework in Embed Frameworks */,
-				1AB6C41A29D6D2AE00A00872 /* SQLiteWords.framework in Embed Frameworks */,
-				1AB6C3B329D6C4A400A00872 /* Words.framework in Embed Frameworks */,
-				1A4982852A3727220057828E /* Common.framework in Embed Frameworks */,
-				1AB6C4C929E047B500A00872 /* Puzzle.framework in Embed Frameworks */,
-				1AB6C44B29D9A42700A00872 /* SQLite.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1AB6C51D29E4440500A00872 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,6 +207,22 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1AB6C51A29E4440500A00872 /* Puzzle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB930392A55C18C00F82E54 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1AB930362A55C18C00F82E54 /* Words.framework in Embed Frameworks */,
+				1AB9302A2A55C18C00F82E54 /* Puzzle.framework in Embed Frameworks */,
+				1AB930262A55C18C00F82E54 /* Game.framework in Embed Frameworks */,
+				1AB9302E2A55C18C00F82E54 /* SQLite.framework in Embed Frameworks */,
+				1AB930322A55C18C00F82E54 /* SQLiteWords.framework in Embed Frameworks */,
+				1AB930222A55C18C00F82E54 /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,12 +236,6 @@
 		1A49827F2A3727220057828E /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		1A49828D2A37273B0057828E /* Try.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try.swift; sourceTree = "<group>"; };
 		1A8610152A2FD8F300CEE805 /* SQLiteWordProvider+WordProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SQLiteWordProvider+WordProvider.swift"; sourceTree = "<group>"; };
-		1AB6C32129D6BDA300A00872 /* WordFall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordFall.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AB6C32429D6BDA300A00872 /* WordFallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFallApp.swift; sourceTree = "<group>"; };
-		1AB6C32629D6BDA300A00872 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1AB6C32829D6BDA500A00872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1AB6C32B29D6BDA500A00872 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1AB6C35529D6C0AF00A00872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1AB6C39F29D6C4A300A00872 /* Words.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Words.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB6C3A129D6C4A300A00872 /* Words.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Words.h; sourceTree = "<group>"; };
 		1AB6C3A629D6C4A400A00872 /* WordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -315,6 +284,16 @@
 		1AB6C51729E442C600A00872 /* Gameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		1AB6C51E29E4465D00A00872 /* GameMakerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMakerImpl.swift; sourceTree = "<group>"; };
 		1AB6C52329E53F3900A00872 /* GameplayImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayImpl.swift; sourceTree = "<group>"; };
+		1AB92FF72A55C0E700F82E54 /* WordFall_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordFall_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB92FF92A55C0E800F82E54 /* WordFall_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFall_iOSApp.swift; sourceTree = "<group>"; };
+		1AB92FFB2A55C0E800F82E54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1AB92FFD2A55C0E900F82E54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AB930002A55C0E900F82E54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1AB930062A55C0EA00F82E54 /* WordFall_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordFall_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB9300A2A55C0EC00F82E54 /* WordFall_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFall_iOSTests.swift; sourceTree = "<group>"; };
+		1AB930102A55C0ED00F82E54 /* WordFall_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordFall_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB930142A55C0EF00F82E54 /* WordFall_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFall_iOSUITests.swift; sourceTree = "<group>"; };
+		1AB930162A55C0EF00F82E54 /* WordFall_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFall_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1AD46C1D2A52FAA3005C54DD /* PuzzleLetterTrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleLetterTrier.swift; sourceTree = "<group>"; };
 		1AD46C1F2A52FB06005C54DD /* PuzzleLetterTrierImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleLetterTrierImpl.swift; sourceTree = "<group>"; };
 		1AD46C212A5305C5005C54DD /* PuzzleLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleLetter.swift; sourceTree = "<group>"; };
@@ -333,19 +312,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A4982792A3727210057828E /* Common.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AB6C31E29D6BDA300A00872 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AB6C4ED29E08B3900A00872 /* Game.framework in Frameworks */,
-				1AB6C41929D6D2AE00A00872 /* SQLiteWords.framework in Frameworks */,
-				1AB6C3B229D6C4A400A00872 /* Words.framework in Frameworks */,
-				1A4982842A3727220057828E /* Common.framework in Frameworks */,
-				1AB6C4C829E047B500A00872 /* Puzzle.framework in Frameworks */,
-				1AB6C44A29D9A42700A00872 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +394,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AB92FF42A55C0E700F82E54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB930352A55C18C00F82E54 /* Words.framework in Frameworks */,
+				1AB930292A55C18C00F82E54 /* Puzzle.framework in Frameworks */,
+				1AB930252A55C18C00F82E54 /* Game.framework in Frameworks */,
+				1AB9302D2A55C18C00F82E54 /* SQLite.framework in Frameworks */,
+				1AB930312A55C18C00F82E54 /* SQLiteWords.framework in Frameworks */,
+				1AB930212A55C18C00F82E54 /* Common.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB930032A55C0E900F82E54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB9300D2A55C0ED00F82E54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -459,7 +452,9 @@
 		1AB6C31829D6BDA300A00872 = {
 			isa = PBXGroup;
 			children = (
-				1AB6C32329D6BDA300A00872 /* WordFall */,
+				1AB92FF82A55C0E800F82E54 /* WordFall_iOS */,
+				1AB930092A55C0EC00F82E54 /* WordFall_iOSTests */,
+				1AB930132A55C0EF00F82E54 /* WordFall_iOSUITests */,
 				1AB6C3A029D6C4A300A00872 /* Words */,
 				1AB6C3AC29D6C4A400A00872 /* WordsTests */,
 				1AB6C40729D6D2AE00A00872 /* SQLiteWords */,
@@ -480,7 +475,6 @@
 		1AB6C32229D6BDA300A00872 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1AB6C32129D6BDA300A00872 /* WordFall.app */,
 				1AB6C39F29D6C4A300A00872 /* Words.framework */,
 				1AB6C3A629D6C4A400A00872 /* WordsTests.xctest */,
 				1AB6C40629D6D2AE00A00872 /* SQLiteWords.framework */,
@@ -493,28 +487,11 @@
 				1AB6C4E129E08B3800A00872 /* GameTests.xctest */,
 				1A4982712A3727210057828E /* Common.framework */,
 				1A4982782A3727210057828E /* CommonTests.xctest */,
+				1AB92FF72A55C0E700F82E54 /* WordFall_iOS.app */,
+				1AB930062A55C0EA00F82E54 /* WordFall_iOSTests.xctest */,
+				1AB930102A55C0ED00F82E54 /* WordFall_iOSUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1AB6C32329D6BDA300A00872 /* WordFall */ = {
-			isa = PBXGroup;
-			children = (
-				1AB6C35529D6C0AF00A00872 /* Info.plist */,
-				1AB6C32429D6BDA300A00872 /* WordFallApp.swift */,
-				1AB6C32629D6BDA300A00872 /* ContentView.swift */,
-				1AB6C32829D6BDA500A00872 /* Assets.xcassets */,
-				1AB6C32A29D6BDA500A00872 /* Preview Content */,
-			);
-			path = WordFall;
-			sourceTree = "<group>";
-		};
-		1AB6C32A29D6BDA500A00872 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				1AB6C32B29D6BDA500A00872 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		1AB6C3A029D6C4A300A00872 /* Words */ = {
@@ -684,6 +661,42 @@
 			path = Impl;
 			sourceTree = "<group>";
 		};
+		1AB92FF82A55C0E800F82E54 /* WordFall_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1AB92FF92A55C0E800F82E54 /* WordFall_iOSApp.swift */,
+				1AB92FFB2A55C0E800F82E54 /* ContentView.swift */,
+				1AB92FFD2A55C0E900F82E54 /* Assets.xcassets */,
+				1AB92FFF2A55C0E900F82E54 /* Preview Content */,
+			);
+			path = WordFall_iOS;
+			sourceTree = "<group>";
+		};
+		1AB92FFF2A55C0E900F82E54 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1AB930002A55C0E900F82E54 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1AB930092A55C0EC00F82E54 /* WordFall_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AB9300A2A55C0EC00F82E54 /* WordFall_iOSTests.swift */,
+			);
+			path = WordFall_iOSTests;
+			sourceTree = "<group>";
+		};
+		1AB930132A55C0EF00F82E54 /* WordFall_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1AB930142A55C0EF00F82E54 /* WordFall_iOSUITests.swift */,
+				1AB930162A55C0EF00F82E54 /* WordFall_iOSUITestsLaunchTests.swift */,
+			);
+			path = WordFall_iOSUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -768,37 +781,11 @@
 			);
 			dependencies = (
 				1A49827B2A3727210057828E /* PBXTargetDependency */,
-				1A49827D2A3727220057828E /* PBXTargetDependency */,
 			);
 			name = CommonTests;
 			productName = CommonTests;
 			productReference = 1A4982782A3727210057828E /* CommonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1AB6C32029D6BDA300A00872 /* WordFall */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1AB6C32F29D6BDA500A00872 /* Build configuration list for PBXNativeTarget "WordFall" */;
-			buildPhases = (
-				1AB6C3BC29D6CA1900A00872 /* SwiftLint */,
-				1AB6C31D29D6BDA300A00872 /* Sources */,
-				1AB6C31E29D6BDA300A00872 /* Frameworks */,
-				1AB6C31F29D6BDA300A00872 /* Resources */,
-				1AB6C35129D6BF7E00A00872 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1AB6C3B129D6C4A400A00872 /* PBXTargetDependency */,
-				1AB6C41829D6D2AE00A00872 /* PBXTargetDependency */,
-				1AB6C44929D9A42700A00872 /* PBXTargetDependency */,
-				1AB6C4C729E047B500A00872 /* PBXTargetDependency */,
-				1AB6C4EC29E08B3900A00872 /* PBXTargetDependency */,
-				1A4982832A3727220057828E /* PBXTargetDependency */,
-			);
-			name = WordFall;
-			productName = "WordFall-Clean";
-			productReference = 1AB6C32129D6BDA300A00872 /* WordFall.app */;
-			productType = "com.apple.product-type.application";
 		};
 		1AB6C39E29D6C4A300A00872 /* Words */ = {
 			isa = PBXNativeTarget;
@@ -831,7 +818,6 @@
 			);
 			dependencies = (
 				1AB6C3A929D6C4A400A00872 /* PBXTargetDependency */,
-				1AB6C3AB29D6C4A400A00872 /* PBXTargetDependency */,
 			);
 			name = WordsTests;
 			productName = WordsTests;
@@ -868,7 +854,6 @@
 			);
 			dependencies = (
 				1AB6C41029D6D2AE00A00872 /* PBXTargetDependency */,
-				1AB6C41229D6D2AE00A00872 /* PBXTargetDependency */,
 			);
 			name = SQLiteWordsTests;
 			productName = SQLiteWordsTests;
@@ -905,7 +890,6 @@
 			);
 			dependencies = (
 				1AB6C44129D9A42700A00872 /* PBXTargetDependency */,
-				1AB6C44329D9A42700A00872 /* PBXTargetDependency */,
 			);
 			name = SQLiteTests;
 			productName = SQLiteTests;
@@ -942,7 +926,6 @@
 			);
 			dependencies = (
 				1AB6C4BF29E047B500A00872 /* PBXTargetDependency */,
-				1AB6C4C129E047B500A00872 /* PBXTargetDependency */,
 			);
 			name = PuzzleTests;
 			productName = PuzzleTests;
@@ -981,12 +964,72 @@
 			);
 			dependencies = (
 				1AB6C4E429E08B3800A00872 /* PBXTargetDependency */,
-				1AB6C4E629E08B3800A00872 /* PBXTargetDependency */,
 			);
 			name = GameTests;
 			productName = GameTests;
 			productReference = 1AB6C4E129E08B3800A00872 /* GameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AB92FF62A55C0E700F82E54 /* WordFall_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB9301E2A55C0EF00F82E54 /* Build configuration list for PBXNativeTarget "WordFall_iOS" */;
+			buildPhases = (
+				1AB9303A2A55C1BC00F82E54 /* SwiftLint */,
+				1AB92FF32A55C0E700F82E54 /* Sources */,
+				1AB92FF42A55C0E700F82E54 /* Frameworks */,
+				1AB92FF52A55C0E700F82E54 /* Resources */,
+				1AB930392A55C18C00F82E54 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AB930242A55C18C00F82E54 /* PBXTargetDependency */,
+				1AB930282A55C18C00F82E54 /* PBXTargetDependency */,
+				1AB9302C2A55C18C00F82E54 /* PBXTargetDependency */,
+				1AB930302A55C18C00F82E54 /* PBXTargetDependency */,
+				1AB930342A55C18C00F82E54 /* PBXTargetDependency */,
+				1AB930382A55C18C00F82E54 /* PBXTargetDependency */,
+			);
+			name = WordFall_iOS;
+			productName = WordFall_iOS;
+			productReference = 1AB92FF72A55C0E700F82E54 /* WordFall_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AB930052A55C0E900F82E54 /* WordFall_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB9301F2A55C0EF00F82E54 /* Build configuration list for PBXNativeTarget "WordFall_iOSTests" */;
+			buildPhases = (
+				1AB930022A55C0E900F82E54 /* Sources */,
+				1AB930032A55C0E900F82E54 /* Frameworks */,
+				1AB930042A55C0E900F82E54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AB930082A55C0EB00F82E54 /* PBXTargetDependency */,
+			);
+			name = WordFall_iOSTests;
+			productName = WordFall_iOSTests;
+			productReference = 1AB930062A55C0EA00F82E54 /* WordFall_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AB9300F2A55C0ED00F82E54 /* WordFall_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB930202A55C0EF00F82E54 /* Build configuration list for PBXNativeTarget "WordFall_iOSUITests" */;
+			buildPhases = (
+				1AB9300C2A55C0ED00F82E54 /* Sources */,
+				1AB9300D2A55C0ED00F82E54 /* Frameworks */,
+				1AB9300E2A55C0ED00F82E54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AB930122A55C0EE00F82E54 /* PBXTargetDependency */,
+			);
+			name = WordFall_iOSUITests;
+			productName = WordFall_iOSUITests;
+			productReference = 1AB930102A55C0ED00F82E54 /* WordFall_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -1005,9 +1048,6 @@
 					1A4982772A3727210057828E = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 1AB6C32029D6BDA300A00872;
-					};
-					1AB6C32029D6BDA300A00872 = {
-						CreatedOnToolsVersion = 14.2;
 					};
 					1AB6C39E29D6C4A300A00872 = {
 						CreatedOnToolsVersion = 14.2;
@@ -1048,6 +1088,17 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 1AB6C32029D6BDA300A00872;
 					};
+					1AB92FF62A55C0E700F82E54 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					1AB930052A55C0E900F82E54 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1AB92FF62A55C0E700F82E54;
+					};
+					1AB9300F2A55C0ED00F82E54 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1AB92FF62A55C0E700F82E54;
+					};
 				};
 			};
 			buildConfigurationList = 1AB6C31C29D6BDA300A00872 /* Build configuration list for PBXProject "WordFall" */;
@@ -1063,7 +1114,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1AB6C32029D6BDA300A00872 /* WordFall */,
 				1AB6C39E29D6C4A300A00872 /* Words */,
 				1AB6C3A529D6C4A400A00872 /* WordsTests */,
 				1AB6C40529D6D2AE00A00872 /* SQLiteWords */,
@@ -1076,6 +1126,9 @@
 				1AB6C4E029E08B3800A00872 /* GameTests */,
 				1A4982702A3727210057828E /* Common */,
 				1A4982772A3727210057828E /* CommonTests */,
+				1AB92FF62A55C0E700F82E54 /* WordFall_iOS */,
+				1AB930052A55C0E900F82E54 /* WordFall_iOSTests */,
+				1AB9300F2A55C0ED00F82E54 /* WordFall_iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1092,15 +1145,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AB6C31F29D6BDA300A00872 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AB6C32C29D6BDA500A00872 /* Preview Assets.xcassets in Resources */,
-				1AB6C32929D6BDA500A00872 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1175,10 +1219,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AB92FF52A55C0E700F82E54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB930012A55C0E900F82E54 /* Preview Assets.xcassets in Resources */,
+				1AB92FFE2A55C0E900F82E54 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB930042A55C0E900F82E54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB9300E2A55C0ED00F82E54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1AB6C3BC29D6CA1900A00872 /* SwiftLint */ = {
+		1AB9303A2A55C1BC00F82E54 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -1213,15 +1280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A4982802A3727220057828E /* CommonTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AB6C31D29D6BDA300A00872 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AB6C32729D6BDA300A00872 /* ContentView.swift in Sources */,
-				1AB6C32529D6BDA300A00872 /* WordFallApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1331,6 +1389,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AB92FF32A55C0E700F82E54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB92FFC2A55C0E800F82E54 /* ContentView.swift in Sources */,
+				1AB92FFA2A55C0E800F82E54 /* WordFall_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB930022A55C0E900F82E54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB9300B2A55C0EC00F82E54 /* WordFall_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB9300C2A55C0ED00F82E54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB930152A55C0EF00F82E54 /* WordFall_iOSUITests.swift in Sources */,
+				1AB930172A55C0EF00F82E54 /* WordFall_iOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1339,95 +1423,75 @@
 			target = 1A4982702A3727210057828E /* Common */;
 			targetProxy = 1A49827A2A3727210057828E /* PBXContainerItemProxy */;
 		};
-		1A49827D2A3727220057828E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C32029D6BDA300A00872 /* WordFall */;
-			targetProxy = 1A49827C2A3727220057828E /* PBXContainerItemProxy */;
-		};
-		1A4982832A3727220057828E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A4982702A3727210057828E /* Common */;
-			targetProxy = 1A4982822A3727220057828E /* PBXContainerItemProxy */;
-		};
 		1AB6C3A929D6C4A400A00872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1AB6C39E29D6C4A300A00872 /* Words */;
 			targetProxy = 1AB6C3A829D6C4A400A00872 /* PBXContainerItemProxy */;
-		};
-		1AB6C3AB29D6C4A400A00872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C32029D6BDA300A00872 /* WordFall */;
-			targetProxy = 1AB6C3AA29D6C4A400A00872 /* PBXContainerItemProxy */;
-		};
-		1AB6C3B129D6C4A400A00872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C39E29D6C4A300A00872 /* Words */;
-			targetProxy = 1AB6C3B029D6C4A400A00872 /* PBXContainerItemProxy */;
 		};
 		1AB6C41029D6D2AE00A00872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1AB6C40529D6D2AE00A00872 /* SQLiteWords */;
 			targetProxy = 1AB6C40F29D6D2AE00A00872 /* PBXContainerItemProxy */;
 		};
-		1AB6C41229D6D2AE00A00872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C32029D6BDA300A00872 /* WordFall */;
-			targetProxy = 1AB6C41129D6D2AE00A00872 /* PBXContainerItemProxy */;
-		};
-		1AB6C41829D6D2AE00A00872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C40529D6D2AE00A00872 /* SQLiteWords */;
-			targetProxy = 1AB6C41729D6D2AE00A00872 /* PBXContainerItemProxy */;
-		};
 		1AB6C44129D9A42700A00872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1AB6C43629D9A42600A00872 /* SQLite */;
 			targetProxy = 1AB6C44029D9A42700A00872 /* PBXContainerItemProxy */;
-		};
-		1AB6C44329D9A42700A00872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C32029D6BDA300A00872 /* WordFall */;
-			targetProxy = 1AB6C44229D9A42700A00872 /* PBXContainerItemProxy */;
-		};
-		1AB6C44929D9A42700A00872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C43629D9A42600A00872 /* SQLite */;
-			targetProxy = 1AB6C44829D9A42700A00872 /* PBXContainerItemProxy */;
 		};
 		1AB6C4BF29E047B500A00872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1AB6C4B429E047B400A00872 /* Puzzle */;
 			targetProxy = 1AB6C4BE29E047B500A00872 /* PBXContainerItemProxy */;
 		};
-		1AB6C4C129E047B500A00872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C32029D6BDA300A00872 /* WordFall */;
-			targetProxy = 1AB6C4C029E047B500A00872 /* PBXContainerItemProxy */;
-		};
-		1AB6C4C729E047B500A00872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C4B429E047B400A00872 /* Puzzle */;
-			targetProxy = 1AB6C4C629E047B500A00872 /* PBXContainerItemProxy */;
-		};
 		1AB6C4E429E08B3800A00872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1AB6C4D929E08B3700A00872 /* Game */;
 			targetProxy = 1AB6C4E329E08B3800A00872 /* PBXContainerItemProxy */;
 		};
-		1AB6C4E629E08B3800A00872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C32029D6BDA300A00872 /* WordFall */;
-			targetProxy = 1AB6C4E529E08B3800A00872 /* PBXContainerItemProxy */;
-		};
-		1AB6C4EC29E08B3900A00872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB6C4D929E08B3700A00872 /* Game */;
-			targetProxy = 1AB6C4EB29E08B3900A00872 /* PBXContainerItemProxy */;
-		};
 		1AB6C51C29E4440500A00872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1AB6C4B429E047B400A00872 /* Puzzle */;
 			targetProxy = 1AB6C51B29E4440500A00872 /* PBXContainerItemProxy */;
+		};
+		1AB930082A55C0EB00F82E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB92FF62A55C0E700F82E54 /* WordFall_iOS */;
+			targetProxy = 1AB930072A55C0EB00F82E54 /* PBXContainerItemProxy */;
+		};
+		1AB930122A55C0EE00F82E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB92FF62A55C0E700F82E54 /* WordFall_iOS */;
+			targetProxy = 1AB930112A55C0EE00F82E54 /* PBXContainerItemProxy */;
+		};
+		1AB930242A55C18C00F82E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A4982702A3727210057828E /* Common */;
+			targetProxy = 1AB930232A55C18C00F82E54 /* PBXContainerItemProxy */;
+		};
+		1AB930282A55C18C00F82E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB6C4D929E08B3700A00872 /* Game */;
+			targetProxy = 1AB930272A55C18C00F82E54 /* PBXContainerItemProxy */;
+		};
+		1AB9302C2A55C18C00F82E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB6C4B429E047B400A00872 /* Puzzle */;
+			targetProxy = 1AB9302B2A55C18C00F82E54 /* PBXContainerItemProxy */;
+		};
+		1AB930302A55C18C00F82E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB6C43629D9A42600A00872 /* SQLite */;
+			targetProxy = 1AB9302F2A55C18C00F82E54 /* PBXContainerItemProxy */;
+		};
+		1AB930342A55C18C00F82E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB6C40529D6D2AE00A00872 /* SQLiteWords */;
+			targetProxy = 1AB930332A55C18C00F82E54 /* PBXContainerItemProxy */;
+		};
+		1AB930382A55C18C00F82E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB6C39E29D6C4A300A00872 /* Words */;
+			targetProxy = 1AB930372A55C18C00F82E54 /* PBXContainerItemProxy */;
 		};
 		1AD46C1B2A52B338005C54DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1657,68 +1721,6 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		1AB6C33029D6BDA500A00872 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WordFall/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Z3949Y4B2;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WordFall/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordFall";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1AB6C33129D6BDA500A00872 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WordFall/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Z3949Y4B2;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WordFall/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordFall";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -2254,6 +2256,144 @@
 			};
 			name = Release;
 		};
+		1AB930182A55C0EF00F82E54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WordFall_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordFall-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AB930192A55C0EF00F82E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WordFall_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordFall-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1AB9301A2A55C0EF00F82E54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordFall-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall_iOS";
+			};
+			name = Debug;
+		};
+		1AB9301B2A55C0EF00F82E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordFall-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall_iOS";
+			};
+			name = Release;
+		};
+		1AB9301C2A55C0EF00F82E54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordFall-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WordFall_iOS;
+			};
+			name = Debug;
+		};
+		1AB9301D2A55C0EF00F82E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordFall-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WordFall_iOS;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2280,15 +2420,6 @@
 			buildConfigurations = (
 				1AB6C32D29D6BDA500A00872 /* Debug */,
 				1AB6C32E29D6BDA500A00872 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1AB6C32F29D6BDA500A00872 /* Build configuration list for PBXNativeTarget "WordFall" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1AB6C33029D6BDA500A00872 /* Debug */,
-				1AB6C33129D6BDA500A00872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2379,6 +2510,33 @@
 			buildConfigurations = (
 				1AB6C4F329E08B3900A00872 /* Debug */,
 				1AB6C4F429E08B3900A00872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AB9301E2A55C0EF00F82E54 /* Build configuration list for PBXNativeTarget "WordFall_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB930182A55C0EF00F82E54 /* Debug */,
+				1AB930192A55C0EF00F82E54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AB9301F2A55C0EF00F82E54 /* Build configuration list for PBXNativeTarget "WordFall_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB9301A2A55C0EF00F82E54 /* Debug */,
+				1AB9301B2A55C0EF00F82E54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AB930202A55C0EF00F82E54 /* Build configuration list for PBXNativeTarget "WordFall_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB9301C2A55C0EF00F82E54 /* Debug */,
+				1AB9301D2A55C0EF00F82E54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
