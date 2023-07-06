@@ -17,6 +17,7 @@
 		1A607F072A56A96D007C6150 /* Purchasing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A607EF42A56A967007C6150 /* Purchasing.framework */; };
 		1A607F082A56A96D007C6150 /* Purchasing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A607EF42A56A967007C6150 /* Purchasing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A607F102A56AA24007C6150 /* PurchasingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A607F0F2A56AA24007C6150 /* PurchasingService.swift */; };
+		1A607F132A56ACC8007C6150 /* StoreKitPurchasingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A607F122A56ACC8007C6150 /* StoreKitPurchasingService.swift */; };
 		1A8610162A2FD8F300CEE805 /* SQLiteWordProvider+WordProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8610152A2FD8F300CEE805 /* SQLiteWordProvider+WordProvider.swift */; };
 		1AB6C3A729D6C4A400A00872 /* Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; };
 		1AB6C3AE29D6C4A400A00872 /* WordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C3AD29D6C4A400A00872 /* WordsTests.swift */; };
@@ -268,6 +269,7 @@
 		1A607EFB2A56A969007C6150 /* PurchasingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurchasingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A607F022A56A96D007C6150 /* PurchasingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasingTests.swift; sourceTree = "<group>"; };
 		1A607F0F2A56AA24007C6150 /* PurchasingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasingService.swift; sourceTree = "<group>"; };
+		1A607F122A56ACC8007C6150 /* StoreKitPurchasingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitPurchasingService.swift; sourceTree = "<group>"; };
 		1A8610152A2FD8F300CEE805 /* SQLiteWordProvider+WordProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SQLiteWordProvider+WordProvider.swift"; sourceTree = "<group>"; };
 		1AB6C39F29D6C4A300A00872 /* Words.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Words.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB6C3A129D6C4A300A00872 /* Words.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Words.h; sourceTree = "<group>"; };
@@ -501,6 +503,7 @@
 		1A607EF52A56A968007C6150 /* Purchasing */ = {
 			isa = PBXGroup;
 			children = (
+				1A607F112A56ACB3007C6150 /* Impl */,
 				1A607F0F2A56AA24007C6150 /* PurchasingService.swift */,
 				1A607EF62A56A968007C6150 /* Purchasing.h */,
 			);
@@ -513,6 +516,14 @@
 				1A607F022A56A96D007C6150 /* PurchasingTests.swift */,
 			);
 			path = PurchasingTests;
+			sourceTree = "<group>";
+		};
+		1A607F112A56ACB3007C6150 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				1A607F122A56ACC8007C6150 /* StoreKitPurchasingService.swift */,
+			);
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		1AB6C31829D6BDA300A00872 = {
@@ -1427,6 +1438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A607F132A56ACC8007C6150 /* StoreKitPurchasingService.swift in Sources */,
 				1A607F102A56AA24007C6150 /* PurchasingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
