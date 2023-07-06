@@ -1,6 +1,6 @@
 import StoreKit
 
-public class StoreKitProductService: ProductService {
+public struct StoreKitProductService: ProductService {
     public func loadProduct(
         withID productID: String,
         completion: @escaping (Result<StoreKit.Product, ProductLoadingError>

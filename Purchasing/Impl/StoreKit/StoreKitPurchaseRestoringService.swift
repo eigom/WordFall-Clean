@@ -1,6 +1,6 @@
 import StoreKit
 
-public class StoreKitPurchaseRestoringService: PurchaseRestoringService {
+public struct StoreKitPurchaseRestoringService: PurchaseRestoringService {
     public func restorePurchases(completion: @escaping (Result<Void, Error>) -> Void) {
         Task {
             do {

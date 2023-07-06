@@ -531,9 +531,7 @@
 		1A607F112A56ACB3007C6150 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				1AD928D62A56CA72006B78EA /* StoreKitProductService.swift */,
-				1A607F122A56ACC8007C6150 /* StoreKitPurchasingService.swift */,
-				1AD928DA2A56CE4D006B78EA /* StoreKitPurchaseRestoringService.swift */,
+				1AD928DC2A572C36006B78EA /* StoreKit */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -788,6 +786,16 @@
 				1AB930162A55C0EF00F82E54 /* WordFall_iOSUITestsLaunchTests.swift */,
 			);
 			path = WordFall_iOSUITests;
+			sourceTree = "<group>";
+		};
+		1AD928DC2A572C36006B78EA /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				1AD928D62A56CA72006B78EA /* StoreKitProductService.swift */,
+				1A607F122A56ACC8007C6150 /* StoreKitPurchasingService.swift */,
+				1AD928DA2A56CE4D006B78EA /* StoreKitPurchaseRestoringService.swift */,
+			);
+			path = StoreKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

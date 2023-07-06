@@ -9,7 +9,9 @@ public protocol PurchasingService {
 }
 
 public enum ProductPurchasingError: Error {
+    case unknown
     case userCancelled
     case pendingApproval
+    case transactionUnverified
     case error(Error)
 }
