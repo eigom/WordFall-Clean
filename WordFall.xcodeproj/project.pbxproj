@@ -91,6 +91,8 @@
 		1AD46C222A5305C5005C54DD /* PuzzleLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD46C212A5305C5005C54DD /* PuzzleLetter.swift */; };
 		1AD928D52A56CA1A006B78EA /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD928D42A56CA1A006B78EA /* ProductService.swift */; };
 		1AD928D72A56CA72006B78EA /* StoreKitProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD928D62A56CA72006B78EA /* StoreKitProductService.swift */; };
+		1AD928D92A56CE1B006B78EA /* PurchaseRestoringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD928D82A56CE1B006B78EA /* PurchaseRestoringService.swift */; };
+		1AD928DB2A56CE4D006B78EA /* StoreKitPurchaseRestoringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD928DA2A56CE4D006B78EA /* StoreKitPurchaseRestoringService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -336,6 +338,8 @@
 		1AD46C212A5305C5005C54DD /* PuzzleLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleLetter.swift; sourceTree = "<group>"; };
 		1AD928D42A56CA1A006B78EA /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		1AD928D62A56CA72006B78EA /* StoreKitProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitProductService.swift; sourceTree = "<group>"; };
+		1AD928D82A56CE1B006B78EA /* PurchaseRestoringService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseRestoringService.swift; sourceTree = "<group>"; };
+		1AD928DA2A56CE4D006B78EA /* StoreKitPurchaseRestoringService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitPurchaseRestoringService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,6 +514,7 @@
 				1A607F112A56ACB3007C6150 /* Impl */,
 				1AD928D42A56CA1A006B78EA /* ProductService.swift */,
 				1A607F0F2A56AA24007C6150 /* PurchasingService.swift */,
+				1AD928D82A56CE1B006B78EA /* PurchaseRestoringService.swift */,
 				1A607EF62A56A968007C6150 /* Purchasing.h */,
 			);
 			path = Purchasing;
@@ -528,6 +533,7 @@
 			children = (
 				1AD928D62A56CA72006B78EA /* StoreKitProductService.swift */,
 				1A607F122A56ACC8007C6150 /* StoreKitPurchasingService.swift */,
+				1AD928DA2A56CE4D006B78EA /* StoreKitPurchaseRestoringService.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -1445,7 +1451,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A607F132A56ACC8007C6150 /* StoreKitPurchasingService.swift in Sources */,
+				1AD928DB2A56CE4D006B78EA /* StoreKitPurchaseRestoringService.swift in Sources */,
 				1A607F102A56AA24007C6150 /* PurchasingService.swift in Sources */,
+				1AD928D92A56CE1B006B78EA /* PurchaseRestoringService.swift in Sources */,
 				1AD928D72A56CA72006B78EA /* StoreKitProductService.swift in Sources */,
 				1AD928D52A56CA1A006B78EA /* ProductService.swift in Sources */,
 			);

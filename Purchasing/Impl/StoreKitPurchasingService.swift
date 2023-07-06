@@ -7,8 +7,4 @@ public class StoreKitPurchasingService: PurchasingService {
     ) -> Void) {
 
     }
-
-    public func restorePurchases() {
-
-    }
 }

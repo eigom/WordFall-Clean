@@ -6,8 +6,6 @@ public protocol PurchasingService {
         _ product: Product,
         completion: @escaping (Result<PurchaseTransaction, ProductPurchasingError>
     ) -> Void)
-
-    func restorePurchases()
 }
 
 public enum ProductPurchasingError: Error {
