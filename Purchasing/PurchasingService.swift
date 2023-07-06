@@ -2,14 +2,12 @@ public protocol PurchasingService {
     associatedtype Product
     associatedtype PurchaseTransaction
 
-    func loadProduct(withID productID: String, completion: @escaping (Result<Product, ProductLoadingError>) -> Void)
-    func purchaseProduct(_ product: Product, completion: @escaping (Result<PurchaseTransaction, ProductPurchasingError>) -> Void)
-    func restorePurchases()
-}
+    func purchaseProduct(
+        _ product: Product,
+        completion: @escaping (Result<PurchaseTransaction, ProductPurchasingError>
+    ) -> Void)
 
-public enum ProductLoadingError: Error {
-    case productNotFound
-    case error(Error)
+    func restorePurchases()
 }
 
 public enum ProductPurchasingError: Error {
