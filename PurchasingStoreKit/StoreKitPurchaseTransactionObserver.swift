@@ -1,7 +1,9 @@
+import Purchasing
 import StoreKit
+import Common
 
 public class StoreKitPurchaseTransactionObserver: PurchaseTransactionObserver {
-    private var observers = [() -> (AnyObject?, Update)]()
+    private let observerNotifier = ObserverNotifier<[Transaction]>()
     private var updateObserverTask: Task<Void, Error>?
 
     public typealias Update = ([Transaction]) -> Void
@@ -12,14 +14,12 @@ public class StoreKitPurchaseTransactionObserver: PurchaseTransactionObserver {
         stopObserving()
     }
 
-    public func addObserver(_ observer: AnyObject, onUpdate: @escaping Update) {
-        guard !observers.contains(where: { $0().0 === observer }) else { return }
-
-        observers.append({ [weak observer] in (observer, onUpdate) })
+    public func addObserver(_ observer: AnyObject, onUpdated: @escaping ([Transaction]) -> Void) {
+        observerNotifier.addObserver(observer, onNotified: onUpdated)
     }
 
     public func removeObserver(_ observer: AnyObject) {
-        observers.removeAll(where: { $0().0 === observer })
+        observerNotifier.removeObserver(observer)
     }
 
     public func startObserving() {
@@ -38,7 +38,7 @@ public class StoreKitPurchaseTransactionObserver: PurchaseTransactionObserver {
                 .collect()
                 .compactMap { self?.verifiedTransaction($0) }
 
-            self?.notifyObservers(transactions: latestTransactions)
+            self?.observerNotifier.notify(latestTransactions)
         }
     }
 
@@ -53,11 +53,5 @@ public class StoreKitPurchaseTransactionObserver: PurchaseTransactionObserver {
         case .verified(let transaction):
             return transaction
         }
-    }
-
-    private func notifyObservers(transactions: [Transaction]) {
-        observers
-            .compactMap { $0().1 }
-            .forEach { onUpdate in onUpdate(transactions) }
     }
 }

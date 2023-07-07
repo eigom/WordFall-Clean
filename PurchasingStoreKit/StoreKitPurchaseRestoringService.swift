@@ -1,3 +1,4 @@
+import Purchasing
 import StoreKit
 
 public struct StoreKitPurchaseRestoringService: PurchaseRestoringService {
