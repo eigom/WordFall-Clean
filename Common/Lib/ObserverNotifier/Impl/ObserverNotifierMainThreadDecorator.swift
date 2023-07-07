@@ -6,8 +6,8 @@ public class ObserverNotifierMainThreadDecorator<Notification, Notifier: Observe
         self.notifier = notifier
     }
 
-    public func addObserver(_ observer: AnyObject, onNotified: @escaping (Notification) -> Void) {
-        notifier.addObserver(observer, onNotified: onNotified)
+    public func addObserver(_ observer: AnyObject, onNotify: @escaping (Notification) -> Void) {
+        notifier.addObserver(observer, onNotify: onNotify)
     }
 
     public func removeObserver(_ observer: AnyObject) {

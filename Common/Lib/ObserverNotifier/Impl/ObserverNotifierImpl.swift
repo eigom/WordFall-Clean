@@ -3,10 +3,10 @@ public class ObserverNotifierImpl<Notification>: ObserverNotifier {
 
     public init() {}
 
-    public func addObserver(_ observer: AnyObject, onNotified: @escaping (Notification) -> Void) {
+    public func addObserver(_ observer: AnyObject, onNotify: @escaping (Notification) -> Void) {
         guard !observers.contains(where: { $0().0 === observer }) else { return }
 
-        observers.append({ [weak observer] in (observer, onNotified) })
+        observers.append({ [weak observer] in (observer, onNotify) })
     }
 
     public func removeObserver(_ observer: AnyObject) {
@@ -16,6 +16,6 @@ public class ObserverNotifierImpl<Notification>: ObserverNotifier {
     public func notify(_ notification: Notification) {
         observers
             .compactMap { $0().1 }
-            .forEach { onNotified in onNotified(notification) }
+            .forEach { onNotify in onNotify(notification) }
     }
 }

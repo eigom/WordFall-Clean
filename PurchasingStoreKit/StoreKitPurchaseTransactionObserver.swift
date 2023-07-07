@@ -18,7 +18,7 @@ public class StoreKitPurchaseTransactionObserver<Notifier: ObserverNotifier>: Pu
     }
 
     public func addObserver(_ observer: AnyObject, onUpdated: @escaping ([Transaction]) -> Void) {
-        notifier.addObserver(observer, onNotified: onUpdated)
+        notifier.addObserver(observer, onNotify: onUpdated)
     }
 
     public func removeObserver(_ observer: AnyObject) {
