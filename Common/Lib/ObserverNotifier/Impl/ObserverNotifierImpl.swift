@@ -1,4 +1,4 @@
-public class ObserverNotifier<Notification> {
+public class ObserverNotifierImpl<Notification>: ObserverNotifier {
     private var observers = [() -> (AnyObject?, (Notification) -> Void)]()
 
     public init() {}

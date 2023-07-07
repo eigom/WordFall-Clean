@@ -2,24 +2,27 @@ import Purchasing
 import StoreKit
 import Common
 
-public class StoreKitPurchaseTransactionObserver: PurchaseTransactionObserver {
-    private let observerNotifier = ObserverNotifier<[Transaction]>()
+public class StoreKitPurchaseTransactionObserver<Notifier: ObserverNotifier>: PurchaseTransactionObserver
+        where Notifier.Notification == [Transaction] {
+    private let notifier: Notifier
     private var updateObserverTask: Task<Void, Error>?
 
     public typealias Update = ([Transaction]) -> Void
 
-    public init() {}
+    public init(notifier: Notifier) {
+        self.notifier = notifier
+    }
 
     deinit {
         stopObserving()
     }
 
     public func addObserver(_ observer: AnyObject, onUpdated: @escaping ([Transaction]) -> Void) {
-        observerNotifier.addObserver(observer, onNotified: onUpdated)
+        notifier.addObserver(observer, onNotified: onUpdated)
     }
 
     public func removeObserver(_ observer: AnyObject) {
-        observerNotifier.removeObserver(observer)
+        notifier.removeObserver(observer)
     }
 
     public func startObserving() {
@@ -38,7 +41,7 @@ public class StoreKitPurchaseTransactionObserver: PurchaseTransactionObserver {
                 .collect()
                 .compactMap { self?.verifiedTransaction($0) }
 
-            self?.observerNotifier.notify(latestTransactions)
+            self?.notifier.notify(latestTransactions)
         }
     }
 
