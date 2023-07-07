@@ -108,6 +108,7 @@
 		1AD9294A2A5806AA006B78EA /* Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; };
 		1AD9294B2A5806AA006B78EA /* Words.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AD929572A588643006B78EA /* ObserverNotifierImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929562A588643006B78EA /* ObserverNotifierImpl.swift */; };
+		1AD929592A588B39006B78EA /* ObserverNotifierMainThreadDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929582A588B39006B78EA /* ObserverNotifierMainThreadDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -440,6 +441,7 @@
 		1AD9293D2A580640006B78EA /* SQLiteWordProvider+WordProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SQLiteWordProvider+WordProvider.swift"; sourceTree = "<group>"; };
 		1AD9293F2A58067C006B78EA /* words.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = words.sqlite; sourceTree = "<group>"; };
 		1AD929562A588643006B78EA /* ObserverNotifierImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverNotifierImpl.swift; sourceTree = "<group>"; };
+		1AD929582A588B39006B78EA /* ObserverNotifierMainThreadDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverNotifierMainThreadDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -945,6 +947,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD929562A588643006B78EA /* ObserverNotifierImpl.swift */,
+				1AD929582A588B39006B78EA /* ObserverNotifierMainThreadDecorator.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -1673,6 +1676,7 @@
 				1AD928E52A57F926006B78EA /* ObserverNotifier.swift in Sources */,
 				1AD929092A58038B006B78EA /* AsyncSequence+Extensions.swift in Sources */,
 				1A49828E2A37273B0057828E /* Try.swift in Sources */,
+				1AD929592A588B39006B78EA /* ObserverNotifierMainThreadDecorator.swift in Sources */,
 				1AD929572A588643006B78EA /* ObserverNotifierImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
