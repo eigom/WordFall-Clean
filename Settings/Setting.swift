@@ -66,3 +66,23 @@ class BooleanSetting<Storage: SettingStorage>: Setting where Storage.ValueType =
 
     }
 }
+
+protocol BooleanSettingStorage: SettingStorage where ValueType == Bool {}
+
+class UserDefaultsBooleanSettingStorage: BooleanSettingStorage {
+    func value(for identifier: String) -> Bool? {
+        return true
+    }
+
+    func store(_ value: Bool, for identifier: String) {
+
+    }
+}
+
+let boolSetting = BooleanSetting(
+    identifier: "",
+    storage: UserDefaultsBooleanSettingStorage(),
+    defaultValue: true
+)
+
+// need to have singleton!?
