@@ -7,8 +7,6 @@ public protocol Setting {
     func removeObserver(_ observer: AnyObject)
 }
 
-//public protocol BooleanSetting: Setting where ValueType == Bool {}
-
 public protocol SettingStorage {
     associatedtype ValueType
 
@@ -48,7 +46,7 @@ where Storage.ValueType == ValueType, Notifier.Notification == ValueType {
 }
 //------
 
-public class BooleanUserDefaultsSettingStorage: SettingStorage {
+public class UserDefaultsBooleanSettingStorage: SettingStorage {
     public func value(for identifier: String) -> Bool? {
         return UserDefaults.standard.object(forKey: identifier) as? Bool
     }
@@ -59,15 +57,13 @@ public class BooleanUserDefaultsSettingStorage: SettingStorage {
 }
 
 public enum AppSettings {
-    public static let soundEnableSetting = SettingImpl(
+    public static let soundEnabledSetting: any Setting = SettingImpl(
         identifier: "",
-        storage: BooleanUserDefaultsSettingStorage(),
+        storage: UserDefaultsBooleanSettingStorage(),
         notifier: ObserverNotifierImpl(),
         defaultValue: true
     )
-
 }
-
 
 /*public protocol Setting {
     associatedtype ValueType
