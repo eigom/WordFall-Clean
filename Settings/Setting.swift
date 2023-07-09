@@ -7,7 +7,7 @@ public protocol Setting {
     func removeObserver(_ observer: AnyObject)
 }
 
-public protocol BooleanSetting: Setting where ValueType == Bool {}
+//public protocol BooleanSetting: Setting where ValueType == Bool {}
 
 public protocol SettingStorage {
     associatedtype ValueType
@@ -46,6 +46,28 @@ where Storage.ValueType == ValueType, Notifier.Notification == ValueType {
         notifier.removeObserver(observer)
     }
 }
+//------
+
+public class BooleanUserDefaultsSettingStorage: SettingStorage {
+    public func value(for identifier: String) -> Bool? {
+        return UserDefaults.standard.object(forKey: identifier) as? Bool
+    }
+
+    public func store(_ value: Bool, for identifier: String) {
+        UserDefaults.standard.set(value, forKey: identifier)
+    }
+}
+
+public enum AppSettings {
+    public static let soundEnableSetting = SettingImpl(
+        identifier: "",
+        storage: BooleanUserDefaultsSettingStorage(),
+        notifier: ObserverNotifierImpl(),
+        defaultValue: true
+    )
+
+}
+
 
 /*public protocol Setting {
     associatedtype ValueType
