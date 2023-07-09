@@ -13,7 +13,7 @@ class UserDefaultsWordLengthSettingStorage: SettingStorage {
     }
 }
 
-extension WordLength {
+private extension WordLength {
     var storageValue: UInt {
         switch self {
         case .fixed(let length):
