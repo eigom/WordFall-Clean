@@ -29,8 +29,10 @@ where /*Storage.ValueType == ValueType, */Notifier.Notification == ValueType {
     }
 }
 
-public class BooleanSettingImpl: SettingImpl<Bool, ObserverNotifierImpl<Bool>>, BooleanSetting {
+extension SettingImpl: BooleanSetting where ValueType == Bool {}
+
+/*public class BooleanSettingImpl: SettingImpl<Bool, ObserverNotifierImpl<Bool>>, BooleanSetting {
     public override init(identifier: String, notifier: ObserverNotifierImpl<Bool>, defaultValue: Bool) {
         super.init(identifier: identifier, notifier: notifier, defaultValue: defaultValue)
     }
-}
+}*/

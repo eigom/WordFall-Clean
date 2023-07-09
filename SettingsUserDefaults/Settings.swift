@@ -32,7 +32,7 @@ public enum AppSettings {
     static func f() {
         AppSettings.soundEnabled.value = true
     }
-    public static let soundEnabled: any BooleanSetting = BooleanSettingImpl(
+    public static let soundEnabled: any BooleanSetting = SettingImpl(
         identifier: "SoundEnabled",
         //storage: UserDefaultsBooleanSettingStorage(),
         notifier: ObserverNotifierImpl(),
