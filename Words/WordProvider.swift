@@ -2,12 +2,12 @@ import Common
 
 public protocol WordProvider {
     var availableWordLengths: Try<[UInt]> { get }
-    func nextWord(length: WordLength) -> Try<Word>
+    func nextWord(length: WordLength, maximumLength: UInt) -> Try<Word>
 }
 
 public enum WordLength {
     case fixed(length: UInt)
-    case any(maxLength: UInt)
+    case any
 }
 
 public struct Word {

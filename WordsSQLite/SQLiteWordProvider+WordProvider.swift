@@ -6,10 +6,14 @@ extension SQLiteWordProvider: WordProvider {
         Try { try fetchWordLengths() }
     }
 
-    public func nextWord(length: WordLength) -> Try<Words.Word> {
+    public func nextWord(length: WordLength, maximumLength: UInt) -> Try<Words.Word> {
         Try {
             let availableLengths = try self.availableWordLengths.get
-            let wordLength = try wordLength(for: length, availableLengths: availableLengths)
+            let wordLength = try wordLength(
+                for: length,
+                availableLengths: availableLengths,
+                maximumLength: maximumLength
+            )
             let word = try fetchRandomWord(length: wordLength)
             let definitions = try fetchDefinitions(wordID: word.id)
 
@@ -17,13 +21,17 @@ extension SQLiteWordProvider: WordProvider {
         }
     }
 
-    private func wordLength(for length: WordLength, availableLengths: [UInt]) throws -> UInt {
+    private func wordLength(
+        for length: WordLength,
+        availableLengths: [UInt],
+        maximumLength: UInt
+    ) throws -> UInt {
         switch length {
         case .fixed(let length):
             return length
-        case .any(let maxLength):
+        case .any:
             return availableLengths
-                .filter { $0 <= maxLength }
+                .filter { $0 <= maximumLength }
                 .randomElement() ?? 0
         }
     }

@@ -126,6 +126,8 @@
 		1AD929A52A5B0EFB006B78EA /* Settings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD9295F2A588F06006B78EA /* Settings.framework */; };
 		1AD929AB2A5B0F17006B78EA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929AA2A5B0F17006B78EA /* Settings.swift */; };
 		1AD929AE2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929AD2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift */; };
+		1AD929AF2A5B11E5006B78EA /* Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; };
+		1AD929B52A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929B42A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -381,6 +383,13 @@
 			remoteGlobalIDString = 1AD9295E2A588F06006B78EA;
 			remoteInfo = Settings;
 		};
+		1AD929B12A5B11E5006B78EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB6C39E29D6C4A300A00872;
+			remoteInfo = Words;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -530,6 +539,7 @@
 		1AD929942A5B0EDA006B78EA /* SettingsUserDefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaultsTests.swift; sourceTree = "<group>"; };
 		1AD929AA2A5B0F17006B78EA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1AD929AD2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsBooleanSettingStorage.swift; sourceTree = "<group>"; };
+		1AD929B42A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWordLengthSettingStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -710,6 +720,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD929AF2A5B11E5006B78EA /* Words.framework in Frameworks */,
 				1AD929A12A5B0EFB006B78EA /* Common.framework in Frameworks */,
 				1AD929A52A5B0EFB006B78EA /* Settings.framework in Frameworks */,
 			);
@@ -1131,6 +1142,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD929AD2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift */,
+				1AD929B42A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift */,
 			);
 			path = SettingStorageImpl;
 			sourceTree = "<group>";
@@ -1637,6 +1649,7 @@
 			dependencies = (
 				1AD929A42A5B0EFB006B78EA /* PBXTargetDependency */,
 				1AD929A82A5B0EFB006B78EA /* PBXTargetDependency */,
+				1AD929B22A5B11E5006B78EA /* PBXTargetDependency */,
 			);
 			name = SettingsUserDefaults;
 			productName = SettingsUserDefaults;
@@ -2206,6 +2219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD929AE2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift in Sources */,
+				1AD929B52A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift in Sources */,
 				1AD929AB2A5B0F17006B78EA /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2400,6 +2414,11 @@
 			isa = PBXTargetDependency;
 			target = 1AD9295E2A588F06006B78EA /* Settings */;
 			targetProxy = 1AD929A72A5B0EFB006B78EA /* PBXContainerItemProxy */;
+		};
+		1AD929B22A5B11E5006B78EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB6C39E29D6C4A300A00872 /* Words */;
+			targetProxy = 1AD929B12A5B11E5006B78EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
