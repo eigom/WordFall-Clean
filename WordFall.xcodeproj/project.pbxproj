@@ -127,6 +127,8 @@
 		1AD92A7B2A5C8D96006B78EA /* WordGameLetterTrierImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A7A2A5C8D96006B78EA /* WordGameLetterTrierImpl.swift */; };
 		1AD92A7D2A5C8DA3006B78EA /* WordGameLetterRevealerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A7C2A5C8DA3006B78EA /* WordGameLetterRevealerImpl.swift */; };
 		1AD92A7F2A5C8E58006B78EA /* WordGameElapsedTimeApplierImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A7E2A5C8E58006B78EA /* WordGameElapsedTimeApplierImpl.swift */; };
+		1AD92A812A5C99CF006B78EA /* WordPuzzle+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A802A5C99CF006B78EA /* WordPuzzle+Copy.swift */; };
+		1AD92A832A5C99EF006B78EA /* WordGame+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A822A5C99EF006B78EA /* WordGame+Copy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -509,6 +511,8 @@
 		1AD92A7A2A5C8D96006B78EA /* WordGameLetterTrierImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameLetterTrierImpl.swift; sourceTree = "<group>"; };
 		1AD92A7C2A5C8DA3006B78EA /* WordGameLetterRevealerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameLetterRevealerImpl.swift; sourceTree = "<group>"; };
 		1AD92A7E2A5C8E58006B78EA /* WordGameElapsedTimeApplierImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameElapsedTimeApplierImpl.swift; sourceTree = "<group>"; };
+		1AD92A802A5C99CF006B78EA /* WordPuzzle+Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordPuzzle+Copy.swift"; sourceTree = "<group>"; };
+		1AD92A822A5C99EF006B78EA /* WordGame+Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordGame+Copy.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -989,6 +993,7 @@
 				1AD92A282A5C8958006B78EA /* Impl */,
 				1AD92A222A5C890B006B78EA /* SolvingTime */,
 				1AD92A1C2A5C8864006B78EA /* WordGame.swift */,
+				1AD92A822A5C99EF006B78EA /* WordGame+Copy.swift */,
 				1AD92A1E2A5C8885006B78EA /* WordGameMaker.swift */,
 				1AD92A202A5C88BB006B78EA /* WordGameElapsedTimeApplier.swift */,
 				1AD92A762A5C8CFA006B78EA /* WordGameLetterTrier.swift */,
@@ -1011,6 +1016,7 @@
 			children = (
 				1AD92A122A5C877B006B78EA /* Impl */,
 				1AD92A082A5C8542006B78EA /* WordPuzzle.swift */,
+				1AD92A802A5C99CF006B78EA /* WordPuzzle+Copy.swift */,
 				1AD92A0A2A5C86E9006B78EA /* WordPuzzleLetter.swift */,
 				1AD92A0C2A5C86F8006B78EA /* WordPuzzleMaker.swift */,
 				1AD92A0E2A5C8705006B78EA /* WordPuzzleLetterTrier.swift */,
@@ -2135,6 +2141,7 @@
 				1AD92A272A5C8944006B78EA /* RandomSolvingTimeStrategy.swift in Sources */,
 				1AD92A242A5C8922006B78EA /* SolvingTimeStrategy.swift in Sources */,
 				1AD92A1F2A5C8885006B78EA /* WordGameMaker.swift in Sources */,
+				1AD92A832A5C99EF006B78EA /* WordGame+Copy.swift in Sources */,
 				1AD92A7D2A5C8DA3006B78EA /* WordGameLetterRevealerImpl.swift in Sources */,
 				1AD92A1D2A5C8864006B78EA /* WordGame.swift in Sources */,
 				1AD92A792A5C8D2D006B78EA /* WordGameLetterRevealer.swift in Sources */,
@@ -2159,6 +2166,7 @@
 				1AD92A172A5C87AE006B78EA /* WordPuzzleMakerImpl.swift in Sources */,
 				1AD92A0D2A5C86F8006B78EA /* WordPuzzleMaker.swift in Sources */,
 				1AD92A092A5C8542006B78EA /* WordPuzzle.swift in Sources */,
+				1AD92A812A5C99CF006B78EA /* WordPuzzle+Copy.swift in Sources */,
 				1AD92A0F2A5C8705006B78EA /* WordPuzzleLetterTrier.swift in Sources */,
 				1AD92A1B2A5C87CA006B78EA /* WordPuzzleLetterRevealerImpl.swift in Sources */,
 				1AD92A152A5C8793006B78EA /* Collection+Replacing.swift in Sources */,

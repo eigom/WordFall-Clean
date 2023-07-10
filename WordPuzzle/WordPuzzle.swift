@@ -4,16 +4,3 @@ public struct WordPuzzle {
     public let solutionLetters: [Character?]
     public var isSolved: Bool { wordLetters == solutionLetters }
 }
-
-extension WordPuzzle {
-    func copy(
-        puzzleLetters: [Character?],
-        solutionLetters: [Character?]
-    ) -> WordPuzzle {
-        return WordPuzzle(
-            wordLetters: wordLetters,
-            puzzleLetters: puzzleLetters,
-            solutionLetters: solutionLetters
-        )
-    }
-}
