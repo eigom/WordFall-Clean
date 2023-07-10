@@ -134,6 +134,32 @@
 		1AD929C32A5BEC30006B78EA /* WordLengthSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929C22A5BEC30006B78EA /* WordLengthSetting.swift */; };
 		1AD929C52A5BEC9F006B78EA /* PersistedSetting+BooleanSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929C42A5BEC9F006B78EA /* PersistedSetting+BooleanSetting.swift */; };
 		1AD929C72A5BECC6006B78EA /* PersistedSetting+WordLengthSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929C62A5BECC6006B78EA /* PersistedSetting+WordLengthSetting.swift */; };
+		1AD929D52A5C847E006B78EA /* WordGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929CD2A5C847D006B78EA /* WordGame.framework */; };
+		1AD929DC2A5C847E006B78EA /* WordGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929DB2A5C847E006B78EA /* WordGameTests.swift */; };
+		1AD929DD2A5C847E006B78EA /* WordGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD929CF2A5C847D006B78EA /* WordGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AD929E02A5C847E006B78EA /* WordGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929CD2A5C847D006B78EA /* WordGame.framework */; };
+		1AD929E12A5C847E006B78EA /* WordGame.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929CD2A5C847D006B78EA /* WordGame.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AD929F52A5C84EA006B78EA /* WordPuzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */; };
+		1AD929FC2A5C84EB006B78EA /* WordPuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929FB2A5C84EB006B78EA /* WordPuzzleTests.swift */; };
+		1AD929FD2A5C84EB006B78EA /* WordPuzzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD929EF2A5C84EA006B78EA /* WordPuzzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AD92A002A5C84EB006B78EA /* WordPuzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */; };
+		1AD92A012A5C84EB006B78EA /* WordPuzzle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AD92A092A5C8542006B78EA /* WordPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A082A5C8542006B78EA /* WordPuzzle.swift */; };
+		1AD92A0B2A5C86E9006B78EA /* WordPuzzleLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A0A2A5C86E9006B78EA /* WordPuzzleLetter.swift */; };
+		1AD92A0D2A5C86F8006B78EA /* WordPuzzleMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A0C2A5C86F8006B78EA /* WordPuzzleMaker.swift */; };
+		1AD92A0F2A5C8705006B78EA /* WordPuzzleLetterTrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A0E2A5C8705006B78EA /* WordPuzzleLetterTrier.swift */; };
+		1AD92A112A5C8714006B78EA /* WordPuzzleLetterRevealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A102A5C8713006B78EA /* WordPuzzleLetterRevealer.swift */; };
+		1AD92A152A5C8793006B78EA /* Collection+Replacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A142A5C8793006B78EA /* Collection+Replacing.swift */; };
+		1AD92A172A5C87AE006B78EA /* WordPuzzleMakerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A162A5C87AE006B78EA /* WordPuzzleMakerImpl.swift */; };
+		1AD92A192A5C87BB006B78EA /* WordPuzzleLetterTrierImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A182A5C87BB006B78EA /* WordPuzzleLetterTrierImpl.swift */; };
+		1AD92A1B2A5C87CA006B78EA /* WordPuzzleLetterRevealerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A1A2A5C87CA006B78EA /* WordPuzzleLetterRevealerImpl.swift */; };
+		1AD92A1D2A5C8864006B78EA /* WordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A1C2A5C8864006B78EA /* WordGame.swift */; };
+		1AD92A1F2A5C8885006B78EA /* WordGameMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A1E2A5C8885006B78EA /* WordGameMaker.swift */; };
+		1AD92A212A5C88BB006B78EA /* WordGameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A202A5C88BB006B78EA /* WordGameplay.swift */; };
+		1AD92A242A5C8922006B78EA /* SolvingTimeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A232A5C8922006B78EA /* SolvingTimeStrategy.swift */; };
+		1AD92A272A5C8944006B78EA /* RandomSolvingTimeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A262A5C8944006B78EA /* RandomSolvingTimeStrategy.swift */; };
+		1AD92A2A2A5C896A006B78EA /* WordGameMakerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A292A5C896A006B78EA /* WordGameMakerImpl.swift */; };
+		1AD92A2C2A5C8979006B78EA /* WordGameplayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A2B2A5C8979006B78EA /* WordGameplayImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -410,6 +436,48 @@
 			remoteGlobalIDString = 1AB6C39E29D6C4A300A00872;
 			remoteInfo = Words;
 		};
+		1AD929D62A5C847E006B78EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD929CC2A5C847D006B78EA;
+			remoteInfo = WordGame;
+		};
+		1AD929D82A5C847E006B78EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB92FF62A55C0E700F82E54;
+			remoteInfo = WordFall_iOS;
+		};
+		1AD929DE2A5C847E006B78EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD929CC2A5C847D006B78EA;
+			remoteInfo = WordGame;
+		};
+		1AD929F62A5C84EA006B78EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD929EC2A5C84E9006B78EA;
+			remoteInfo = WordPuzzle;
+		};
+		1AD929F82A5C84EB006B78EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB92FF62A55C0E700F82E54;
+			remoteInfo = WordFall_iOS;
+		};
+		1AD929FE2A5C84EB006B78EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD929EC2A5C84E9006B78EA;
+			remoteInfo = WordPuzzle;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -433,12 +501,14 @@
 				1AD9299A2A5B0EDA006B78EA /* SettingsUserDefaults.framework in Embed Frameworks */,
 				1AB930362A55C18C00F82E54 /* Words.framework in Embed Frameworks */,
 				1AD928FF2A580331006B78EA /* PurchasingStoreKit.framework in Embed Frameworks */,
+				1AD929E12A5C847E006B78EA /* WordGame.framework in Embed Frameworks */,
 				1AB9302A2A55C18C00F82E54 /* Puzzle.framework in Embed Frameworks */,
 				1AB930262A55C18C00F82E54 /* Game.framework in Embed Frameworks */,
 				1AB9302E2A55C18C00F82E54 /* SQLite.framework in Embed Frameworks */,
 				1AD929332A58060C006B78EA /* WordsSQLite.framework in Embed Frameworks */,
 				1AB930222A55C18C00F82E54 /* Common.framework in Embed Frameworks */,
 				1A607F082A56A96D007C6150 /* Purchasing.framework in Embed Frameworks */,
+				1AD92A012A5C84EB006B78EA /* WordPuzzle.framework in Embed Frameworks */,
 				1AD929732A588F08006B78EA /* Settings.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -564,6 +634,30 @@
 		1AD929C22A5BEC30006B78EA /* WordLengthSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLengthSetting.swift; sourceTree = "<group>"; };
 		1AD929C42A5BEC9F006B78EA /* PersistedSetting+BooleanSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistedSetting+BooleanSetting.swift"; sourceTree = "<group>"; };
 		1AD929C62A5BECC6006B78EA /* PersistedSetting+WordLengthSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistedSetting+WordLengthSetting.swift"; sourceTree = "<group>"; };
+		1AD929CD2A5C847D006B78EA /* WordGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WordGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD929CF2A5C847D006B78EA /* WordGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordGame.h; sourceTree = "<group>"; };
+		1AD929D42A5C847E006B78EA /* WordGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD929DB2A5C847E006B78EA /* WordGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameTests.swift; sourceTree = "<group>"; };
+		1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WordPuzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD929EF2A5C84EA006B78EA /* WordPuzzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordPuzzle.h; sourceTree = "<group>"; };
+		1AD929F42A5C84EA006B78EA /* WordPuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordPuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD929FB2A5C84EB006B78EA /* WordPuzzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleTests.swift; sourceTree = "<group>"; };
+		1AD92A082A5C8542006B78EA /* WordPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzle.swift; sourceTree = "<group>"; };
+		1AD92A0A2A5C86E9006B78EA /* WordPuzzleLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleLetter.swift; sourceTree = "<group>"; };
+		1AD92A0C2A5C86F8006B78EA /* WordPuzzleMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleMaker.swift; sourceTree = "<group>"; };
+		1AD92A0E2A5C8705006B78EA /* WordPuzzleLetterTrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleLetterTrier.swift; sourceTree = "<group>"; };
+		1AD92A102A5C8713006B78EA /* WordPuzzleLetterRevealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleLetterRevealer.swift; sourceTree = "<group>"; };
+		1AD92A142A5C8793006B78EA /* Collection+Replacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Replacing.swift"; sourceTree = "<group>"; };
+		1AD92A162A5C87AE006B78EA /* WordPuzzleMakerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleMakerImpl.swift; sourceTree = "<group>"; };
+		1AD92A182A5C87BB006B78EA /* WordPuzzleLetterTrierImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleLetterTrierImpl.swift; sourceTree = "<group>"; };
+		1AD92A1A2A5C87CA006B78EA /* WordPuzzleLetterRevealerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleLetterRevealerImpl.swift; sourceTree = "<group>"; };
+		1AD92A1C2A5C8864006B78EA /* WordGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGame.swift; sourceTree = "<group>"; };
+		1AD92A1E2A5C8885006B78EA /* WordGameMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameMaker.swift; sourceTree = "<group>"; };
+		1AD92A202A5C88BB006B78EA /* WordGameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameplay.swift; sourceTree = "<group>"; };
+		1AD92A232A5C8922006B78EA /* SolvingTimeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvingTimeStrategy.swift; sourceTree = "<group>"; };
+		1AD92A262A5C8944006B78EA /* RandomSolvingTimeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSolvingTimeStrategy.swift; sourceTree = "<group>"; };
+		1AD92A292A5C896A006B78EA /* WordGameMakerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameMakerImpl.swift; sourceTree = "<group>"; };
+		1AD92A2B2A5C8979006B78EA /* WordGameplayImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameplayImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -666,12 +760,14 @@
 				1AD929992A5B0EDA006B78EA /* SettingsUserDefaults.framework in Frameworks */,
 				1AB930352A55C18C00F82E54 /* Words.framework in Frameworks */,
 				1AD928FE2A580331006B78EA /* PurchasingStoreKit.framework in Frameworks */,
+				1AD929E02A5C847E006B78EA /* WordGame.framework in Frameworks */,
 				1AB930292A55C18C00F82E54 /* Puzzle.framework in Frameworks */,
 				1AB930252A55C18C00F82E54 /* Game.framework in Frameworks */,
 				1AB9302D2A55C18C00F82E54 /* SQLite.framework in Frameworks */,
 				1AD929322A58060C006B78EA /* WordsSQLite.framework in Frameworks */,
 				1AB930212A55C18C00F82E54 /* Common.framework in Frameworks */,
 				1A607F072A56A96D007C6150 /* Purchasing.framework in Frameworks */,
+				1AD92A002A5C84EB006B78EA /* WordPuzzle.framework in Frameworks */,
 				1AD929722A588F08006B78EA /* Settings.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -760,6 +856,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AD929CA2A5C847D006B78EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929D12A5C847D006B78EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD929D52A5C847E006B78EA /* WordGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929EA2A5C84E9006B78EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929F12A5C84EA006B78EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD929F52A5C84EA006B78EA /* WordPuzzle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -820,10 +946,12 @@
 				1AB6C3AC29D6C4A400A00872 /* WordsTests */,
 				1AD929202A58060B006B78EA /* WordsSQLite */,
 				1AD9292C2A58060C006B78EA /* WordsSQLiteTests */,
-				1AB6C43829D9A42600A00872 /* SQLite */,
-				1AB6C44429D9A42700A00872 /* SQLiteTests */,
+				1AD929EE2A5C84EA006B78EA /* WordPuzzle */,
+				1AD929FA2A5C84EB006B78EA /* WordPuzzleTests */,
 				1AB6C4B629E047B400A00872 /* Puzzle */,
 				1AB6C4C229E047B500A00872 /* PuzzleTests */,
+				1AD929CE2A5C847D006B78EA /* WordGame */,
+				1AD929DA2A5C847E006B78EA /* WordGameTests */,
 				1AB6C4DB29E08B3800A00872 /* Game */,
 				1AB6C4E729E08B3900A00872 /* GameTests */,
 				1A607EF52A56A968007C6150 /* Purchasing */,
@@ -834,6 +962,8 @@
 				1AD9296C2A588F08006B78EA /* SettingsTests */,
 				1AD929872A5B0ED8006B78EA /* SettingsUserDefaults */,
 				1AD929932A5B0EDA006B78EA /* SettingsUserDefaultsTests */,
+				1AB6C43829D9A42600A00872 /* SQLite */,
+				1AB6C44429D9A42700A00872 /* SQLiteTests */,
 				1A4982722A3727210057828E /* Common */,
 				1A49827E2A3727220057828E /* CommonTests */,
 				1AB6C32229D6BDA300A00872 /* Products */,
@@ -867,6 +997,10 @@
 				1AD929662A588F07006B78EA /* SettingsTests.xctest */,
 				1AD929862A5B0ED8006B78EA /* SettingsUserDefaults.framework */,
 				1AD9298D2A5B0ED9006B78EA /* SettingsUserDefaultsTests.xctest */,
+				1AD929CD2A5C847D006B78EA /* WordGame.framework */,
+				1AD929D42A5C847E006B78EA /* WordGameTests.xctest */,
+				1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */,
+				1AD929F42A5C84EA006B78EA /* WordPuzzleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1177,6 +1311,94 @@
 			path = SettingStorageImpl;
 			sourceTree = "<group>";
 		};
+		1AD929CE2A5C847D006B78EA /* WordGame */ = {
+			isa = PBXGroup;
+			children = (
+				1AD92A282A5C8958006B78EA /* Impl */,
+				1AD92A222A5C890B006B78EA /* SolvingTime */,
+				1AD92A1C2A5C8864006B78EA /* WordGame.swift */,
+				1AD92A1E2A5C8885006B78EA /* WordGameMaker.swift */,
+				1AD92A202A5C88BB006B78EA /* WordGameplay.swift */,
+				1AD929CF2A5C847D006B78EA /* WordGame.h */,
+			);
+			path = WordGame;
+			sourceTree = "<group>";
+		};
+		1AD929DA2A5C847E006B78EA /* WordGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AD929DB2A5C847E006B78EA /* WordGameTests.swift */,
+			);
+			path = WordGameTests;
+			sourceTree = "<group>";
+		};
+		1AD929EE2A5C84EA006B78EA /* WordPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				1AD92A122A5C877B006B78EA /* Impl */,
+				1AD92A082A5C8542006B78EA /* WordPuzzle.swift */,
+				1AD92A0A2A5C86E9006B78EA /* WordPuzzleLetter.swift */,
+				1AD92A0C2A5C86F8006B78EA /* WordPuzzleMaker.swift */,
+				1AD92A0E2A5C8705006B78EA /* WordPuzzleLetterTrier.swift */,
+				1AD92A102A5C8713006B78EA /* WordPuzzleLetterRevealer.swift */,
+				1AD929EF2A5C84EA006B78EA /* WordPuzzle.h */,
+			);
+			path = WordPuzzle;
+			sourceTree = "<group>";
+		};
+		1AD929FA2A5C84EB006B78EA /* WordPuzzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AD929FB2A5C84EB006B78EA /* WordPuzzleTests.swift */,
+			);
+			path = WordPuzzleTests;
+			sourceTree = "<group>";
+		};
+		1AD92A122A5C877B006B78EA /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				1AD92A132A5C8785006B78EA /* Lib */,
+				1AD92A162A5C87AE006B78EA /* WordPuzzleMakerImpl.swift */,
+				1AD92A182A5C87BB006B78EA /* WordPuzzleLetterTrierImpl.swift */,
+				1AD92A1A2A5C87CA006B78EA /* WordPuzzleLetterRevealerImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		1AD92A132A5C8785006B78EA /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1AD92A142A5C8793006B78EA /* Collection+Replacing.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		1AD92A222A5C890B006B78EA /* SolvingTime */ = {
+			isa = PBXGroup;
+			children = (
+				1AD92A252A5C8931006B78EA /* Impl */,
+				1AD92A232A5C8922006B78EA /* SolvingTimeStrategy.swift */,
+			);
+			path = SolvingTime;
+			sourceTree = "<group>";
+		};
+		1AD92A252A5C8931006B78EA /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				1AD92A262A5C8944006B78EA /* RandomSolvingTimeStrategy.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		1AD92A282A5C8958006B78EA /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				1AD92A292A5C896A006B78EA /* WordGameMakerImpl.swift */,
+				1AD92A2B2A5C8979006B78EA /* WordGameplayImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1257,6 +1479,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD929962A5B0EDA006B78EA /* SettingsUserDefaults.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929C82A5C847D006B78EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD929DD2A5C847E006B78EA /* WordGame.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929E82A5C84E9006B78EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD929FD2A5C84EB006B78EA /* WordPuzzle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1506,6 +1744,8 @@
 				1AD929312A58060C006B78EA /* PBXTargetDependency */,
 				1AD929712A588F08006B78EA /* PBXTargetDependency */,
 				1AD929982A5B0EDA006B78EA /* PBXTargetDependency */,
+				1AD929DF2A5C847E006B78EA /* PBXTargetDependency */,
+				1AD929FF2A5C84EB006B78EA /* PBXTargetDependency */,
 			);
 			name = WordFall_iOS;
 			productName = WordFall_iOS;
@@ -1707,6 +1947,80 @@
 			productReference = 1AD9298D2A5B0ED9006B78EA /* SettingsUserDefaultsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1AD929CC2A5C847D006B78EA /* WordGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD929E22A5C847E006B78EA /* Build configuration list for PBXNativeTarget "WordGame" */;
+			buildPhases = (
+				1AD929C82A5C847D006B78EA /* Headers */,
+				1AD929C92A5C847D006B78EA /* Sources */,
+				1AD929CA2A5C847D006B78EA /* Frameworks */,
+				1AD929CB2A5C847D006B78EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordGame;
+			productName = WordGame;
+			productReference = 1AD929CD2A5C847D006B78EA /* WordGame.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1AD929D32A5C847D006B78EA /* WordGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD929E52A5C847E006B78EA /* Build configuration list for PBXNativeTarget "WordGameTests" */;
+			buildPhases = (
+				1AD929D02A5C847D006B78EA /* Sources */,
+				1AD929D12A5C847D006B78EA /* Frameworks */,
+				1AD929D22A5C847D006B78EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AD929D72A5C847E006B78EA /* PBXTargetDependency */,
+				1AD929D92A5C847E006B78EA /* PBXTargetDependency */,
+			);
+			name = WordGameTests;
+			productName = WordGameTests;
+			productReference = 1AD929D42A5C847E006B78EA /* WordGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AD929EC2A5C84E9006B78EA /* WordPuzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD92A022A5C84EB006B78EA /* Build configuration list for PBXNativeTarget "WordPuzzle" */;
+			buildPhases = (
+				1AD929E82A5C84E9006B78EA /* Headers */,
+				1AD929E92A5C84E9006B78EA /* Sources */,
+				1AD929EA2A5C84E9006B78EA /* Frameworks */,
+				1AD929EB2A5C84E9006B78EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordPuzzle;
+			productName = WordPuzzle;
+			productReference = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1AD929F32A5C84EA006B78EA /* WordPuzzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD92A052A5C84EB006B78EA /* Build configuration list for PBXNativeTarget "WordPuzzleTests" */;
+			buildPhases = (
+				1AD929F02A5C84EA006B78EA /* Sources */,
+				1AD929F12A5C84EA006B78EA /* Frameworks */,
+				1AD929F22A5C84EA006B78EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AD929F72A5C84EA006B78EA /* PBXTargetDependency */,
+				1AD929F92A5C84EB006B78EA /* PBXTargetDependency */,
+			);
+			name = WordPuzzleTests;
+			productName = WordPuzzleTests;
+			productReference = 1AD929F42A5C84EA006B78EA /* WordPuzzleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1807,6 +2121,22 @@
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 1AB92FF62A55C0E700F82E54;
 					};
+					1AD929CC2A5C847D006B78EA = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+					};
+					1AD929D32A5C847D006B78EA = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1AB92FF62A55C0E700F82E54;
+					};
+					1AD929EC2A5C84E9006B78EA = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+					};
+					1AD929F32A5C84EA006B78EA = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1AB92FF62A55C0E700F82E54;
+					};
 				};
 			};
 			buildConfigurationList = 1AB6C31C29D6BDA300A00872 /* Build configuration list for PBXProject "WordFall" */;
@@ -1845,6 +2175,10 @@
 				1AD929652A588F07006B78EA /* SettingsTests */,
 				1AD929852A5B0ED8006B78EA /* SettingsUserDefaults */,
 				1AD9298C2A5B0ED9006B78EA /* SettingsUserDefaultsTests */,
+				1AD929CC2A5C847D006B78EA /* WordGame */,
+				1AD929D32A5C847D006B78EA /* WordGameTests */,
+				1AD929EC2A5C84E9006B78EA /* WordPuzzle */,
+				1AD929F32A5C84EA006B78EA /* WordPuzzleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -2008,6 +2342,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1AD9298B2A5B0ED9006B78EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929CB2A5C847D006B78EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929D22A5C847D006B78EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929EB2A5C84E9006B78EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929F22A5C84EA006B78EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2268,6 +2630,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AD929C92A5C847D006B78EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD92A2A2A5C896A006B78EA /* WordGameMakerImpl.swift in Sources */,
+				1AD92A272A5C8944006B78EA /* RandomSolvingTimeStrategy.swift in Sources */,
+				1AD92A242A5C8922006B78EA /* SolvingTimeStrategy.swift in Sources */,
+				1AD92A1F2A5C8885006B78EA /* WordGameMaker.swift in Sources */,
+				1AD92A1D2A5C8864006B78EA /* WordGame.swift in Sources */,
+				1AD92A2C2A5C8979006B78EA /* WordGameplayImpl.swift in Sources */,
+				1AD92A212A5C88BB006B78EA /* WordGameplay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929D02A5C847D006B78EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD929DC2A5C847E006B78EA /* WordGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929E92A5C84E9006B78EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD92A192A5C87BB006B78EA /* WordPuzzleLetterTrierImpl.swift in Sources */,
+				1AD92A172A5C87AE006B78EA /* WordPuzzleMakerImpl.swift in Sources */,
+				1AD92A0D2A5C86F8006B78EA /* WordPuzzleMaker.swift in Sources */,
+				1AD92A092A5C8542006B78EA /* WordPuzzle.swift in Sources */,
+				1AD92A0F2A5C8705006B78EA /* WordPuzzleLetterTrier.swift in Sources */,
+				1AD92A1B2A5C87CA006B78EA /* WordPuzzleLetterRevealerImpl.swift in Sources */,
+				1AD92A152A5C8793006B78EA /* Collection+Replacing.swift in Sources */,
+				1AD92A112A5C8714006B78EA /* WordPuzzleLetterRevealer.swift in Sources */,
+				1AD92A0B2A5C86E9006B78EA /* WordPuzzleLetter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD929F02A5C84EA006B78EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD929FC2A5C84EB006B78EA /* WordPuzzleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2466,6 +2874,36 @@
 			target = 1AB6C39E29D6C4A300A00872 /* Words */;
 			targetProxy = 1AD929BD2A5BEB91006B78EA /* PBXContainerItemProxy */;
 		};
+		1AD929D72A5C847E006B78EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD929CC2A5C847D006B78EA /* WordGame */;
+			targetProxy = 1AD929D62A5C847E006B78EA /* PBXContainerItemProxy */;
+		};
+		1AD929D92A5C847E006B78EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB92FF62A55C0E700F82E54 /* WordFall_iOS */;
+			targetProxy = 1AD929D82A5C847E006B78EA /* PBXContainerItemProxy */;
+		};
+		1AD929DF2A5C847E006B78EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD929CC2A5C847D006B78EA /* WordGame */;
+			targetProxy = 1AD929DE2A5C847E006B78EA /* PBXContainerItemProxy */;
+		};
+		1AD929F72A5C84EA006B78EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD929EC2A5C84E9006B78EA /* WordPuzzle */;
+			targetProxy = 1AD929F62A5C84EA006B78EA /* PBXContainerItemProxy */;
+		};
+		1AD929F92A5C84EB006B78EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB92FF62A55C0E700F82E54 /* WordFall_iOS */;
+			targetProxy = 1AD929F82A5C84EB006B78EA /* PBXContainerItemProxy */;
+		};
+		1AD929FF2A5C84EB006B78EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD929EC2A5C84E9006B78EA /* WordPuzzle */;
+			targetProxy = 1AD929FE2A5C84EB006B78EA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -2484,7 +2922,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2520,7 +2958,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2548,7 +2986,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.CommonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2567,7 +3005,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.CommonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2817,6 +3255,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2853,6 +3292,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2880,6 +3320,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2898,6 +3339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2923,6 +3365,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2957,6 +3400,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2984,6 +3428,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.SQLiteTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3002,6 +3447,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.SQLiteTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3028,6 +3474,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3064,6 +3511,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3091,6 +3539,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.PuzzleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3109,6 +3558,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.PuzzleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3135,6 +3585,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3171,6 +3622,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3198,6 +3650,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.GameTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3216,6 +3669,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.GameTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3802,6 +4256,224 @@
 			};
 			name = Release;
 		};
+		1AD929E32A5C847E006B78EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordGame";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1AD929E42A5C847E006B78EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordGame";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1AD929E62A5C847E006B78EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall_iOS";
+			};
+			name = Debug;
+		};
+		1AD929E72A5C847E006B78EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall_iOS";
+			};
+			name = Release;
+		};
+		1AD92A032A5C84EB006B78EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordPuzzle";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1AD92A042A5C84EB006B78EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordPuzzle";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1AD92A062A5C84EB006B78EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordPuzzleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall_iOS";
+			};
+			name = Debug;
+		};
+		1AD92A072A5C84EB006B78EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Z3949Y4B2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordPuzzleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall_iOS";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4017,6 +4689,42 @@
 			buildConfigurations = (
 				1AD9299F2A5B0EDA006B78EA /* Debug */,
 				1AD929A02A5B0EDA006B78EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD929E22A5C847E006B78EA /* Build configuration list for PBXNativeTarget "WordGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD929E32A5C847E006B78EA /* Debug */,
+				1AD929E42A5C847E006B78EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD929E52A5C847E006B78EA /* Build configuration list for PBXNativeTarget "WordGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD929E62A5C847E006B78EA /* Debug */,
+				1AD929E72A5C847E006B78EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD92A022A5C84EB006B78EA /* Build configuration list for PBXNativeTarget "WordPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD92A032A5C84EB006B78EA /* Debug */,
+				1AD92A042A5C84EB006B78EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD92A052A5C84EB006B78EA /* Build configuration list for PBXNativeTarget "WordPuzzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD92A062A5C84EB006B78EA /* Debug */,
+				1AD92A072A5C84EB006B78EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
