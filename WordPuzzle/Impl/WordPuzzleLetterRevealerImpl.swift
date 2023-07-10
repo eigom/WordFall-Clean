@@ -27,7 +27,10 @@ public struct WordPuzzleLetterRevealerImpl: WordPuzzleLetterRevealer {
         return (newPuzzle, revealedLetter)
     }
 
-    public func revealLetters(at puzzleLetterIndexes: [Int], in puzzle: WordPuzzle) -> (WordPuzzle, [WordPuzzleLetter]) {
+    public func revealLetters(
+        at puzzleLetterIndexes: [Int],
+        in puzzle: WordPuzzle) -> (WordPuzzle, [WordPuzzleLetter]
+    ) {
         return puzzleLetterIndexes.reduce((puzzle, [WordPuzzleLetter]())) { partialResult, index in
             let (puzzle, letters) = partialResult
             let (newPuzzle, revealedLetter) = revealLetter(at: index, in: puzzle)

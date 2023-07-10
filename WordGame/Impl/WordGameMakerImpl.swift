@@ -1,8 +1,11 @@
-//
-//  WordGameMakerImpl.swift
-//  WordGame
-//
-//  Created by Eigo Madaloja on 10.07.2023.
-//
+import WordPuzzle
 
-import Foundation
+public struct WordGameMakerImpl: WordGameMaker {
+    public func makeGame(puzzle: WordPuzzle, solvingTimeStrategy: SolvingTimeStrategy) -> WordGame {
+        return WordGame(
+            puzzle: puzzle,
+            totalSolvingTimeSeconds: solvingTimeStrategy.totalSolvingTimeSeconds,
+            letterSolvingTimeSeconds: solvingTimeStrategy.letterSolvingTimeSeconds
+        )
+    }
+}
