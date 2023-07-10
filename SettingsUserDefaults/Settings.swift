@@ -2,28 +2,24 @@ import Settings
 import Common
 
 public enum AppSettings {
-    static func f() {
-        AppSettings.soundEnabled.value = true
-    }
-    public static let soundEnabled: any BooleanSetting = SettingImpl(
+    public static let soundEnabled: any BooleanSetting = PersistedSetting(
         identifier: "SoundEnabled",
         storage: UserDefaultsBooleanSettingStorage(),
         notifier: ObserverNotifierImpl(),
         defaultValue: true
     )
 
-    public static let revealingPurchased: any BooleanSetting = SettingImpl(
+    public static let revealingPurchased: any BooleanSetting = PersistedSetting(
         identifier: "RevealingPurchased",
         storage: UserDefaultsBooleanSettingStorage(),
         notifier: ObserverNotifierImpl(),
         defaultValue: false
     )
 
-    public static let wordLength: any Setting = SettingImpl(
+    public static let wordLength: any WordLengthSetting = PersistedSetting(
         identifier: "WordLength",
-        //storage: UserDefaultsWordLengthSettingStorage(),
+        storage: UserDefaultsWordLengthSettingStorage(),
         notifier: ObserverNotifierImpl(),
         defaultValue: .any
     )
 }
-

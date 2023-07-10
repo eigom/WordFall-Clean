@@ -1,6 +1,6 @@
 import Common
 
-public class SettingImpl<ValueType, Storage: SettingStorage, Notifier: ObserverNotifier>: Setting
+public class PersistedSetting<ValueType, Storage: SettingStorage, Notifier: ObserverNotifier>: Setting
 where Storage.ValueType == ValueType, Notifier.Notification == ValueType {
     private let identifier: String
     private let storage: Storage
@@ -28,5 +28,3 @@ where Storage.ValueType == ValueType, Notifier.Notification == ValueType {
         notifier.removeObserver(observer)
     }
 }
-
-extension SettingImpl: BooleanSetting where ValueType == Bool {}

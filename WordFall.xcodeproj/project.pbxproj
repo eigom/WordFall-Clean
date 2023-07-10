@@ -116,7 +116,7 @@
 		1AD929732A588F08006B78EA /* Settings.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD9295F2A588F06006B78EA /* Settings.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AD9297B2A589068006B78EA /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9297A2A589068006B78EA /* Setting.swift */; };
 		1AD9297D2A5B0DB5006B78EA /* SettingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9297C2A5B0DB5006B78EA /* SettingStorage.swift */; };
-		1AD929802A5B0DE3006B78EA /* SettingImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9297F2A5B0DE3006B78EA /* SettingImpl.swift */; };
+		1AD929802A5B0DE3006B78EA /* PersistedSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9297F2A5B0DE3006B78EA /* PersistedSetting.swift */; };
 		1AD9298E2A5B0ED9006B78EA /* SettingsUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929862A5B0ED8006B78EA /* SettingsUserDefaults.framework */; };
 		1AD929952A5B0EDA006B78EA /* SettingsUserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929942A5B0EDA006B78EA /* SettingsUserDefaultsTests.swift */; };
 		1AD929962A5B0EDA006B78EA /* SettingsUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD929882A5B0ED8006B78EA /* SettingsUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -128,6 +128,12 @@
 		1AD929AE2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929AD2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift */; };
 		1AD929AF2A5B11E5006B78EA /* Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; };
 		1AD929B52A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929B42A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift */; };
+		1AD929B62A5BEB27006B78EA /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
+		1AD929BB2A5BEB91006B78EA /* Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C39F29D6C4A300A00872 /* Words.framework */; };
+		1AD929C12A5BEC22006B78EA /* BooleanSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929C02A5BEC22006B78EA /* BooleanSetting.swift */; };
+		1AD929C32A5BEC30006B78EA /* WordLengthSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929C22A5BEC30006B78EA /* WordLengthSetting.swift */; };
+		1AD929C52A5BEC9F006B78EA /* PersistedSetting+BooleanSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929C42A5BEC9F006B78EA /* PersistedSetting+BooleanSetting.swift */; };
+		1AD929C72A5BECC6006B78EA /* PersistedSetting+WordLengthSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929C62A5BECC6006B78EA /* PersistedSetting+WordLengthSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -390,6 +396,20 @@
 			remoteGlobalIDString = 1AB6C39E29D6C4A300A00872;
 			remoteInfo = Words;
 		};
+		1AD929B82A5BEB27006B78EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A4982702A3727210057828E;
+			remoteInfo = Common;
+		};
+		1AD929BD2A5BEB91006B78EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB6C39E29D6C4A300A00872;
+			remoteInfo = Words;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -532,7 +552,7 @@
 		1AD9296D2A588F08006B78EA /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
 		1AD9297A2A589068006B78EA /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		1AD9297C2A5B0DB5006B78EA /* SettingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStorage.swift; sourceTree = "<group>"; };
-		1AD9297F2A5B0DE3006B78EA /* SettingImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImpl.swift; sourceTree = "<group>"; };
+		1AD9297F2A5B0DE3006B78EA /* PersistedSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistedSetting.swift; sourceTree = "<group>"; };
 		1AD929862A5B0ED8006B78EA /* SettingsUserDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SettingsUserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD929882A5B0ED8006B78EA /* SettingsUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsUserDefaults.h; sourceTree = "<group>"; };
 		1AD9298D2A5B0ED9006B78EA /* SettingsUserDefaultsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettingsUserDefaultsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -540,6 +560,10 @@
 		1AD929AA2A5B0F17006B78EA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1AD929AD2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsBooleanSettingStorage.swift; sourceTree = "<group>"; };
 		1AD929B42A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWordLengthSettingStorage.swift; sourceTree = "<group>"; };
+		1AD929C02A5BEC22006B78EA /* BooleanSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanSetting.swift; sourceTree = "<group>"; };
+		1AD929C22A5BEC30006B78EA /* WordLengthSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLengthSetting.swift; sourceTree = "<group>"; };
+		1AD929C42A5BEC9F006B78EA /* PersistedSetting+BooleanSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistedSetting+BooleanSetting.swift"; sourceTree = "<group>"; };
+		1AD929C62A5BECC6006B78EA /* PersistedSetting+WordLengthSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistedSetting+WordLengthSetting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -705,6 +729,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD929BB2A5BEB91006B78EA /* Words.framework in Frameworks */,
+				1AD929B62A5BEB27006B78EA /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1098,6 +1124,8 @@
 			children = (
 				1AD9297E2A5B0DD5006B78EA /* Impl */,
 				1AD9297A2A589068006B78EA /* Setting.swift */,
+				1AD929C02A5BEC22006B78EA /* BooleanSetting.swift */,
+				1AD929C22A5BEC30006B78EA /* WordLengthSetting.swift */,
 				1AD9297C2A5B0DB5006B78EA /* SettingStorage.swift */,
 				1AD929612A588F07006B78EA /* Settings.h */,
 			);
@@ -1115,7 +1143,9 @@
 		1AD9297E2A5B0DD5006B78EA /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				1AD9297F2A5B0DE3006B78EA /* SettingImpl.swift */,
+				1AD9297F2A5B0DE3006B78EA /* PersistedSetting.swift */,
+				1AD929C42A5BEC9F006B78EA /* PersistedSetting+BooleanSetting.swift */,
+				1AD929C62A5BECC6006B78EA /* PersistedSetting+WordLengthSetting.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -1610,6 +1640,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1AD929B92A5BEB27006B78EA /* PBXTargetDependency */,
+				1AD929BE2A5BEB91006B78EA /* PBXTargetDependency */,
 			);
 			name = Settings;
 			productName = Settings;
@@ -2200,9 +2232,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD929802A5B0DE3006B78EA /* SettingImpl.swift in Sources */,
+				1AD929802A5B0DE3006B78EA /* PersistedSetting.swift in Sources */,
+				1AD929C12A5BEC22006B78EA /* BooleanSetting.swift in Sources */,
+				1AD929C72A5BECC6006B78EA /* PersistedSetting+WordLengthSetting.swift in Sources */,
+				1AD929C52A5BEC9F006B78EA /* PersistedSetting+BooleanSetting.swift in Sources */,
 				1AD9297D2A5B0DB5006B78EA /* SettingStorage.swift in Sources */,
 				1AD9297B2A589068006B78EA /* Setting.swift in Sources */,
+				1AD929C32A5BEC30006B78EA /* WordLengthSetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2419,6 +2455,16 @@
 			isa = PBXTargetDependency;
 			target = 1AB6C39E29D6C4A300A00872 /* Words */;
 			targetProxy = 1AD929B12A5B11E5006B78EA /* PBXContainerItemProxy */;
+		};
+		1AD929B92A5BEB27006B78EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A4982702A3727210057828E /* Common */;
+			targetProxy = 1AD929B82A5BEB27006B78EA /* PBXContainerItemProxy */;
+		};
+		1AD929BE2A5BEB91006B78EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB6C39E29D6C4A300A00872 /* Words */;
+			targetProxy = 1AD929BD2A5BEB91006B78EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -6,5 +6,3 @@ public protocol Setting: AnyObject {
     func addObserver(_ observer: AnyObject, onUpdated: @escaping (ValueType) -> Void)
     func removeObserver(_ observer: AnyObject)
 }
-
-public protocol BooleanSetting: Setting where ValueType == Bool {}
