@@ -1,7 +1,7 @@
 import Settings
 import Common
 
-public enum AppSettings {
+public enum UserDefaultsSettings: Settings {
     public static let soundEnabled: any BooleanSetting = PersistedSetting(
         identifier: "SoundEnabled",
         storage: UserDefaultsBooleanSettingStorage(),

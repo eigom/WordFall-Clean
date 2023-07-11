@@ -75,7 +75,7 @@
 		1AD9299A2A5B0EDA006B78EA /* SettingsUserDefaults.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929862A5B0ED8006B78EA /* SettingsUserDefaults.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AD929A12A5B0EFB006B78EA /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
 		1AD929A52A5B0EFB006B78EA /* Settings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD9295F2A588F06006B78EA /* Settings.framework */; };
-		1AD929AB2A5B0F17006B78EA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929AA2A5B0F17006B78EA /* Settings.swift */; };
+		1AD929AB2A5B0F17006B78EA /* UserDefaultsSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929AA2A5B0F17006B78EA /* UserDefaultsSettings.swift */; };
 		1AD929AE2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929AD2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift */; };
 		1AD929B52A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929B42A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift */; };
 		1AD929B62A5BEB27006B78EA /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
@@ -129,6 +129,7 @@
 		1AD92A7F2A5C8E58006B78EA /* WordGameElapsedTimeApplierImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A7E2A5C8E58006B78EA /* WordGameElapsedTimeApplierImpl.swift */; };
 		1AD92A812A5C99CF006B78EA /* WordPuzzle+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A802A5C99CF006B78EA /* WordPuzzle+Copy.swift */; };
 		1AD92A832A5C99EF006B78EA /* WordGame+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A822A5C99EF006B78EA /* WordGame+Copy.swift */; };
+		1AD92A8E2A5DAC3A006B78EA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A8D2A5DAC3A006B78EA /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -464,7 +465,7 @@
 		1AD929882A5B0ED8006B78EA /* SettingsUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsUserDefaults.h; sourceTree = "<group>"; };
 		1AD9298D2A5B0ED9006B78EA /* SettingsUserDefaultsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettingsUserDefaultsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD929942A5B0EDA006B78EA /* SettingsUserDefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserDefaultsTests.swift; sourceTree = "<group>"; };
-		1AD929AA2A5B0F17006B78EA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1AD929AA2A5B0F17006B78EA /* UserDefaultsSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSettings.swift; sourceTree = "<group>"; };
 		1AD929AD2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsBooleanSettingStorage.swift; sourceTree = "<group>"; };
 		1AD929B42A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWordLengthSettingStorage.swift; sourceTree = "<group>"; };
 		1AD929C02A5BEC22006B78EA /* BooleanSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanSetting.swift; sourceTree = "<group>"; };
@@ -513,6 +514,7 @@
 		1AD92A7E2A5C8E58006B78EA /* WordGameElapsedTimeApplierImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameElapsedTimeApplierImpl.swift; sourceTree = "<group>"; };
 		1AD92A802A5C99CF006B78EA /* WordPuzzle+Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordPuzzle+Copy.swift"; sourceTree = "<group>"; };
 		1AD92A822A5C99EF006B78EA /* WordGame+Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordGame+Copy.swift"; sourceTree = "<group>"; };
+		1AD92A8D2A5DAC3A006B78EA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -934,6 +936,7 @@
 			children = (
 				1AD9297E2A5B0DD5006B78EA /* Impl */,
 				1AD9297A2A589068006B78EA /* Setting.swift */,
+				1AD92A8D2A5DAC3A006B78EA /* Settings.swift */,
 				1AD929C02A5BEC22006B78EA /* BooleanSetting.swift */,
 				1AD929C22A5BEC30006B78EA /* WordLengthSetting.swift */,
 				1AD9297C2A5B0DB5006B78EA /* SettingStorage.swift */,
@@ -964,7 +967,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD929AC2A5B0F36006B78EA /* SettingStorageImpl */,
-				1AD929AA2A5B0F17006B78EA /* Settings.swift */,
+				1AD929AA2A5B0F17006B78EA /* UserDefaultsSettings.swift */,
 				1AD929882A5B0ED8006B78EA /* SettingsUserDefaults.h */,
 			);
 			path = SettingsUserDefaults;
@@ -2097,6 +2100,7 @@
 			files = (
 				1AD929802A5B0DE3006B78EA /* PersistedSetting.swift in Sources */,
 				1AD929C12A5BEC22006B78EA /* BooleanSetting.swift in Sources */,
+				1AD92A8E2A5DAC3A006B78EA /* Settings.swift in Sources */,
 				1AD929C72A5BECC6006B78EA /* PersistedSetting+WordLengthSetting.swift in Sources */,
 				1AD929C52A5BEC9F006B78EA /* PersistedSetting+BooleanSetting.swift in Sources */,
 				1AD9297D2A5B0DB5006B78EA /* SettingStorage.swift in Sources */,
@@ -2119,7 +2123,7 @@
 			files = (
 				1AD929AE2A5B0F78006B78EA /* UserDefaultsBooleanSettingStorage.swift in Sources */,
 				1AD929B52A5B1202006B78EA /* UserDefaultsWordLengthSettingStorage.swift in Sources */,
-				1AD929AB2A5B0F17006B78EA /* Settings.swift in Sources */,
+				1AD929AB2A5B0F17006B78EA /* UserDefaultsSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
