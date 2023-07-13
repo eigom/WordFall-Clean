@@ -1,5 +1,4 @@
-import protocol WordProvider.Word
-import protocol WordProvider.WordProvider
+import WordProvider
 import Common
 
 extension SQLiteWordsDatabase: WordProvider {
@@ -7,7 +6,7 @@ extension SQLiteWordsDatabase: WordProvider {
         Try { try fetchWordLengths() }
     }
 
-    public func nextWord(length: WordLength, maximumLength: UInt) -> Try<WordProvider.Word> {
+    public func nextWord(length: WordLength, maximumLength: UInt) -> Try<Word> {
         Try {
             let availableLengths = try self.availableWordLengths.get
             let wordLength = try wordLength(

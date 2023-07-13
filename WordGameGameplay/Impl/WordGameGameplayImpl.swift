@@ -40,5 +40,11 @@ public class WordGameGameplayImpl: WordGameGameplay {
 
     public func tryLetter(at puzzleLetterIndex: Int) {
         let (newWordGame, solvedLetter) = letterTrier.tryLetter(at: puzzleLetterIndex, in: wordGame)
+
+        wordGame = newWordGame
+
+        if let solvedLetter {
+            
+        }
     }
 }

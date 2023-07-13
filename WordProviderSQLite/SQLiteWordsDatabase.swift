@@ -1,16 +1,16 @@
 import SQLite
 
-public final class SQLiteWordsDatabase {
-    struct Word: Decodable {
-        let id: Int64
-        let word: String
-    }
+struct DBWord: Decodable {
+    let id: Int64
+    let word: String
+}
 
-    struct Definition: Decodable {
-        let type: String
-        let definition: String
-    }
-    
+struct DBDefinition: Decodable {
+    let type: String
+    let definition: String
+}
+
+public final class SQLiteWordsDatabase {
     public enum Error: Swift.Error {
         case missingDatabase
         case wordNotFound
@@ -34,8 +34,8 @@ public final class SQLiteWordsDatabase {
         )
     }
 
-    func fetchRandomWord(length: UInt) throws -> Word {
-        let result: [Word] = try Database.fetch(
+    func fetchRandomWord(length: UInt) throws -> DBWord {
+        let result: [DBWord] = try Database.fetch(
             """
             SELECT id, word FROM word WHERE id = (
                 SELECT first_word_id + abs(random() %  (last_word_id - first_word_id)) AS wordID
@@ -53,7 +53,7 @@ public final class SQLiteWordsDatabase {
         return word
     }
 
-    func fetchDefinitions(wordID: Int64) throws -> [Definition] {
+    func fetchDefinitions(wordID: Int64) throws -> [DBDefinition] {
         return try Database.fetch(
             """
             SELECT type, definition from definition
