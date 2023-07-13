@@ -10,22 +10,12 @@ public enum WordLength {
     case any
 }
 
-public struct Word {
-    public let word: String
-    public let definitions: [Definition]
-
-    public init(word: String, definitions: [Definition]) {
-        self.word = word
-        self.definitions = definitions
-    }
+public protocol Word {
+    var word: String { get }
+    var definitions: [Definition] { get }
 }
 
-public struct Definition {
-    public let type: String
-    public let definition: String
-
-    public init(type: String, definition: String) {
-        self.type = type
-        self.definition = definition
-    }
+public protocol Definition {
+    var type: String { get }
+    var definition: String { get }
 }

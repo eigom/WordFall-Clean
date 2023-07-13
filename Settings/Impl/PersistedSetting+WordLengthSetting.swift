@@ -1,3 +1,3 @@
-import Words
+import WordProvider
 
 extension PersistedSetting: WordLengthSetting where ValueType == WordLength {}

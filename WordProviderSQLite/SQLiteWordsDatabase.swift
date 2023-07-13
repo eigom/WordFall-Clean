@@ -1,16 +1,16 @@
 import SQLite
 
-struct Word: Decodable {
-    let id: Int64
-    let word: String
-}
-
-struct Definition: Decodable {
-    let type: String
-    let definition: String
-}
-
 public final class SQLiteWordsDatabase {
+    struct Word: Decodable {
+        let id: Int64
+        let word: String
+    }
+
+    struct Definition: Decodable {
+        let type: String
+        let definition: String
+    }
+    
     public enum Error: Swift.Error {
         case missingDatabase
         case wordNotFound

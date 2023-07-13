@@ -1,10 +1,15 @@
 import WordPuzzle
 
 public struct WordGameLetterTrierImpl: WordGameLetterTrier {
+    private let letterTrier: WordPuzzleLetterTrier
+
+    public init(letterTrier: WordPuzzleLetterTrier) {
+        self.letterTrier = letterTrier
+    }
+
     public func tryLetter(
         at puzzleLetterIndex: Int,
-        in game: WordGame,
-        using letterTrier: WordPuzzleLetterTrier
+        in game: WordGame
     ) -> (WordGame, solvedLetter: WordPuzzleLetter?) {
         let (newPuzzle, solvedLetter) = letterTrier.tryLetter(at: puzzleLetterIndex, in: game.puzzle)
         let newLetterSolvingTimeSeconds = newPuzzle.puzzleLetters

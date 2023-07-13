@@ -1,5 +1,5 @@
 import Settings
-import Words
+import WordProvider
 
 class UserDefaultsWordLengthSettingStorage: SettingStorage {
     func value(for identifier: String) -> WordLength? {

@@ -1,4 +1,5 @@
-import Words
+import protocol WordProvider.Word
+import protocol WordProvider.WordProvider
 import Common
 
 extension SQLiteWordsDatabase: WordProvider {
@@ -6,7 +7,7 @@ extension SQLiteWordsDatabase: WordProvider {
         Try { try fetchWordLengths() }
     }
 
-    public func nextWord(length: WordLength, maximumLength: UInt) -> Try<Words.Word> {
+    public func nextWord(length: WordLength, maximumLength: UInt) -> Try<WordProvider.Word> {
         Try {
             let availableLengths = try self.availableWordLengths.get
             let wordLength = try wordLength(
@@ -17,7 +18,7 @@ extension SQLiteWordsDatabase: WordProvider {
             let word = try fetchRandomWord(length: wordLength)
             let definitions = try fetchDefinitions(wordID: word.id)
 
-            return Words.Word(word: word, definitions: definitions)
+            return WordImpl(word: word, definitions: definitions)
         }
     }
 
@@ -34,17 +35,5 @@ extension SQLiteWordsDatabase: WordProvider {
                 .filter { $0 <= maximumLength }
                 .randomElement() ?? 0
         }
-    }
-}
-
-private extension Words.Word {
-    init(word: Word, definitions: [Definition]) {
-        self.init(word: word.word, definitions: definitions.map { .init(definition: $0) })
-    }
-}
-
-private extension Words.Definition {
-    init(definition: Definition) {
-        self.init(type: definition.type, definition: definition.definition)
     }
 }

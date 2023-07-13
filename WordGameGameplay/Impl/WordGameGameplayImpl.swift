@@ -1,12 +1,18 @@
 import WordGame
 
 public class WordGameGameplayImpl: WordGameGameplay {
-    private let wordGame: WordGame
+    private var wordGame: WordGame
     private let gamePresenter: WordGameGameplayPresenter
+    private let letterTrier: WordGameLetterTrier
 
-    init(wordGame: WordGame, gamePresenter: WordGameGameplayPresenter) {
+    init(
+        wordGame: WordGame,
+        gamePresenter: WordGameGameplayPresenter,
+        letterTrier: WordGameLetterTrier
+    ) {
         self.wordGame = wordGame
         self.gamePresenter = gamePresenter
+        self.letterTrier = letterTrier
     }
 
     public func start() {
@@ -21,18 +27,18 @@ public class WordGameGameplayImpl: WordGameGameplay {
     }
 
     public func pause() {
-
+        // pause game loop
     }
 
     public func resume() {
-
-    }
-
-    public func tryLetter(at puzzleLetterIndex: Int) {
-
+        // resume game loop
     }
 
     public func finish() {
+        // stop game loop, end
+    }
 
+    public func tryLetter(at puzzleLetterIndex: Int) {
+        let (newWordGame, solvedLetter) = letterTrier.tryLetter(at: puzzleLetterIndex, in: wordGame)
     }
 }
