@@ -1,3 +1,5 @@
+import WordPuzzle
+
 public protocol WordGameGameplayPresenter {
     typealias Finished = () -> Void
 
@@ -7,4 +9,7 @@ public protocol WordGameGameplayPresenter {
         totalSolvingTimeSeconds: TimeInterval,
         finished: Finished
     )
+
+    func revealSolvedLetter(_ letter: WordPuzzleLetter)
+    func revealLetters(_ letters: [WordPuzzleLetter])
 }

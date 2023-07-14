@@ -3,7 +3,6 @@ import WordPuzzle
 public protocol WordGameElapsedTimeApplier {
     func applyElapsedSeconds(
         _ elapsedSeconds: TimeInterval,
-        to game: WordGame,
-        letterRevealer: WordPuzzleLetterRevealer
+        to game: WordGame
     ) -> (WordGame, revealedLetters: [WordPuzzleLetter])
 }

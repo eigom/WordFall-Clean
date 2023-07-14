@@ -1,10 +1,15 @@
 import WordPuzzle
 
 public struct WordGameElapsedTimeApplierImpl: WordGameElapsedTimeApplier {
+    private let letterRevealer: WordPuzzleLetterRevealer
+
+    public init(letterRevealer: WordPuzzleLetterRevealer) {
+        self.letterRevealer = letterRevealer
+    }
+
     public func applyElapsedSeconds(
         _ elapsedSeconds: TimeInterval,
-        to game: WordGame,
-        letterRevealer: WordPuzzleLetterRevealer
+        to game: WordGame
     ) -> (WordGame, revealedLetters: [WordPuzzleLetter]) {
         let newLetterSolvingTimeSeconds = game.letterSolvingTimeSeconds
             .map { max($0 - elapsedSeconds, 0) }

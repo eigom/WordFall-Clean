@@ -4,15 +4,24 @@ public class WordGameGameplayImpl: WordGameGameplay {
     private var wordGame: WordGame
     private let gamePresenter: WordGameGameplayPresenter
     private let letterTrier: WordGameLetterTrier
+    private let letterRevealer: WordGameLetterRevealer
+    private let elapsedTimeApplier: WordGameElapsedTimeApplier
+    private let timeUpdater: WordGameGameplayTimeUpdater
 
     init(
         wordGame: WordGame,
         gamePresenter: WordGameGameplayPresenter,
-        letterTrier: WordGameLetterTrier
+        letterTrier: WordGameLetterTrier,
+        letterRevealer: WordGameLetterRevealer,
+        elapsedTimeApplier: WordGameElapsedTimeApplier,
+        timeUpdater: WordGameGameplayTimeUpdater
     ) {
         self.wordGame = wordGame
         self.gamePresenter = gamePresenter
         self.letterTrier = letterTrier
+        self.letterRevealer = letterRevealer
+        self.elapsedTimeApplier = elapsedTimeApplier
+        self.timeUpdater = timeUpdater
     }
 
     public func start() {
@@ -21,21 +30,11 @@ public class WordGameGameplayImpl: WordGameGameplay {
             letterSolvingTimeSeconds: wordGame.letterSolvingTimeSeconds,
             totalSolvingTimeSeconds: wordGame.totalSolvingTimeSeconds,
             finished: {
-                // start game loop
+                timeUpdater.start(durationSeconds: wordGame.totalSolvingTimeSeconds) { elapsedSeconds in
+                    applyElapsedSeconds(elapsedSeconds)
+                }
             }
         )
-    }
-
-    public func pause() {
-        // pause game loop
-    }
-
-    public func resume() {
-        // resume game loop
-    }
-
-    public func finish() {
-        // stop game loop, end
     }
 
     public func tryLetter(at puzzleLetterIndex: Int) {
@@ -44,7 +43,27 @@ public class WordGameGameplayImpl: WordGameGameplay {
         wordGame = newWordGame
 
         if let solvedLetter {
-            
+            gamePresenter.revealSolvedLetter(solvedLetter)
+        }
+    }
+
+    public func revealAllLetters() {
+        let (newWordGame, revealedLetters) = letterRevealer.revealAllLetters(in: wordGame)
+
+        wordGame = newWordGame
+
+        if !revealedLetters.isEmpty {
+            gamePresenter.revealLetters(revealedLetters)
+        }
+    }
+
+    private func applyElapsedSeconds(_ elapsedSeconds: TimeInterval) {
+        let (newWordGame, revealedLetters) = elapsedTimeApplier.applyElapsedSeconds(elapsedSeconds, to: wordGame)
+
+        wordGame = newWordGame
+
+        if !revealedLetters.isEmpty {
+            gamePresenter.revealLetters(revealedLetters)
         }
     }
 }
