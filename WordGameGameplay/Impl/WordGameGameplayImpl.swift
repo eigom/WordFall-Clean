@@ -65,5 +65,7 @@ public class WordGameGameplayImpl: WordGameGameplay {
         if !revealedLetters.isEmpty {
             gamePresenter.revealLetters(revealedLetters)
         }
+
+        gamePresenter.updateLetterSolvingTimeSeconds(wordGame.letterSolvingTimeSeconds)
     }
 }
