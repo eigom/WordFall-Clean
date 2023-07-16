@@ -13,7 +13,7 @@ public struct SolvingTimeStrategyProviderImpl: SolvingTimeStrategyProvider {
         self.allStrategies = [defaultStrategy] + otherStrategies
     }
 
-    public func randomStrategy(for wordLength: Int) -> SolvingTimeStrategy {
+    public func randomStrategy(wordLength: Int) -> SolvingTimeStrategy {
         let randomStrategy = allStrategies.randomElement()
             .map { $0.init(wordLength: wordLength) }
 

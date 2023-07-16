@@ -3,5 +3,5 @@
 //
 
 public protocol SolvingTimeStrategyProvider {
-    func randomStrategy(for wordLength: Int) -> SolvingTimeStrategy
+    func randomStrategy(wordLength: Int) -> SolvingTimeStrategy
 }
