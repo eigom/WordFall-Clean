@@ -4,6 +4,7 @@
 
 import WordGame
 import WordGameGameplay
+import Common
 import Foundation
 
 public class WordGameGameplayImpl: WordGameGameplay {
