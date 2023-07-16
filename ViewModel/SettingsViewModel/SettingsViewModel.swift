@@ -1,3 +1,1 @@
-public protocol SettingsViewModel {
-    
-}
+public protocol SettingsViewModel {}

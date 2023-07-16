@@ -1,6 +1,8 @@
-public struct WordPuzzle {
-    public let wordLetters: [Character]
-    public let puzzleLetters: [Character?]
-    public let solutionLetters: [Character?]
-    public var isSolved: Bool { wordLetters == solutionLetters }
+public protocol WordPuzzle {
+    var wordLetters: [Character] { get }
+    var puzzleLetters: [Character?] { get }
+    var solutionLetters: [Character?] { get }
+    var isSolved: Bool { get }
+
+    func copy(puzzleLetters: [Character?], solutionLetters: [Character?]) -> WordPuzzle
 }

@@ -1,7 +1,12 @@
 import WordPuzzle
 
-public struct WordGame {
-    public let puzzle: WordPuzzle
-    public let totalSolvingTimeSeconds: TimeInterval
-    public let letterSolvingTimeSeconds: [TimeInterval]
+public protocol WordGame {
+    var puzzle: WordPuzzle { get }
+    var totalSolvingTimeSeconds: TimeInterval { get }
+    var letterSolvingTimeSeconds: [TimeInterval] { get }
+
+    func copy(
+        puzzle: WordPuzzle,
+        letterSolvingTimeSeconds: [TimeInterval]
+    ) -> WordGame
 }
