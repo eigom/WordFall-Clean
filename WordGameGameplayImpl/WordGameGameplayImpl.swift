@@ -1,4 +1,5 @@
 import WordGame
+import WordGameGameplay
 
 public class WordGameGameplayImpl: WordGameGameplay {
     private var wordGame: WordGame
