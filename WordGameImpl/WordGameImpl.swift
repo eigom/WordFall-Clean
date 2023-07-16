@@ -1,4 +1,5 @@
 import WordPuzzle
+import WordGame
 
 public struct WordGameImpl: WordGame {
     public let puzzle: WordPuzzle

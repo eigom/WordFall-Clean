@@ -1,3 +1,5 @@
+import WordGame
+
 struct RandomSolvingTimeStrategy: SolvingTimeStrategy {
     let totalSolvingTimeSeconds: TimeInterval
     let letterSolvingTimeSeconds: [TimeInterval]

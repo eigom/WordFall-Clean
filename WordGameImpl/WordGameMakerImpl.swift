@@ -1,4 +1,5 @@
 import WordPuzzle
+import WordGame
 
 public struct WordGameMakerImpl: WordGameMaker {
     public func makeGame(puzzle: WordPuzzle, solvingTimeStrategy: SolvingTimeStrategy) -> WordGame {

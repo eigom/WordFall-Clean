@@ -1,4 +1,5 @@
 import WordPuzzle
+import WordGame
 
 public struct WordGameElapsedTimeApplierImpl: WordGameElapsedTimeApplier {
     private let letterRevealer: WordPuzzleLetterRevealer
