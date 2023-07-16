@@ -1,8 +1,5 @@
 //
-//  SQLiteTests.swift
-//  SQLiteTests
-//
-//  Created by Eigo Madaloja on 02.04.2023.
+//  Copyright 2023 Eigo Madaloja
 //
 
 import XCTest

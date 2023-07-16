@@ -1,8 +1,5 @@
 //
-//  WordFall_iOSUITests.swift
-//  WordFall_iOSUITests
-//
-//  Created by Eigo Madaloja on 05.07.2023.
+//  Copyright 2023 Eigo Madaloja
 //
 
 import XCTest

@@ -1,3 +1,7 @@
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 public class ObserverNotifierImpl<Notification>: ObserverNotifier {
     private var observers = [() -> (AnyObject?, (Notification) -> Void)]()
 

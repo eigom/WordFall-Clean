@@ -1,3 +1,7 @@
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 struct ResultSetJSONEncoder {
     static func encode(_ resultSet: ResultSet) throws -> String {
         let encodedRows = try resultSet.rows.reduce([String]()) { partialResult, row in

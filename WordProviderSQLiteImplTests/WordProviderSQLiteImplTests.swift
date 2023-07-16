@@ -1,8 +1,5 @@
 //
-//  WordProviderSQLiteTests.swift
-//  WordProviderSQLiteTests
-//
-//  Created by Eigo Madaloja on 10.07.2023.
+//  Copyright 2023 Eigo Madaloja
 //
 
 import XCTest

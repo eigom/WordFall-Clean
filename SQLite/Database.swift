@@ -1,3 +1,7 @@
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 public struct Database {
     public static func fetch<Result: Decodable>(
         _ query: String,

@@ -1,3 +1,7 @@
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 struct ResultSet {
     enum Value {
         case null

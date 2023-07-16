@@ -1,3 +1,7 @@
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 public struct QueryParameter {
     enum ParameterValue: Equatable {
         case integer(Int64)

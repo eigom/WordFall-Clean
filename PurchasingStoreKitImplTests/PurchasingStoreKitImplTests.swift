@@ -1,8 +1,5 @@
 //
-//  PurchasingStoreKitTests.swift
-//  PurchasingStoreKitTests
-//
-//  Created by Eigo Madaloja on 07.07.2023.
+//  Copyright 2023 Eigo Madaloja
 //
 
 import XCTest

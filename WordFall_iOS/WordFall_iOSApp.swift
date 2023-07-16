@@ -1,8 +1,5 @@
 //
-//  WordFall_iOSApp.swift
-//  WordFall_iOS
-//
-//  Created by Eigo Madaloja on 05.07.2023.
+//  Copyright 2023 Eigo Madaloja
 //
 
 import SwiftUI

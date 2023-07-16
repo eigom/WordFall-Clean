@@ -1,8 +1,5 @@
 //
-//  SettingsUserDefaultsTests.swift
-//  SettingsUserDefaultsTests
-//
-//  Created by Eigo Madaloja on 09.07.2023.
+//  Copyright 2023 Eigo Madaloja
 //
 
 import XCTest

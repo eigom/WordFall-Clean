@@ -1,8 +1,5 @@
 //
-//  WordGameImplTests.swift
-//  WordGameImplTests
-//
-//  Created by Eigo Madaloja on 16.07.2023.
+//  Copyright 2023 Eigo Madaloja
 //
 
 import XCTest

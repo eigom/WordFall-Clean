@@ -1,3 +1,7 @@
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 public protocol PurchasingService {
     associatedtype Product
     associatedtype PurchaseTransaction

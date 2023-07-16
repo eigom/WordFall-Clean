@@ -1,5 +1,9 @@
 import SQLite3
 
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 struct ResultSetBuilder {
     static func build(
         statement: OpaquePointer,

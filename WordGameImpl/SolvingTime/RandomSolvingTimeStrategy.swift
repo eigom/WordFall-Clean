@@ -1,3 +1,7 @@
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 import WordGame
 
 struct RandomSolvingTimeStrategy: SolvingTimeStrategy {

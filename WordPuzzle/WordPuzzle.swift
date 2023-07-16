@@ -1,3 +1,7 @@
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 public protocol WordPuzzle {
     var wordLetters: [Character] { get }
     var puzzleLetters: [Character?] { get }

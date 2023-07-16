@@ -1,3 +1,7 @@
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 struct QueryMaker {
     static func make(query: String, parameters: [QueryParameter]) -> String {
         parameters.reduce(query) { partialQuery, parameter in

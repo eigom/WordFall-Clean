@@ -1,3 +1,7 @@
+//
+//  Copyright 2023 Eigo Madaloja
+//
+
 public enum Try<T> {
     case success(T)
     case failure(Error)
