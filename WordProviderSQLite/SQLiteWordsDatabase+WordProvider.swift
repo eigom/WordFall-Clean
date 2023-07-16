@@ -17,7 +17,7 @@ extension SQLiteWordsDatabase: WordProvider {
             let word = try fetchRandomWord(length: wordLength)
             let definitions = try fetchDefinitions(wordID: word.id)
 
-            return WordImpl(word: word, definitions: definitions)
+            return DBWord(id: word.id, word: word.word, dbDefinitions: definitions)
         }
     }
 

@@ -1,15 +1,5 @@
 import SQLite
 
-struct DBWord: Decodable {
-    let id: Int64
-    let word: String
-}
-
-struct DBDefinition: Decodable {
-    let type: String
-    let definition: String
-}
-
 public final class SQLiteWordsDatabase {
     public enum Error: Swift.Error {
         case missingDatabase
