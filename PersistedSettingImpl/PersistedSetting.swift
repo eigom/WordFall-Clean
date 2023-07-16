@@ -1,3 +1,4 @@
+import Settings
 import Common
 
 public class PersistedSetting<ValueType, Storage: SettingStorage, Notifier: ObserverNotifier>: Setting

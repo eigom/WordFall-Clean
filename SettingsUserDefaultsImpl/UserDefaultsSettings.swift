@@ -1,4 +1,5 @@
 import Settings
+import PersistedSettingImpl
 import Common
 
 public enum UserDefaultsSettings: Settings {
