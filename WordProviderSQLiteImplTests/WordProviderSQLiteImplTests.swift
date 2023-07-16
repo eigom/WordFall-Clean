@@ -1,14 +1,14 @@
 //
-//  WordProviderTests.swift
-//  WordProviderTests
+//  WordProviderSQLiteTests.swift
+//  WordProviderSQLiteTests
 //
 //  Created by Eigo Madaloja on 10.07.2023.
 //
 
 import XCTest
-@testable import WordProvider
+@testable import WordProviderSQLiteImpl
 
-final class WordProviderTests: XCTestCase {
+final class WordProviderSQLiteImplTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
