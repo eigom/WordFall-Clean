@@ -64,6 +64,8 @@
 		1A93011D2A64311300EFDEA6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
 		1A9301222A6438F400EFDEA6 /* WordPuzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */; };
 		1A9301232A6438F400EFDEA6 /* WordPuzzle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A9301282A644F8F00EFDEA6 /* WordGameGameplayFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9301272A644F8F00EFDEA6 /* WordGameGameplayFactory.swift */; };
+		1A93012A2A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9301292A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift */; };
 		1AB6C43F29D9A42700A00872 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; };
 		1AB6C44629D9A42700A00872 /* SQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C44529D9A42700A00872 /* SQLiteTests.swift */; };
 		1AB6C45229D9A44B00A00872 /* ResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42A29D713AA00A00872 /* ResultSet.swift */; };
@@ -624,6 +626,8 @@
 		1A9300BE2A64152200EFDEA6 /* PersistedSettingImpl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistedSettingImpl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9300C52A64152300EFDEA6 /* PersistedSettingImplTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistedSettingImplTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9300CC2A64152400EFDEA6 /* PersistedSettingImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistedSettingImplTests.swift; sourceTree = "<group>"; };
+		1A9301272A644F8F00EFDEA6 /* WordGameGameplayFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameGameplayFactory.swift; sourceTree = "<group>"; };
+		1A9301292A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameGameplayFactoryImpl.swift; sourceTree = "<group>"; };
 		1AB6C42629D7070800A00872 /* QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParameter.swift; sourceTree = "<group>"; };
 		1AB6C42A29D713AA00A00872 /* ResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSet.swift; sourceTree = "<group>"; };
 		1AB6C42C29D778D600A00872 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
@@ -1044,6 +1048,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD92AB92A605DD8006B78EA /* WordGameGameplayImpl.swift */,
+				1A9301292A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift */,
 			);
 			path = WordGameGameplayImpl;
 			sourceTree = "<group>";
@@ -1378,6 +1383,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD92AB32A605936006B78EA /* WordGameGameplay.swift */,
+				1A9301272A644F8F00EFDEA6 /* WordGameGameplayFactory.swift */,
 				1AD92AB52A605946006B78EA /* WordGameGameplayPresenter.swift */,
 				1AD92AF12A614EC7006B78EA /* WordGameGameplayTimeUpdater.swift */,
 			);
@@ -2489,6 +2495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A93012A2A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift in Sources */,
 				1A93008B2A6411C200EFDEA6 /* WordGameGameplayImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2680,6 +2687,7 @@
 			files = (
 				1AD92AB62A605946006B78EA /* WordGameGameplayPresenter.swift in Sources */,
 				1AD92AB42A605936006B78EA /* WordGameGameplay.swift in Sources */,
+				1A9301282A644F8F00EFDEA6 /* WordGameGameplayFactory.swift in Sources */,
 				1AD92AF22A614EC7006B78EA /* WordGameGameplayTimeUpdater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
