@@ -3,6 +3,7 @@
 //
 
 import WordPuzzle
+import Foundation
 
 public protocol WordGameGameplayPresenter {
     func setupNewGame(

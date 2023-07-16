@@ -2,6 +2,8 @@
 //  Copyright 2023 Eigo Madaloja
 //
 
+import Dispatch
+
 public class ObserverNotifierMainThreadDecorator<Notification, Notifier: ObserverNotifier>: ObserverNotifier
         where Notifier.Notification == Notification {
     private let notifier: Notifier

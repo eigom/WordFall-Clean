@@ -4,6 +4,7 @@
 
 import WordGame
 import WordGameGameplay
+import Foundation
 
 public class WordGameGameplayImpl: WordGameGameplay {
     private var wordGame: WordGame

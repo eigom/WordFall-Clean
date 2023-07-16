@@ -3,6 +3,7 @@
 //
 
 import Settings
+import Foundation
 
 class UserDefaultsBooleanSettingStorage: SettingStorage {
     func value(for identifier: String) -> Bool? {

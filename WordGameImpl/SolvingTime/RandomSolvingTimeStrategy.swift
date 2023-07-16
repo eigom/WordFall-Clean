@@ -3,6 +3,7 @@
 //
 
 import WordGame
+import Foundation
 
 struct RandomSolvingTimeStrategy: SolvingTimeStrategy {
     let totalSolvingTimeSeconds: TimeInterval

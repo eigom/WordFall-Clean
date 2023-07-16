@@ -2,6 +2,8 @@
 //  Copyright 2023 Eigo Madaloja
 //
 
+import Foundation
+
 public protocol SolvingTimeStrategy {
     init(wordLength: Int)
 

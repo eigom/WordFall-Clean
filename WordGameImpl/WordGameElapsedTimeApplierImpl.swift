@@ -4,6 +4,7 @@
 
 import WordPuzzle
 import WordGame
+import Foundation
 
 public struct WordGameElapsedTimeApplierImpl: WordGameElapsedTimeApplier {
     private let letterRevealer: WordPuzzleLetterRevealer

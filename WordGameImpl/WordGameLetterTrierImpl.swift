@@ -4,6 +4,7 @@
 
 import WordPuzzle
 import WordGame
+import Foundation
 
 public struct WordGameLetterTrierImpl: WordGameLetterTrier {
     private let letterTrier: WordPuzzleLetterTrier

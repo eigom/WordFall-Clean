@@ -3,6 +3,7 @@
 //
 
 import SQLite
+import Foundation
 
 public final class SQLiteWordsDatabase {
     public enum Error: Swift.Error {

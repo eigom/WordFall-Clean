@@ -2,6 +2,8 @@
 //  Copyright 2023 Eigo Madaloja
 //
 
+import Foundation
+
 struct ResultJSONDecoder {
     static func decode<T: Decodable>(jsonString: String) throws -> T {
         guard let data = jsonString.data(using: .utf8) else { throw SQLiteError.failedToConvertToData }

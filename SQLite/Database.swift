@@ -22,6 +22,4 @@ public struct Database {
 
         return result
     }
-
-    private init() {}
 }

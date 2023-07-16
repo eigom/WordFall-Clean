@@ -3,6 +3,7 @@
 //
 
 import WordPuzzle
+import Foundation
 
 public protocol WordGame {
     var puzzle: WordPuzzle { get }
