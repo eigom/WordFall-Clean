@@ -22,7 +22,6 @@
 		1A9300242A640D4400EFDEA6 /* WordPuzzleImpl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9300112A640D4200EFDEA6 /* WordPuzzleImpl.framework */; };
 		1A9300252A640D4400EFDEA6 /* WordPuzzleImpl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9300112A640D4200EFDEA6 /* WordPuzzleImpl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A93002C2A640DA400EFDEA6 /* WordPuzzleImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9300002A63D24F00EFDEA6 /* WordPuzzleImpl.swift */; };
-		1A93002D2A640DA400EFDEA6 /* WordPuzzleMakerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A162A5C87AE006B78EA /* WordPuzzleMakerImpl.swift */; };
 		1A93002E2A640DA400EFDEA6 /* WordPuzzleLetterTrierImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A182A5C87BB006B78EA /* WordPuzzleLetterTrierImpl.swift */; };
 		1A93002F2A640DA400EFDEA6 /* WordPuzzleLetterRevealerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A1A2A5C87CA006B78EA /* WordPuzzleLetterRevealerImpl.swift */; };
 		1A9300302A640DE700EFDEA6 /* WordPuzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */; };
@@ -66,6 +65,12 @@
 		1A9301232A6438F400EFDEA6 /* WordPuzzle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A9301282A644F8F00EFDEA6 /* WordGameGameplayFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9301272A644F8F00EFDEA6 /* WordGameGameplayFactory.swift */; };
 		1A93012A2A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9301292A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift */; };
+		1A93012C2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93012B2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift */; };
+		1A93012E2A646BC600EFDEA6 /* WordPuzzleFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93012D2A646BC600EFDEA6 /* WordPuzzleFactoryImpl.swift */; };
+		1A93012F2A646C2800EFDEA6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
+		1A9301342A646C3700EFDEA6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
+		1A9301392A646C4000EFDEA6 /* WordProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; };
+		1A93013D2A646D3500EFDEA6 /* WordProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; };
 		1AB6C43F29D9A42700A00872 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; };
 		1AB6C44629D9A42700A00872 /* SQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C44529D9A42700A00872 /* SQLiteTests.swift */; };
 		1AB6C45229D9A44B00A00872 /* ResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42A29D713AA00A00872 /* ResultSet.swift */; };
@@ -129,7 +134,7 @@
 		1AD92A012A5C84EB006B78EA /* WordPuzzle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AD92A092A5C8542006B78EA /* WordPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A082A5C8542006B78EA /* WordPuzzle.swift */; };
 		1AD92A0B2A5C86E9006B78EA /* WordPuzzleLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A0A2A5C86E9006B78EA /* WordPuzzleLetter.swift */; };
-		1AD92A0D2A5C86F8006B78EA /* WordPuzzleMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A0C2A5C86F8006B78EA /* WordPuzzleMaker.swift */; };
+		1AD92A0D2A5C86F8006B78EA /* WordPuzzleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A0C2A5C86F8006B78EA /* WordPuzzleFactory.swift */; };
 		1AD92A0F2A5C8705006B78EA /* WordPuzzleLetterTrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A0E2A5C8705006B78EA /* WordPuzzleLetterTrier.swift */; };
 		1AD92A112A5C8714006B78EA /* WordPuzzleLetterRevealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A102A5C8713006B78EA /* WordPuzzleLetterRevealer.swift */; };
 		1AD92A1D2A5C8864006B78EA /* WordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD92A1C2A5C8864006B78EA /* WordGame.swift */; };
@@ -336,6 +341,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1AD929EC2A5C84E9006B78EA;
 			remoteInfo = WordPuzzle;
+		};
+		1A9301312A646C2900EFDEA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A4982702A3727210057828E;
+			remoteInfo = Common;
+		};
+		1A9301362A646C3700EFDEA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A4982702A3727210057828E;
+			remoteInfo = Common;
+		};
+		1A93013B2A646C4000EFDEA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD92A312A5C8AD2006B78EA;
+			remoteInfo = WordProvider;
+		};
+		1A93013F2A646D3500EFDEA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD92A312A5C8AD2006B78EA;
+			remoteInfo = WordProvider;
 		};
 		1AB6C44029D9A42700A00872 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -628,6 +661,8 @@
 		1A9300CC2A64152400EFDEA6 /* PersistedSettingImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistedSettingImplTests.swift; sourceTree = "<group>"; };
 		1A9301272A644F8F00EFDEA6 /* WordGameGameplayFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameGameplayFactory.swift; sourceTree = "<group>"; };
 		1A9301292A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameGameplayFactoryImpl.swift; sourceTree = "<group>"; };
+		1A93012B2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameInfiniteGameplay.swift; sourceTree = "<group>"; };
+		1A93012D2A646BC600EFDEA6 /* WordPuzzleFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleFactoryImpl.swift; sourceTree = "<group>"; };
 		1AB6C42629D7070800A00872 /* QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParameter.swift; sourceTree = "<group>"; };
 		1AB6C42A29D713AA00A00872 /* ResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSet.swift; sourceTree = "<group>"; };
 		1AB6C42C29D778D600A00872 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
@@ -684,11 +719,10 @@
 		1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WordPuzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD92A082A5C8542006B78EA /* WordPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzle.swift; sourceTree = "<group>"; };
 		1AD92A0A2A5C86E9006B78EA /* WordPuzzleLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleLetter.swift; sourceTree = "<group>"; };
-		1AD92A0C2A5C86F8006B78EA /* WordPuzzleMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleMaker.swift; sourceTree = "<group>"; };
+		1AD92A0C2A5C86F8006B78EA /* WordPuzzleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleFactory.swift; sourceTree = "<group>"; };
 		1AD92A0E2A5C8705006B78EA /* WordPuzzleLetterTrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleLetterTrier.swift; sourceTree = "<group>"; };
 		1AD92A102A5C8713006B78EA /* WordPuzzleLetterRevealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleLetterRevealer.swift; sourceTree = "<group>"; };
 		1AD92A142A5C8793006B78EA /* Collection+Replacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Replacing.swift"; sourceTree = "<group>"; };
-		1AD92A162A5C87AE006B78EA /* WordPuzzleMakerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleMakerImpl.swift; sourceTree = "<group>"; };
 		1AD92A182A5C87BB006B78EA /* WordPuzzleLetterTrierImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleLetterTrierImpl.swift; sourceTree = "<group>"; };
 		1AD92A1A2A5C87CA006B78EA /* WordPuzzleLetterRevealerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleLetterRevealerImpl.swift; sourceTree = "<group>"; };
 		1AD92A1C2A5C8864006B78EA /* WordGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGame.swift; sourceTree = "<group>"; };
@@ -746,6 +780,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A9300302A640DE700EFDEA6 /* WordPuzzle.framework in Frameworks */,
+				1A9301392A646C4000EFDEA6 /* WordProvider.framework in Frameworks */,
+				1A9301342A646C3700EFDEA6 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,6 +953,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A93012F2A646C2800EFDEA6 /* Common.framework in Frameworks */,
+				1A93013D2A646D3500EFDEA6 /* WordProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -999,8 +1037,8 @@
 			children = (
 				1AD92A132A5C8785006B78EA /* Lib */,
 				1A9300002A63D24F00EFDEA6 /* WordPuzzleImpl.swift */,
+				1A93012D2A646BC600EFDEA6 /* WordPuzzleFactoryImpl.swift */,
 				1A9300362A640EA900EFDEA6 /* WordPuzzleLetterImpl.swift */,
-				1AD92A162A5C87AE006B78EA /* WordPuzzleMakerImpl.swift */,
 				1AD92A182A5C87BB006B78EA /* WordPuzzleLetterTrierImpl.swift */,
 				1AD92A1A2A5C87CA006B78EA /* WordPuzzleLetterRevealerImpl.swift */,
 			);
@@ -1318,7 +1356,7 @@
 			children = (
 				1AD92A082A5C8542006B78EA /* WordPuzzle.swift */,
 				1AD92A0A2A5C86E9006B78EA /* WordPuzzleLetter.swift */,
-				1AD92A0C2A5C86F8006B78EA /* WordPuzzleMaker.swift */,
+				1AD92A0C2A5C86F8006B78EA /* WordPuzzleFactory.swift */,
 				1AD92A0E2A5C8705006B78EA /* WordPuzzleLetterTrier.swift */,
 				1AD92A102A5C8713006B78EA /* WordPuzzleLetterRevealer.swift */,
 			);
@@ -1386,6 +1424,7 @@
 				1A9301272A644F8F00EFDEA6 /* WordGameGameplayFactory.swift */,
 				1AD92AB52A605946006B78EA /* WordGameGameplayPresenter.swift */,
 				1AD92AF12A614EC7006B78EA /* WordGameGameplayTimeUpdater.swift */,
+				1A93012B2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift */,
 			);
 			path = WordGameGameplay;
 			sourceTree = "<group>";
@@ -1576,6 +1615,8 @@
 			);
 			dependencies = (
 				1A9300332A640DE700EFDEA6 /* PBXTargetDependency */,
+				1A9301372A646C3700EFDEA6 /* PBXTargetDependency */,
+				1A93013C2A646C4000EFDEA6 /* PBXTargetDependency */,
 			);
 			name = WordPuzzleImpl;
 			productName = WordPuzzleImpl;
@@ -1957,6 +1998,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1A9301322A646C2900EFDEA6 /* PBXTargetDependency */,
+				1A9301402A646D3500EFDEA6 /* PBXTargetDependency */,
 			);
 			name = WordPuzzle;
 			productName = WordPuzzle;
@@ -2453,8 +2496,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A93012E2A646BC600EFDEA6 /* WordPuzzleFactoryImpl.swift in Sources */,
 				1A93002E2A640DA400EFDEA6 /* WordPuzzleLetterTrierImpl.swift in Sources */,
-				1A93002D2A640DA400EFDEA6 /* WordPuzzleMakerImpl.swift in Sources */,
 				1A93002C2A640DA400EFDEA6 /* WordPuzzleImpl.swift in Sources */,
 				1A9300372A640EA900EFDEA6 /* WordPuzzleLetterImpl.swift in Sources */,
 				1A9300352A640E4100EFDEA6 /* Collection+Replacing.swift in Sources */,
@@ -2644,7 +2687,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD92A0D2A5C86F8006B78EA /* WordPuzzleMaker.swift in Sources */,
+				1AD92A0D2A5C86F8006B78EA /* WordPuzzleFactory.swift in Sources */,
 				1AD92A092A5C8542006B78EA /* WordPuzzle.swift in Sources */,
 				1AD92A0F2A5C8705006B78EA /* WordPuzzleLetterTrier.swift in Sources */,
 				1AD92A112A5C8714006B78EA /* WordPuzzleLetterRevealer.swift in Sources */,
@@ -2686,6 +2729,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD92AB62A605946006B78EA /* WordGameGameplayPresenter.swift in Sources */,
+				1A93012C2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift in Sources */,
 				1AD92AB42A605936006B78EA /* WordGameGameplay.swift in Sources */,
 				1A9301282A644F8F00EFDEA6 /* WordGameGameplayFactory.swift in Sources */,
 				1AD92AF22A614EC7006B78EA /* WordGameGameplayTimeUpdater.swift in Sources */,
@@ -2819,6 +2863,26 @@
 			isa = PBXTargetDependency;
 			target = 1AD929EC2A5C84E9006B78EA /* WordPuzzle */;
 			targetProxy = 1A9301242A6438F400EFDEA6 /* PBXContainerItemProxy */;
+		};
+		1A9301322A646C2900EFDEA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A4982702A3727210057828E /* Common */;
+			targetProxy = 1A9301312A646C2900EFDEA6 /* PBXContainerItemProxy */;
+		};
+		1A9301372A646C3700EFDEA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A4982702A3727210057828E /* Common */;
+			targetProxy = 1A9301362A646C3700EFDEA6 /* PBXContainerItemProxy */;
+		};
+		1A93013C2A646C4000EFDEA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD92A312A5C8AD2006B78EA /* WordProvider */;
+			targetProxy = 1A93013B2A646C4000EFDEA6 /* PBXContainerItemProxy */;
+		};
+		1A9301402A646D3500EFDEA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD92A312A5C8AD2006B78EA /* WordProvider */;
+			targetProxy = 1A93013F2A646D3500EFDEA6 /* PBXContainerItemProxy */;
 		};
 		1AB6C44129D9A42700A00872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
