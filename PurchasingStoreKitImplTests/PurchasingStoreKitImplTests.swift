@@ -6,9 +6,9 @@
 //
 
 import XCTest
-@testable import PurchasingStoreKit
+@testable import PurchasingStoreKitImpl
 
-final class PurchasingStoreKitTests: XCTestCase {
+final class PurchasingStoreKitImplTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -11,8 +11,6 @@
 		1A4982802A3727220057828E /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A49827F2A3727220057828E /* CommonTests.swift */; };
 		1A4982812A3727220057828E /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4982732A3727210057828E /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A49828E2A37273B0057828E /* Try.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A49828D2A37273B0057828E /* Try.swift */; };
-		1A607EFC2A56A96A007C6150 /* Purchasing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A607EF42A56A967007C6150 /* Purchasing.framework */; };
-		1A607F032A56A96D007C6150 /* PurchasingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A607F022A56A96D007C6150 /* PurchasingTests.swift */; };
 		1A607F042A56A96D007C6150 /* Purchasing.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A607EF62A56A968007C6150 /* Purchasing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A607F072A56A96D007C6150 /* Purchasing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A607EF42A56A967007C6150 /* Purchasing.framework */; };
 		1A607F082A56A96D007C6150 /* Purchasing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A607EF42A56A967007C6150 /* Purchasing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -56,14 +54,6 @@
 		1A93008C2A64121D00EFDEA6 /* WordPuzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */; };
 		1A9300912A64123100EFDEA6 /* WordGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929CD2A5C847D006B78EA /* WordGame.framework */; };
 		1A9300952A64124900EFDEA6 /* WordGameGameplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A982A60590F006B78EA /* WordGameGameplay.framework */; };
-		1A93FFE42A63199D00EFDEA6 /* ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A93FFDC2A63199D00EFDEA6 /* ViewModel.framework */; };
-		1A93FFEB2A63199D00EFDEA6 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93FFEA2A63199D00EFDEA6 /* ViewModelTests.swift */; };
-		1A93FFEC2A63199D00EFDEA6 /* ViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A93FFDE2A63199D00EFDEA6 /* ViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A93FFEF2A63199D00EFDEA6 /* ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A93FFDC2A63199D00EFDEA6 /* ViewModel.framework */; };
-		1A93FFF02A63199D00EFDEA6 /* ViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A93FFDC2A63199D00EFDEA6 /* ViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1A93FFFA2A631BC200EFDEA6 /* GameplayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93FFF92A631BC200EFDEA6 /* GameplayViewModel.swift */; };
-		1A93FFFC2A631BCE00EFDEA6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93FFFB2A631BCE00EFDEA6 /* SettingsViewModel.swift */; };
-		1A93FFFE2A63249800EFDEA6 /* GameplayViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93FFFD2A63249800EFDEA6 /* GameplayViewModelImpl.swift */; };
 		1AB6C43F29D9A42700A00872 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; };
 		1AB6C44629D9A42700A00872 /* SQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C44529D9A42700A00872 /* SQLiteTests.swift */; };
 		1AB6C44729D9A42700A00872 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB6C43929D9A42600A00872 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -94,11 +84,11 @@
 		1AD928D92A56CE1B006B78EA /* PurchaseRestoringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD928D82A56CE1B006B78EA /* PurchaseRestoringService.swift */; };
 		1AD928DE2A572EAF006B78EA /* PurchaseTransactionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD928DD2A572EAF006B78EA /* PurchaseTransactionObserver.swift */; };
 		1AD928E52A57F926006B78EA /* ObserverNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD928E42A57F926006B78EA /* ObserverNotifier.swift */; };
-		1AD928F32A580330006B78EA /* PurchasingStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD928EB2A58032D006B78EA /* PurchasingStoreKit.framework */; };
-		1AD928FA2A580331006B78EA /* PurchasingStoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD928F92A580331006B78EA /* PurchasingStoreKitTests.swift */; };
-		1AD928FB2A580331006B78EA /* PurchasingStoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD928ED2A58032E006B78EA /* PurchasingStoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AD928FE2A580331006B78EA /* PurchasingStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD928EB2A58032D006B78EA /* PurchasingStoreKit.framework */; };
-		1AD928FF2A580331006B78EA /* PurchasingStoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD928EB2A58032D006B78EA /* PurchasingStoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AD928F32A580330006B78EA /* PurchasingStoreKitImpl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD928EB2A58032D006B78EA /* PurchasingStoreKitImpl.framework */; };
+		1AD928FA2A580331006B78EA /* PurchasingStoreKitImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD928F92A580331006B78EA /* PurchasingStoreKitImplTests.swift */; };
+		1AD928FB2A580331006B78EA /* PurchasingStoreKitImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD928ED2A58032E006B78EA /* PurchasingStoreKitImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AD928FE2A580331006B78EA /* PurchasingStoreKitImpl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD928EB2A58032D006B78EA /* PurchasingStoreKitImpl.framework */; };
+		1AD928FF2A580331006B78EA /* PurchasingStoreKitImpl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD928EB2A58032D006B78EA /* PurchasingStoreKitImpl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AD929092A58038B006B78EA /* AsyncSequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD929082A58038B006B78EA /* AsyncSequence+Extensions.swift */; };
 		1AD9290B2A5803AC006B78EA /* StoreKitProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9290A2A5803AC006B78EA /* StoreKitProductService.swift */; };
 		1AD9290D2A5803BA006B78EA /* StoreKitPurchaseRestoringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9290C2A5803BA006B78EA /* StoreKitPurchaseRestoringService.swift */; };
@@ -181,20 +171,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1A4982702A3727210057828E;
 			remoteInfo = Common;
-		};
-		1A607EFD2A56A96A007C6150 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A607EF32A56A966007C6150;
-			remoteInfo = Purchasing;
-		};
-		1A607EFF2A56A96C007C6150 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB92FF62A55C0E700F82E54;
-			remoteInfo = WordFall_iOS;
 		};
 		1A607F052A56A96D007C6150 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -307,27 +283,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1AD92A972A60590F006B78EA;
 			remoteInfo = WordGameGameplay;
-		};
-		1A93FFE52A63199D00EFDEA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A93FFDB2A63199D00EFDEA6;
-			remoteInfo = ViewModel;
-		};
-		1A93FFE72A63199D00EFDEA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB92FF62A55C0E700F82E54;
-			remoteInfo = WordFall_iOS;
-		};
-		1A93FFED2A63199D00EFDEA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A93FFDB2A63199D00EFDEA6;
-			remoteInfo = ViewModel;
 		};
 		1AB6C44029D9A42700A00872 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -573,7 +528,7 @@
 				1A9300252A640D4400EFDEA6 /* WordPuzzleImpl.framework in Embed Frameworks */,
 				1AD92A462A5C8AD4006B78EA /* WordProvider.framework in Embed Frameworks */,
 				1A9300842A64118000EFDEA6 /* WordGameGameplayImpl.framework in Embed Frameworks */,
-				1AD928FF2A580331006B78EA /* PurchasingStoreKit.framework in Embed Frameworks */,
+				1AD928FF2A580331006B78EA /* PurchasingStoreKitImpl.framework in Embed Frameworks */,
 				1AD929E12A5C847E006B78EA /* WordGame.framework in Embed Frameworks */,
 				1AD92A682A5C8B1D006B78EA /* WordProviderSQLiteImpl.framework in Embed Frameworks */,
 				1AB9302E2A55C18C00F82E54 /* SQLite.framework in Embed Frameworks */,
@@ -583,7 +538,6 @@
 				1AD92A012A5C84EB006B78EA /* WordPuzzle.framework in Embed Frameworks */,
 				1AD929732A588F08006B78EA /* Settings.framework in Embed Frameworks */,
 				1AD92AAC2A605910006B78EA /* WordGameGameplay.framework in Embed Frameworks */,
-				1A93FFF02A63199D00EFDEA6 /* ViewModel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,8 +552,6 @@
 		1A49828D2A37273B0057828E /* Try.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try.swift; sourceTree = "<group>"; };
 		1A607EF42A56A967007C6150 /* Purchasing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Purchasing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A607EF62A56A968007C6150 /* Purchasing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Purchasing.h; sourceTree = "<group>"; };
-		1A607EFB2A56A969007C6150 /* PurchasingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurchasingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A607F022A56A96D007C6150 /* PurchasingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasingTests.swift; sourceTree = "<group>"; };
 		1A607F0F2A56AA24007C6150 /* PurchasingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasingService.swift; sourceTree = "<group>"; };
 		1A9300002A63D24F00EFDEA6 /* WordPuzzleImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleImpl.swift; sourceTree = "<group>"; };
 		1A9300022A63D5EA00EFDEA6 /* WordGameImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameImpl.swift; sourceTree = "<group>"; };
@@ -620,13 +572,6 @@
 		1A9300722A64117E00EFDEA6 /* WordGameGameplayImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordGameGameplayImpl.h; sourceTree = "<group>"; };
 		1A9300772A64117E00EFDEA6 /* WordGameGameplayImplTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordGameGameplayImplTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A93007E2A64117F00EFDEA6 /* WordGameGameplayImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameGameplayImplTests.swift; sourceTree = "<group>"; };
-		1A93FFDC2A63199D00EFDEA6 /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A93FFDE2A63199D00EFDEA6 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
-		1A93FFE32A63199D00EFDEA6 /* ViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A93FFEA2A63199D00EFDEA6 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
-		1A93FFF92A631BC200EFDEA6 /* GameplayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayViewModel.swift; sourceTree = "<group>"; };
-		1A93FFFB2A631BCE00EFDEA6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		1A93FFFD2A63249800EFDEA6 /* GameplayViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayViewModelImpl.swift; sourceTree = "<group>"; };
 		1AB6C42629D7070800A00872 /* QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParameter.swift; sourceTree = "<group>"; };
 		1AB6C42A29D713AA00A00872 /* ResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSet.swift; sourceTree = "<group>"; };
 		1AB6C42C29D778D600A00872 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
@@ -657,10 +602,10 @@
 		1AD928D82A56CE1B006B78EA /* PurchaseRestoringService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseRestoringService.swift; sourceTree = "<group>"; };
 		1AD928DD2A572EAF006B78EA /* PurchaseTransactionObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTransactionObserver.swift; sourceTree = "<group>"; };
 		1AD928E42A57F926006B78EA /* ObserverNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverNotifier.swift; sourceTree = "<group>"; };
-		1AD928EB2A58032D006B78EA /* PurchasingStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PurchasingStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AD928ED2A58032E006B78EA /* PurchasingStoreKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchasingStoreKit.h; sourceTree = "<group>"; };
-		1AD928F22A58032F006B78EA /* PurchasingStoreKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurchasingStoreKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AD928F92A580331006B78EA /* PurchasingStoreKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasingStoreKitTests.swift; sourceTree = "<group>"; };
+		1AD928EB2A58032D006B78EA /* PurchasingStoreKitImpl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PurchasingStoreKitImpl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD928ED2A58032E006B78EA /* PurchasingStoreKitImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchasingStoreKitImpl.h; sourceTree = "<group>"; };
+		1AD928F22A58032F006B78EA /* PurchasingStoreKitImplTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurchasingStoreKitImplTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD928F92A580331006B78EA /* PurchasingStoreKitImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasingStoreKitImplTests.swift; sourceTree = "<group>"; };
 		1AD929082A58038B006B78EA /* AsyncSequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncSequence+Extensions.swift"; sourceTree = "<group>"; };
 		1AD9290A2A5803AC006B78EA /* StoreKitProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitProductService.swift; sourceTree = "<group>"; };
 		1AD9290C2A5803BA006B78EA /* StoreKitPurchaseRestoringService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitPurchaseRestoringService.swift; sourceTree = "<group>"; };
@@ -751,14 +696,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A607EF82A56A968007C6150 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A607EFC2A56A96A007C6150 /* Purchasing.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1A93000E2A640D4200EFDEA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -810,21 +747,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A93FFD92A63199D00EFDEA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A93FFE02A63199D00EFDEA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A93FFE42A63199D00EFDEA6 /* ViewModel.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1AB6C43429D9A42600A00872 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -848,7 +770,7 @@
 				1A9300242A640D4400EFDEA6 /* WordPuzzleImpl.framework in Frameworks */,
 				1AD92A452A5C8AD4006B78EA /* WordProvider.framework in Frameworks */,
 				1A9300832A64118000EFDEA6 /* WordGameGameplayImpl.framework in Frameworks */,
-				1AD928FE2A580331006B78EA /* PurchasingStoreKit.framework in Frameworks */,
+				1AD928FE2A580331006B78EA /* PurchasingStoreKitImpl.framework in Frameworks */,
 				1AD929E02A5C847E006B78EA /* WordGame.framework in Frameworks */,
 				1AD92A672A5C8B1D006B78EA /* WordProviderSQLiteImpl.framework in Frameworks */,
 				1AB9302D2A55C18C00F82E54 /* SQLite.framework in Frameworks */,
@@ -858,7 +780,6 @@
 				1AD92A002A5C84EB006B78EA /* WordPuzzle.framework in Frameworks */,
 				1AD929722A588F08006B78EA /* Settings.framework in Frameworks */,
 				1AD92AAB2A605910006B78EA /* WordGameGameplay.framework in Frameworks */,
-				1A93FFEF2A63199D00EFDEA6 /* ViewModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -889,7 +810,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD928F32A580330006B78EA /* PurchasingStoreKit.framework in Frameworks */,
+				1AD928F32A580330006B78EA /* PurchasingStoreKitImpl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1018,14 +939,6 @@
 			path = Purchasing;
 			sourceTree = "<group>";
 		};
-		1A607F012A56A96D007C6150 /* PurchasingTests */ = {
-			isa = PBXGroup;
-			children = (
-				1A607F022A56A96D007C6150 /* PurchasingTests.swift */,
-			);
-			path = PurchasingTests;
-			sourceTree = "<group>";
-		};
 		1A9300122A640D4200EFDEA6 /* WordPuzzleImpl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1095,49 +1008,6 @@
 			path = WordGameGameplayImplTests;
 			sourceTree = "<group>";
 		};
-		1A93FFDD2A63199D00EFDEA6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				1A93FFF72A631B0F00EFDEA6 /* GameplayViewModel */,
-				1A93FFF82A631B1A00EFDEA6 /* SettingsViewModel */,
-				1A93FFDE2A63199D00EFDEA6 /* ViewModel.h */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		1A93FFE92A63199D00EFDEA6 /* ViewModelTests */ = {
-			isa = PBXGroup;
-			children = (
-				1A93FFEA2A63199D00EFDEA6 /* ViewModelTests.swift */,
-			);
-			path = ViewModelTests;
-			sourceTree = "<group>";
-		};
-		1A93FFF72A631B0F00EFDEA6 /* GameplayViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				1A93FFFF2A63249D00EFDEA6 /* Impl */,
-				1A93FFF92A631BC200EFDEA6 /* GameplayViewModel.swift */,
-			);
-			path = GameplayViewModel;
-			sourceTree = "<group>";
-		};
-		1A93FFF82A631B1A00EFDEA6 /* SettingsViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				1A93FFFB2A631BCE00EFDEA6 /* SettingsViewModel.swift */,
-			);
-			path = SettingsViewModel;
-			sourceTree = "<group>";
-		};
-		1A93FFFF2A63249D00EFDEA6 /* Impl */ = {
-			isa = PBXGroup;
-			children = (
-				1A93FFFD2A63249800EFDEA6 /* GameplayViewModelImpl.swift */,
-			);
-			path = Impl;
-			sourceTree = "<group>";
-		};
 		1AB6C31829D6BDA300A00872 = {
 			isa = PBXGroup;
 			children = (
@@ -1156,12 +1026,9 @@
 				1AD92A992A60590F006B78EA /* WordGameGameplay */,
 				1A9300712A64117E00EFDEA6 /* WordGameGameplayImpl */,
 				1A93007D2A64117F00EFDEA6 /* WordGameGameplayImplTests */,
-				1A93FFDD2A63199D00EFDEA6 /* ViewModel */,
-				1A93FFE92A63199D00EFDEA6 /* ViewModelTests */,
 				1A607EF52A56A968007C6150 /* Purchasing */,
-				1A607F012A56A96D007C6150 /* PurchasingTests */,
-				1AD928EC2A58032E006B78EA /* PurchasingStoreKit */,
-				1AD928F82A580331006B78EA /* PurchasingStoreKitTests */,
+				1AD928EC2A58032E006B78EA /* PurchasingStoreKitImpl */,
+				1AD928F82A580331006B78EA /* PurchasingStoreKitImplTests */,
 				1AD929602A588F07006B78EA /* Settings */,
 				1AD9296C2A588F08006B78EA /* SettingsTests */,
 				1AD929872A5B0ED8006B78EA /* SettingsUserDefaults */,
@@ -1186,9 +1053,8 @@
 				1AB930062A55C0EA00F82E54 /* WordFall_iOSTests.xctest */,
 				1AB930102A55C0ED00F82E54 /* WordFall_iOSUITests.xctest */,
 				1A607EF42A56A967007C6150 /* Purchasing.framework */,
-				1A607EFB2A56A969007C6150 /* PurchasingTests.xctest */,
-				1AD928EB2A58032D006B78EA /* PurchasingStoreKit.framework */,
-				1AD928F22A58032F006B78EA /* PurchasingStoreKitTests.xctest */,
+				1AD928EB2A58032D006B78EA /* PurchasingStoreKitImpl.framework */,
+				1AD928F22A58032F006B78EA /* PurchasingStoreKitImplTests.xctest */,
 				1AD9295F2A588F06006B78EA /* Settings.framework */,
 				1AD929662A588F07006B78EA /* SettingsTests.xctest */,
 				1AD929862A5B0ED8006B78EA /* SettingsUserDefaults.framework */,
@@ -1199,8 +1065,6 @@
 				1AD92A542A5C8B1B006B78EA /* WordProviderSQLiteImpl.framework */,
 				1AD92A5B2A5C8B1C006B78EA /* WordProviderSQLiteImplTests.xctest */,
 				1AD92A982A60590F006B78EA /* WordGameGameplay.framework */,
-				1A93FFDC2A63199D00EFDEA6 /* ViewModel.framework */,
-				1A93FFE32A63199D00EFDEA6 /* ViewModelTests.xctest */,
 				1A9300112A640D4200EFDEA6 /* WordPuzzleImpl.framework */,
 				1A9300182A640D4300EFDEA6 /* WordPuzzleImplTests.xctest */,
 				1A93003D2A640F9D00EFDEA6 /* WordGameImpl.framework */,
@@ -1282,23 +1146,23 @@
 			path = WordFall_iOSUITests;
 			sourceTree = "<group>";
 		};
-		1AD928EC2A58032E006B78EA /* PurchasingStoreKit */ = {
+		1AD928EC2A58032E006B78EA /* PurchasingStoreKitImpl */ = {
 			isa = PBXGroup;
 			children = (
 				1AD9290A2A5803AC006B78EA /* StoreKitProductService.swift */,
 				1AD9290C2A5803BA006B78EA /* StoreKitPurchaseRestoringService.swift */,
 				1AD9290E2A5803CD006B78EA /* StoreKitPurchaseTransactionObserver.swift */,
-				1AD928ED2A58032E006B78EA /* PurchasingStoreKit.h */,
+				1AD928ED2A58032E006B78EA /* PurchasingStoreKitImpl.h */,
 			);
-			path = PurchasingStoreKit;
+			path = PurchasingStoreKitImpl;
 			sourceTree = "<group>";
 		};
-		1AD928F82A580331006B78EA /* PurchasingStoreKitTests */ = {
+		1AD928F82A580331006B78EA /* PurchasingStoreKitImplTests */ = {
 			isa = PBXGroup;
 			children = (
-				1AD928F92A580331006B78EA /* PurchasingStoreKitTests.swift */,
+				1AD928F92A580331006B78EA /* PurchasingStoreKitImplTests.swift */,
 			);
-			path = PurchasingStoreKitTests;
+			path = PurchasingStoreKitImplTests;
 			sourceTree = "<group>";
 		};
 		1AD929072A58037A006B78EA /* Extensions */ = {
@@ -1531,14 +1395,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A93FFD72A63199D00EFDEA6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A93FFEC2A63199D00EFDEA6 /* ViewModel.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1AB6C43229D9A42600A00872 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1551,7 +1407,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD928FB2A580331006B78EA /* PurchasingStoreKit.h in Headers */,
+				1AD928FB2A580331006B78EA /* PurchasingStoreKitImpl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1667,25 +1523,6 @@
 			productName = Purchasing;
 			productReference = 1A607EF42A56A967007C6150 /* Purchasing.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		1A607EFA2A56A968007C6150 /* PurchasingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A607F0E2A56A96E007C6150 /* Build configuration list for PBXNativeTarget "PurchasingTests" */;
-			buildPhases = (
-				1A607EF72A56A968007C6150 /* Sources */,
-				1A607EF82A56A968007C6150 /* Frameworks */,
-				1A607EF92A56A968007C6150 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A607EFE2A56A96A007C6150 /* PBXTargetDependency */,
-				1A607F002A56A96C007C6150 /* PBXTargetDependency */,
-			);
-			name = PurchasingTests;
-			productName = PurchasingTests;
-			productReference = 1A607EFB2A56A969007C6150 /* PurchasingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		1A9300102A640D4200EFDEA6 /* WordPuzzleImpl */ = {
 			isa = PBXNativeTarget;
@@ -1804,43 +1641,6 @@
 			productReference = 1A9300772A64117E00EFDEA6 /* WordGameGameplayImplTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1A93FFDB2A63199D00EFDEA6 /* ViewModel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A93FFF12A63199E00EFDEA6 /* Build configuration list for PBXNativeTarget "ViewModel" */;
-			buildPhases = (
-				1A93FFD72A63199D00EFDEA6 /* Headers */,
-				1A93FFD82A63199D00EFDEA6 /* Sources */,
-				1A93FFD92A63199D00EFDEA6 /* Frameworks */,
-				1A93FFDA2A63199D00EFDEA6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ViewModel;
-			productName = ViewModel;
-			productReference = 1A93FFDC2A63199D00EFDEA6 /* ViewModel.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1A93FFE22A63199D00EFDEA6 /* ViewModelTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A93FFF42A63199E00EFDEA6 /* Build configuration list for PBXNativeTarget "ViewModelTests" */;
-			buildPhases = (
-				1A93FFDF2A63199D00EFDEA6 /* Sources */,
-				1A93FFE02A63199D00EFDEA6 /* Frameworks */,
-				1A93FFE12A63199D00EFDEA6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A93FFE62A63199D00EFDEA6 /* PBXTargetDependency */,
-				1A93FFE82A63199D00EFDEA6 /* PBXTargetDependency */,
-			);
-			name = ViewModelTests;
-			productName = ViewModelTests;
-			productReference = 1A93FFE32A63199D00EFDEA6 /* ViewModelTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		1AB6C43629D9A42600A00872 /* SQLite */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AB6C44C29D9A42700A00872 /* Build configuration list for PBXNativeTarget "SQLite" */;
@@ -1901,7 +1701,6 @@
 				1AD92A442A5C8AD4006B78EA /* PBXTargetDependency */,
 				1AD92A662A5C8B1D006B78EA /* PBXTargetDependency */,
 				1AD92AAA2A605910006B78EA /* PBXTargetDependency */,
-				1A93FFEE2A63199D00EFDEA6 /* PBXTargetDependency */,
 				1A9300232A640D4400EFDEA6 /* PBXTargetDependency */,
 				1A93004F2A640F9F00EFDEA6 /* PBXTargetDependency */,
 				1A9300822A64118000EFDEA6 /* PBXTargetDependency */,
@@ -1947,9 +1746,9 @@
 			productReference = 1AB930102A55C0ED00F82E54 /* WordFall_iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		1AD928EA2A58032D006B78EA /* PurchasingStoreKit */ = {
+		1AD928EA2A58032D006B78EA /* PurchasingStoreKitImpl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AD929002A580332006B78EA /* Build configuration list for PBXNativeTarget "PurchasingStoreKit" */;
+			buildConfigurationList = 1AD929002A580332006B78EA /* Build configuration list for PBXNativeTarget "PurchasingStoreKitImpl" */;
 			buildPhases = (
 				1AD928E62A58032D006B78EA /* Headers */,
 				1AD928E72A58032D006B78EA /* Sources */,
@@ -1962,14 +1761,14 @@
 				1AD929132A580422006B78EA /* PBXTargetDependency */,
 				1AD929182A5804CC006B78EA /* PBXTargetDependency */,
 			);
-			name = PurchasingStoreKit;
+			name = PurchasingStoreKitImpl;
 			productName = PurchasingStoreKit;
-			productReference = 1AD928EB2A58032D006B78EA /* PurchasingStoreKit.framework */;
+			productReference = 1AD928EB2A58032D006B78EA /* PurchasingStoreKitImpl.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1AD928F12A58032E006B78EA /* PurchasingStoreKitTests */ = {
+		1AD928F12A58032E006B78EA /* PurchasingStoreKitImplTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AD929032A580332006B78EA /* Build configuration list for PBXNativeTarget "PurchasingStoreKitTests" */;
+			buildConfigurationList = 1AD929032A580332006B78EA /* Build configuration list for PBXNativeTarget "PurchasingStoreKitImplTests" */;
 			buildPhases = (
 				1AD928EE2A58032E006B78EA /* Sources */,
 				1AD928EF2A58032E006B78EA /* Frameworks */,
@@ -1981,9 +1780,9 @@
 				1AD928F52A580330006B78EA /* PBXTargetDependency */,
 				1AD928F72A580331006B78EA /* PBXTargetDependency */,
 			);
-			name = PurchasingStoreKitTests;
+			name = PurchasingStoreKitImplTests;
 			productName = PurchasingStoreKitTests;
-			productReference = 1AD928F22A58032F006B78EA /* PurchasingStoreKitTests.xctest */;
+			productReference = 1AD928F22A58032F006B78EA /* PurchasingStoreKitImplTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		1AD9295E2A588F06006B78EA /* Settings */ = {
@@ -2201,10 +2000,6 @@
 						CreatedOnToolsVersion = 14.3;
 						LastSwiftMigration = 1430;
 					};
-					1A607EFA2A56A968007C6150 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 1AB92FF62A55C0E700F82E54;
-					};
 					1A9300102A640D4200EFDEA6 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -2223,14 +2018,6 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					1A9300762A64117E00EFDEA6 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 1AB92FF62A55C0E700F82E54;
-					};
-					1A93FFDB2A63199D00EFDEA6 = {
-						CreatedOnToolsVersion = 14.3;
-						LastSwiftMigration = 1430;
-					};
-					1A93FFE22A63199D00EFDEA6 = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 1AB92FF62A55C0E700F82E54;
 					};
@@ -2330,12 +2117,9 @@
 				1AD92A972A60590F006B78EA /* WordGameGameplay */,
 				1A93006F2A64117D00EFDEA6 /* WordGameGameplayImpl */,
 				1A9300762A64117E00EFDEA6 /* WordGameGameplayImplTests */,
-				1A93FFDB2A63199D00EFDEA6 /* ViewModel */,
-				1A93FFE22A63199D00EFDEA6 /* ViewModelTests */,
 				1A607EF32A56A966007C6150 /* Purchasing */,
-				1A607EFA2A56A968007C6150 /* PurchasingTests */,
-				1AD928EA2A58032D006B78EA /* PurchasingStoreKit */,
-				1AD928F12A58032E006B78EA /* PurchasingStoreKitTests */,
+				1AD928EA2A58032D006B78EA /* PurchasingStoreKitImpl */,
+				1AD928F12A58032E006B78EA /* PurchasingStoreKitImplTests */,
 				1AD9295E2A588F06006B78EA /* Settings */,
 				1AD929652A588F07006B78EA /* SettingsTests */,
 				1AD929852A5B0ED8006B78EA /* SettingsUserDefaults */,
@@ -2364,13 +2148,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1A607EF22A56A966007C6150 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A607EF92A56A968007C6150 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2413,20 +2190,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1A9300752A64117E00EFDEA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A93FFDA2A63199D00EFDEA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A93FFE12A63199D00EFDEA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2611,14 +2374,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A607EF72A56A968007C6150 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A607F032A56A96D007C6150 /* PurchasingTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1A93000D2A640D4200EFDEA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2674,24 +2429,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A93007F2A64117F00EFDEA6 /* WordGameGameplayImplTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A93FFD82A63199D00EFDEA6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A93FFFA2A631BC200EFDEA6 /* GameplayViewModel.swift in Sources */,
-				1A93FFFE2A63249800EFDEA6 /* GameplayViewModelImpl.swift in Sources */,
-				1A93FFFC2A631BCE00EFDEA6 /* SettingsViewModel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A93FFDF2A63199D00EFDEA6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A93FFEB2A63199D00EFDEA6 /* ViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2762,7 +2499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD928FA2A580331006B78EA /* PurchasingStoreKitTests.swift in Sources */,
+				1AD928FA2A580331006B78EA /* PurchasingStoreKitImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2879,16 +2616,6 @@
 			target = 1A4982702A3727210057828E /* Common */;
 			targetProxy = 1A49827A2A3727210057828E /* PBXContainerItemProxy */;
 		};
-		1A607EFE2A56A96A007C6150 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A607EF32A56A966007C6150 /* Purchasing */;
-			targetProxy = 1A607EFD2A56A96A007C6150 /* PBXContainerItemProxy */;
-		};
-		1A607F002A56A96C007C6150 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB92FF62A55C0E700F82E54 /* WordFall_iOS */;
-			targetProxy = 1A607EFF2A56A96C007C6150 /* PBXContainerItemProxy */;
-		};
 		1A607F062A56A96D007C6150 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1A607EF32A56A966007C6150 /* Purchasing */;
@@ -2969,21 +2696,6 @@
 			target = 1AD92A972A60590F006B78EA /* WordGameGameplay */;
 			targetProxy = 1A9300972A64124A00EFDEA6 /* PBXContainerItemProxy */;
 		};
-		1A93FFE62A63199D00EFDEA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A93FFDB2A63199D00EFDEA6 /* ViewModel */;
-			targetProxy = 1A93FFE52A63199D00EFDEA6 /* PBXContainerItemProxy */;
-		};
-		1A93FFE82A63199D00EFDEA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AB92FF62A55C0E700F82E54 /* WordFall_iOS */;
-			targetProxy = 1A93FFE72A63199D00EFDEA6 /* PBXContainerItemProxy */;
-		};
-		1A93FFEE2A63199D00EFDEA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A93FFDB2A63199D00EFDEA6 /* ViewModel */;
-			targetProxy = 1A93FFED2A63199D00EFDEA6 /* PBXContainerItemProxy */;
-		};
 		1AB6C44129D9A42700A00872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1AB6C43629D9A42600A00872 /* SQLite */;
@@ -3011,7 +2723,7 @@
 		};
 		1AD928F52A580330006B78EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1AD928EA2A58032D006B78EA /* PurchasingStoreKit */;
+			target = 1AD928EA2A58032D006B78EA /* PurchasingStoreKitImpl */;
 			targetProxy = 1AD928F42A580330006B78EA /* PBXContainerItemProxy */;
 		};
 		1AD928F72A580331006B78EA /* PBXTargetDependency */ = {
@@ -3021,7 +2733,7 @@
 		};
 		1AD928FD2A580331006B78EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1AD928EA2A58032D006B78EA /* PurchasingStoreKit */;
+			target = 1AD928EA2A58032D006B78EA /* PurchasingStoreKitImpl */;
 			targetProxy = 1AD928FC2A580331006B78EA /* PBXContainerItemProxy */;
 		};
 		1AD929132A580422006B78EA /* PBXTargetDependency */ = {
@@ -3329,44 +3041,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1A607F0B2A56A96E007C6150 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3Z3949Y4B2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.PurchasingTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall_iOS";
-			};
-			name = Debug;
-		};
-		1A607F0C2A56A96E007C6150 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3Z3949Y4B2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.PurchasingTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall_iOS";
 			};
 			name = Release;
 		};
@@ -3680,115 +3354,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.WordGameGameplayImplTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall_iOS";
-			};
-			name = Release;
-		};
-		1A93FFF22A63199E00EFDEA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3Z3949Y4B2;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.ViewModel";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1A93FFF32A63199E00EFDEA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3Z3949Y4B2;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.ViewModel";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1A93FFF52A63199E00EFDEA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3Z3949Y4B2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.ViewModelTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordFall_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordFall_iOS";
-			};
-			name = Debug;
-		};
-		1A93FFF62A63199E00EFDEA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3Z3949Y4B2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Eigo-Madaloja.ViewModelTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -4909,15 +4474,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A607F0E2A56A96E007C6150 /* Build configuration list for PBXNativeTarget "PurchasingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A607F0B2A56A96E007C6150 /* Debug */,
-				1A607F0C2A56A96E007C6150 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1A9300262A640D4400EFDEA6 /* Build configuration list for PBXNativeTarget "WordPuzzleImpl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -4968,24 +4524,6 @@
 			buildConfigurations = (
 				1A9300892A64118000EFDEA6 /* Debug */,
 				1A93008A2A64118000EFDEA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A93FFF12A63199E00EFDEA6 /* Build configuration list for PBXNativeTarget "ViewModel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A93FFF22A63199E00EFDEA6 /* Debug */,
-				1A93FFF32A63199E00EFDEA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A93FFF42A63199E00EFDEA6 /* Build configuration list for PBXNativeTarget "ViewModelTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A93FFF52A63199E00EFDEA6 /* Debug */,
-				1A93FFF62A63199E00EFDEA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -5044,7 +4582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AD929002A580332006B78EA /* Build configuration list for PBXNativeTarget "PurchasingStoreKit" */ = {
+		1AD929002A580332006B78EA /* Build configuration list for PBXNativeTarget "PurchasingStoreKitImpl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1AD929012A580332006B78EA /* Debug */,
@@ -5053,7 +4591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AD929032A580332006B78EA /* Build configuration list for PBXNativeTarget "PurchasingStoreKitTests" */ = {
+		1AD929032A580332006B78EA /* Build configuration list for PBXNativeTarget "PurchasingStoreKitImplTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1AD929042A580332006B78EA /* Debug */,
