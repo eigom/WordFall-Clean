@@ -1,3 +1,5 @@
+import WordPuzzle
+
 public struct WordPuzzleMakerImpl: WordPuzzleMaker {
     public func makePuzzle(with word: String) -> WordPuzzle {
         return WordPuzzleImpl(

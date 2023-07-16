@@ -1,14 +1,14 @@
 //
-//  WordPuzzleTests.swift
-//  WordPuzzleTests
+//  WordPuzzleImplTests.swift
+//  WordPuzzleImplTests
 //
-//  Created by Eigo Madaloja on 10.07.2023.
+//  Created by Eigo Madaloja on 16.07.2023.
 //
 
 import XCTest
-@testable import WordPuzzle
+@testable import WordPuzzleImpl
 
-final class WordPuzzleTests: XCTestCase {
+final class WordPuzzleImplTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

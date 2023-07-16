@@ -1,3 +1,5 @@
+import WordPuzzle
+
 public struct WordPuzzleLetterTrierImpl: WordPuzzleLetterTrier {
     public func tryLetter(at puzzleLetterIndex: Int, in puzzle: WordPuzzle) -> (WordPuzzle, WordPuzzleLetter?) {
         guard
@@ -17,7 +19,7 @@ public struct WordPuzzleLetterTrierImpl: WordPuzzleLetterTrier {
             puzzleLetters: newPuzzleLetters,
             solutionLetters: newSolutionLetters
         )
-        let solvedLetter = WordPuzzleLetter(
+        let solvedLetter = WordPuzzleLetterImpl(
             letter: puzzleLetter,
             puzzleIndex: puzzleLetterIndex,
             solutionIndex: solutionLetterIndex

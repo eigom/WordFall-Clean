@@ -1,3 +1,5 @@
+import WordPuzzle
+
 public struct WordPuzzleImpl: WordPuzzle {
     public let wordLetters: [Character]
     public let puzzleLetters: [Character?]
