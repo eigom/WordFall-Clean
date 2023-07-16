@@ -5,7 +5,7 @@
 import WordPuzzle
 import WordGame
 
-public struct WordGameMakerImpl: WordGameMaker {
+public struct WordGameFactoryImpl: WordGameFactory {
     public func makeGame(puzzle: WordPuzzle, solvingTimeStrategy: SolvingTimeStrategy) -> WordGame {
         return WordGameImpl(
             puzzle: puzzle,

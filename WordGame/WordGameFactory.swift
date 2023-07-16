@@ -4,6 +4,6 @@
 
 import WordPuzzle
 
-public protocol WordGameMaker {
+public protocol WordGameFactory {
     func makeGame(puzzle: WordPuzzle, solvingTimeStrategy: SolvingTimeStrategy) -> WordGame
 }
