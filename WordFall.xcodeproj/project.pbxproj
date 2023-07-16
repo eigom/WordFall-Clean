@@ -71,6 +71,8 @@
 		1A9301342A646C3700EFDEA6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
 		1A9301392A646C4000EFDEA6 /* WordProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; };
 		1A93013D2A646D3500EFDEA6 /* WordProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; };
+		1A9301432A646FD300EFDEA6 /* SolvingTimeStrategyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9301422A646FD300EFDEA6 /* SolvingTimeStrategyProvider.swift */; };
+		1A9301452A64701200EFDEA6 /* SolvingTimeStrategyProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9301442A64701200EFDEA6 /* SolvingTimeStrategyProviderImpl.swift */; };
 		1AB6C43F29D9A42700A00872 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; };
 		1AB6C44629D9A42700A00872 /* SQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C44529D9A42700A00872 /* SQLiteTests.swift */; };
 		1AB6C45229D9A44B00A00872 /* ResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42A29D713AA00A00872 /* ResultSet.swift */; };
@@ -663,6 +665,8 @@
 		1A9301292A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameGameplayFactoryImpl.swift; sourceTree = "<group>"; };
 		1A93012B2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameInfiniteGameplay.swift; sourceTree = "<group>"; };
 		1A93012D2A646BC600EFDEA6 /* WordPuzzleFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleFactoryImpl.swift; sourceTree = "<group>"; };
+		1A9301422A646FD300EFDEA6 /* SolvingTimeStrategyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvingTimeStrategyProvider.swift; sourceTree = "<group>"; };
+		1A9301442A64701200EFDEA6 /* SolvingTimeStrategyProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvingTimeStrategyProviderImpl.swift; sourceTree = "<group>"; };
 		1AB6C42629D7070800A00872 /* QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParameter.swift; sourceTree = "<group>"; };
 		1AB6C42A29D713AA00A00872 /* ResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSet.swift; sourceTree = "<group>"; };
 		1AB6C42C29D778D600A00872 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
@@ -1078,6 +1082,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD92A232A5C8922006B78EA /* SolvingTimeStrategy.swift */,
+				1A9301422A646FD300EFDEA6 /* SolvingTimeStrategyProvider.swift */,
 			);
 			path = SolvingTime;
 			sourceTree = "<group>";
@@ -1375,6 +1380,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD92A262A5C8944006B78EA /* RandomSolvingTimeStrategy.swift */,
+				1A9301442A64701200EFDEA6 /* SolvingTimeStrategyProviderImpl.swift */,
 			);
 			path = SolvingTime;
 			sourceTree = "<group>";
@@ -2520,6 +2526,7 @@
 				1A9300592A640FD800EFDEA6 /* WordGameLetterRevealerImpl.swift in Sources */,
 				1A93005B2A640FD800EFDEA6 /* WordGameElapsedTimeApplierImpl.swift in Sources */,
 				1A93005E2A64101200EFDEA6 /* RandomSolvingTimeStrategy.swift in Sources */,
+				1A9301452A64701200EFDEA6 /* SolvingTimeStrategyProviderImpl.swift in Sources */,
 				1A93005A2A640FD800EFDEA6 /* WordGameLetterTrierImpl.swift in Sources */,
 				1A9300582A640FD800EFDEA6 /* WordGameImpl.swift in Sources */,
 				1A93005C2A640FD800EFDEA6 /* WordGameMakerImpl.swift in Sources */,
@@ -2676,6 +2683,7 @@
 			files = (
 				1AD92A772A5C8CFA006B78EA /* WordGameLetterTrier.swift in Sources */,
 				1AD92A1F2A5C8885006B78EA /* WordGameMaker.swift in Sources */,
+				1A9301432A646FD300EFDEA6 /* SolvingTimeStrategyProvider.swift in Sources */,
 				1A9300602A64104A00EFDEA6 /* SolvingTimeStrategy.swift in Sources */,
 				1AD92A1D2A5C8864006B78EA /* WordGame.swift in Sources */,
 				1AD92A792A5C8D2D006B78EA /* WordGameLetterRevealer.swift in Sources */,
