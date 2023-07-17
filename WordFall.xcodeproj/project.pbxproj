@@ -64,7 +64,6 @@
 		1A9301222A6438F400EFDEA6 /* WordPuzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD929ED2A5C84E9006B78EA /* WordPuzzle.framework */; };
 		1A9301282A644F8F00EFDEA6 /* WordGameGameplayFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9301272A644F8F00EFDEA6 /* WordGameGameplayFactory.swift */; };
 		1A93012A2A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9301292A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift */; };
-		1A93012C2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93012B2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift */; };
 		1A93012E2A646BC600EFDEA6 /* WordPuzzleFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93012D2A646BC600EFDEA6 /* WordPuzzleFactoryImpl.swift */; };
 		1A93012F2A646C2800EFDEA6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
 		1A9301342A646C3700EFDEA6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
@@ -676,7 +675,6 @@
 		1A9300CC2A64152400EFDEA6 /* PersistedSettingImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistedSettingImplTests.swift; sourceTree = "<group>"; };
 		1A9301272A644F8F00EFDEA6 /* WordGameGameplayFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameGameplayFactory.swift; sourceTree = "<group>"; };
 		1A9301292A644FE500EFDEA6 /* WordGameGameplayFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameGameplayFactoryImpl.swift; sourceTree = "<group>"; };
-		1A93012B2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameInfiniteGameplay.swift; sourceTree = "<group>"; };
 		1A93012D2A646BC600EFDEA6 /* WordPuzzleFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleFactoryImpl.swift; sourceTree = "<group>"; };
 		1A9301422A646FD300EFDEA6 /* SolvingTimeStrategyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvingTimeStrategyProvider.swift; sourceTree = "<group>"; };
 		1A9301442A64701200EFDEA6 /* SolvingTimeStrategyProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvingTimeStrategyProviderImpl.swift; sourceTree = "<group>"; };
@@ -1448,7 +1446,6 @@
 				1A9301272A644F8F00EFDEA6 /* WordGameGameplayFactory.swift */,
 				1AD92AB52A605946006B78EA /* WordGameGameplayPresenter.swift */,
 				1AD92AF12A614EC7006B78EA /* WordGameGameplayTimeUpdater.swift */,
-				1A93012B2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift */,
 			);
 			path = WordGameGameplay;
 			sourceTree = "<group>";
@@ -2758,7 +2755,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD92AB62A605946006B78EA /* WordGameGameplayPresenter.swift in Sources */,
-				1A93012C2A64520800EFDEA6 /* WordGameInfiniteGameplay.swift in Sources */,
 				1AD92AB42A605936006B78EA /* WordGameGameplay.swift in Sources */,
 				1A9301282A644F8F00EFDEA6 /* WordGameGameplayFactory.swift in Sources */,
 				1AD92AF22A614EC7006B78EA /* WordGameGameplayTimeUpdater.swift in Sources */,
