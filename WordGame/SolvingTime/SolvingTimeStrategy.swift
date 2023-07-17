@@ -10,3 +10,9 @@ public protocol SolvingTimeStrategy {
     var totalSolvingTimeSeconds: TimeInterval { get }
     var letterSolvingTimeSeconds: [TimeInterval] { get }
 }
+
+public extension SolvingTimeStrategy {
+    var totalSolvingTimeSeconds: TimeInterval {
+        letterSolvingTimeSeconds.max() ?? 0
+    }
+}

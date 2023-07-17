@@ -75,6 +75,7 @@
 		1A9301462A649E1600EFDEA6 /* WordProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; };
 		1A93014B2A649E1E00EFDEA6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
 		1A93014F2A649EEB00EFDEA6 /* WordProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; };
+		1A9301552A65819D00EFDEA6 /* LinearlyDecreasingSolvingTimeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9301542A65819D00EFDEA6 /* LinearlyDecreasingSolvingTimeStrategy.swift */; };
 		1AB6C43F29D9A42700A00872 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; };
 		1AB6C44629D9A42700A00872 /* SQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C44529D9A42700A00872 /* SQLiteTests.swift */; };
 		1AB6C45229D9A44B00A00872 /* ResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42A29D713AA00A00872 /* ResultSet.swift */; };
@@ -679,6 +680,7 @@
 		1A93012D2A646BC600EFDEA6 /* WordPuzzleFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPuzzleFactoryImpl.swift; sourceTree = "<group>"; };
 		1A9301422A646FD300EFDEA6 /* SolvingTimeStrategyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvingTimeStrategyProvider.swift; sourceTree = "<group>"; };
 		1A9301442A64701200EFDEA6 /* SolvingTimeStrategyProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvingTimeStrategyProviderImpl.swift; sourceTree = "<group>"; };
+		1A9301542A65819D00EFDEA6 /* LinearlyDecreasingSolvingTimeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearlyDecreasingSolvingTimeStrategy.swift; sourceTree = "<group>"; };
 		1AB6C42629D7070800A00872 /* QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParameter.swift; sourceTree = "<group>"; };
 		1AB6C42A29D713AA00A00872 /* ResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSet.swift; sourceTree = "<group>"; };
 		1AB6C42C29D778D600A00872 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
@@ -1395,6 +1397,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD92A262A5C8944006B78EA /* RandomSolvingTimeStrategy.swift */,
+				1A9301542A65819D00EFDEA6 /* LinearlyDecreasingSolvingTimeStrategy.swift */,
 				1A9301442A64701200EFDEA6 /* SolvingTimeStrategyProviderImpl.swift */,
 			);
 			path = SolvingTime;
@@ -2547,6 +2550,7 @@
 				1A93005A2A640FD800EFDEA6 /* WordGameLetterTrierImpl.swift in Sources */,
 				1A9300582A640FD800EFDEA6 /* WordGameImpl.swift in Sources */,
 				1A93005C2A640FD800EFDEA6 /* WordGameFactoryImpl.swift in Sources */,
+				1A9301552A65819D00EFDEA6 /* LinearlyDecreasingSolvingTimeStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
