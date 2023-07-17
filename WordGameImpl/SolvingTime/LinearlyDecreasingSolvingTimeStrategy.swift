@@ -13,7 +13,8 @@ struct LinearlyDecreasingSolvingTimeStrategy: SolvingTimeStrategy {
 
         letterSolvingTimeSeconds = (0 ..< wordLength)
             .reduce(([TimeInterval](), maxSeconds), { partialResult, _ in
-                (partialResult.0 + [partialResult.1], partialResult.1 - 2)
+                let (solvingTimes, time) = partialResult
+                return (solvingTimes + [time], time - 2)
             }).0
     }
 }
