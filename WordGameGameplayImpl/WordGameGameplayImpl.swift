@@ -32,7 +32,7 @@ public class WordGameGameplayImpl: WordGameGameplay {
     }
 
     public func start() {
-        gamePresenter.setupNewGame(
+        gamePresenter.setupGame(
             puzzleLetters: wordGame.puzzle.puzzleLetters.compactMap { $0 },
             letterSolvingTimeSeconds: wordGame.letterSolvingTimeSeconds,
             totalSolvingTimeSeconds: wordGame.totalSolvingTimeSeconds,

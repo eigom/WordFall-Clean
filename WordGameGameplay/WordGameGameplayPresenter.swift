@@ -6,7 +6,7 @@ import WordPuzzle
 import Foundation
 
 public protocol WordGameGameplayPresenter {
-    func setupNewGame(
+    func setupGame(
         puzzleLetters: [Character],
         letterSolvingTimeSeconds: [TimeInterval],
         totalSolvingTimeSeconds: TimeInterval,
