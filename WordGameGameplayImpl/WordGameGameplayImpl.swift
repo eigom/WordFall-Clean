@@ -44,6 +44,10 @@ public class WordGameGameplayImpl: WordGameGameplay {
         )
     }
 
+    public func stop() {
+        timeUpdater.stop()
+    }
+
     public func tryLetter(at puzzleLetterIndex: Int) {
         let (newWordGame, solvedLetter) = letterTrier.tryLetter(at: puzzleLetterIndex, in: wordGame)
 

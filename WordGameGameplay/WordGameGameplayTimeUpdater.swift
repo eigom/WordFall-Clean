@@ -9,7 +9,7 @@ public protocol WordGameGameplayTimeUpdater {
         durationSeconds: TimeInterval,
         onUpdate: (_ elapsedSeconds: TimeInterval) -> Void
     )
+    func stop()
     func pause()
     func resume()
-    func finish()
 }

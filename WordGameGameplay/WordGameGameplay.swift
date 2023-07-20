@@ -4,6 +4,7 @@
 
 public protocol WordGameGameplay {
     func start()
+    func stop()
     func tryLetter(at puzzleLetterIndex: Int)
     func revealAllLetters()
 }
