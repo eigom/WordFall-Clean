@@ -3,7 +3,9 @@
 //
 
 import WordGame
+import WordProvider
+import Common
 
 public protocol WordGameGameplayFactory {
-    func makeGameplay(with wordGame: WordGame) -> WordGameGameplay
+    func makeGameplay(wordLength: WordLength) -> Try<WordGameGameplay>
 }

@@ -75,6 +75,12 @@
 		1A93014B2A649E1E00EFDEA6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
 		1A93014F2A649EEB00EFDEA6 /* WordProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; };
 		1A9301552A65819D00EFDEA6 /* LinearlyDecreasingSolvingTimeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9301542A65819D00EFDEA6 /* LinearlyDecreasingSolvingTimeStrategy.swift */; };
+		1AA837D72A697B180032C834 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; };
+		1AA837D82A697B180032C834 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4982712A3727210057828E /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AA837DB2A697B180032C834 /* WordProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; };
+		1AA837DC2A697B180032C834 /* WordProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AA837E02A697B440032C834 /* WordProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; };
+		1AA837E12A697B440032C834 /* WordProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD92A322A5C8AD2006B78EA /* WordProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AB6C43F29D9A42700A00872 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB6C43729D9A42600A00872 /* SQLite.framework */; };
 		1AB6C44629D9A42700A00872 /* SQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C44529D9A42700A00872 /* SQLiteTests.swift */; };
 		1AB6C45229D9A44B00A00872 /* ResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6C42A29D713AA00A00872 /* ResultSet.swift */; };
@@ -395,6 +401,27 @@
 			remoteGlobalIDString = 1AD92A312A5C8AD2006B78EA;
 			remoteInfo = WordProvider;
 		};
+		1AA837D92A697B180032C834 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A4982702A3727210057828E;
+			remoteInfo = Common;
+		};
+		1AA837DD2A697B180032C834 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD92A312A5C8AD2006B78EA;
+			remoteInfo = WordProvider;
+		};
+		1AA837E22A697B440032C834 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD92A312A5C8AD2006B78EA;
+			remoteInfo = WordProvider;
+		};
 		1AB6C44029D9A42700A00872 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AB6C31929D6BDA300A00872 /* Project object */;
@@ -620,6 +647,29 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AA837DF2A697B180032C834 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1AA837D82A697B180032C834 /* Common.framework in Embed Frameworks */,
+				1AA837DC2A697B180032C834 /* WordProvider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AA837E42A697B440032C834 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1AA837E12A697B440032C834 /* WordProvider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AB930392A55C18C00F82E54 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -834,6 +884,7 @@
 				1A9300912A64123100EFDEA6 /* WordGame.framework in Frameworks */,
 				1A93011D2A64311300EFDEA6 /* Common.framework in Frameworks */,
 				1A9300952A64124900EFDEA6 /* WordGameGameplay.framework in Frameworks */,
+				1AA837E02A697B440032C834 /* WordProvider.framework in Frameworks */,
 				1A93008C2A64121D00EFDEA6 /* WordPuzzle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1008,6 +1059,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A9301222A6438F400EFDEA6 /* WordPuzzle.framework in Frameworks */,
+				1AA837DB2A697B180032C834 /* WordProvider.framework in Frameworks */,
+				1AA837D72A697B180032C834 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1711,6 +1764,7 @@
 				1A93006C2A64117D00EFDEA6 /* Sources */,
 				1A93006D2A64117D00EFDEA6 /* Frameworks */,
 				1A93006E2A64117D00EFDEA6 /* Resources */,
+				1AA837E42A697B440032C834 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1719,6 +1773,7 @@
 				1A9300942A64123100EFDEA6 /* PBXTargetDependency */,
 				1A9300982A64124A00EFDEA6 /* PBXTargetDependency */,
 				1A9301202A64311400EFDEA6 /* PBXTargetDependency */,
+				1AA837E32A697B440032C834 /* PBXTargetDependency */,
 			);
 			name = WordGameGameplayImpl;
 			productName = WordGameGameplayImpl;
@@ -2097,11 +2152,14 @@
 				1AD92A942A60590F006B78EA /* Sources */,
 				1AD92A952A60590F006B78EA /* Frameworks */,
 				1AD92A962A60590F006B78EA /* Resources */,
+				1AA837DF2A697B180032C834 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				1A9301252A6438F400EFDEA6 /* PBXTargetDependency */,
+				1AA837DA2A697B180032C834 /* PBXTargetDependency */,
+				1AA837DE2A697B180032C834 /* PBXTargetDependency */,
 			);
 			name = WordGameGameplay;
 			productName = WordGameGameplay;
@@ -2923,6 +2981,21 @@
 			isa = PBXTargetDependency;
 			target = 1AD92A312A5C8AD2006B78EA /* WordProvider */;
 			targetProxy = 1A9301512A649EEB00EFDEA6 /* PBXContainerItemProxy */;
+		};
+		1AA837DA2A697B180032C834 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A4982702A3727210057828E /* Common */;
+			targetProxy = 1AA837D92A697B180032C834 /* PBXContainerItemProxy */;
+		};
+		1AA837DE2A697B180032C834 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD92A312A5C8AD2006B78EA /* WordProvider */;
+			targetProxy = 1AA837DD2A697B180032C834 /* PBXContainerItemProxy */;
+		};
+		1AA837E32A697B440032C834 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD92A312A5C8AD2006B78EA /* WordProvider */;
+			targetProxy = 1AA837E22A697B440032C834 /* PBXContainerItemProxy */;
 		};
 		1AB6C44129D9A42700A00872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

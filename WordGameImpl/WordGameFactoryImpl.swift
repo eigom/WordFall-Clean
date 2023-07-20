@@ -11,7 +11,10 @@ public struct WordGameFactoryImpl: WordGameFactory {
     private let wordPuzzleFactory: WordPuzzleFactory
     private let solvingTimeStrategyProvider: SolvingTimeStrategyProvider
 
-    public init(wordPuzzleFactory: WordPuzzleFactory, solvingTimeStrategyProvider: SolvingTimeStrategyProvider) {
+    public init(
+        wordPuzzleFactory: WordPuzzleFactory,
+        solvingTimeStrategyProvider: SolvingTimeStrategyProvider
+    ) {
         self.wordPuzzleFactory = wordPuzzleFactory
         self.solvingTimeStrategyProvider = solvingTimeStrategyProvider
     }
