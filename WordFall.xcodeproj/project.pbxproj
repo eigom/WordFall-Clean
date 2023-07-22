@@ -1107,6 +1107,8 @@
 		1A607EF52A56A968007C6150 /* Purchasing */ = {
 			isa = PBXGroup;
 			children = (
+				1AD928EC2A58032E006B78EA /* PurchasingStoreKitImpl */,
+				1AD928F82A580331006B78EA /* PurchasingStoreKitImplTests */,
 				1AD928D42A56CA1A006B78EA /* ProductService.swift */,
 				1A607F0F2A56AA24007C6150 /* PurchasingService.swift */,
 				1AD928D82A56CE1B006B78EA /* PurchaseRestoringService.swift */,
@@ -1208,25 +1210,11 @@
 				1AB930092A55C0EC00F82E54 /* WordFall_iOSTests */,
 				1AB930132A55C0EF00F82E54 /* WordFall_iOSUITests */,
 				1AD92A332A5C8AD3006B78EA /* WordProvider */,
-				1AD92A552A5C8B1B006B78EA /* WordProviderSQLiteImpl */,
-				1AD92A612A5C8B1C006B78EA /* WordProviderSQLiteImplTests */,
 				1AD929EE2A5C84EA006B78EA /* WordPuzzle */,
-				1A9300122A640D4200EFDEA6 /* WordPuzzleImpl */,
-				1A93001E2A640D4400EFDEA6 /* WordPuzzleImplTests */,
 				1AD929CE2A5C847D006B78EA /* WordGame */,
-				1A93003E2A640F9D00EFDEA6 /* WordGameImpl */,
-				1A93004A2A640F9E00EFDEA6 /* WordGameImplTests */,
 				1AD92A992A60590F006B78EA /* WordGameGameplay */,
-				1A9300712A64117E00EFDEA6 /* WordGameGameplayImpl */,
-				1A93007D2A64117F00EFDEA6 /* WordGameGameplayImplTests */,
 				1A607EF52A56A968007C6150 /* Purchasing */,
-				1AD928EC2A58032E006B78EA /* PurchasingStoreKitImpl */,
-				1AD928F82A580331006B78EA /* PurchasingStoreKitImplTests */,
 				1AD929602A588F07006B78EA /* Settings */,
-				1A9300BF2A64152300EFDEA6 /* PersistedSettingImpl */,
-				1A9300CB2A64152400EFDEA6 /* PersistedSettingImplTests */,
-				1AD929872A5B0ED8006B78EA /* SettingsUserDefaultsImpl */,
-				1AD929932A5B0EDA006B78EA /* SettingsUserDefaultsImplTests */,
 				1AB6C43829D9A42600A00872 /* SQLite */,
 				1AB6C44429D9A42700A00872 /* SQLiteTests */,
 				1A4982722A3727210057828E /* Common */,
@@ -1387,6 +1375,10 @@
 		1AD929602A588F07006B78EA /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				1A9300BF2A64152300EFDEA6 /* PersistedSettingImpl */,
+				1A9300CB2A64152400EFDEA6 /* PersistedSettingImplTests */,
+				1AD929872A5B0ED8006B78EA /* SettingsUserDefaultsImpl */,
+				1AD929932A5B0EDA006B78EA /* SettingsUserDefaultsImplTests */,
 				1AD9297A2A589068006B78EA /* Setting.swift */,
 				1AD92A8D2A5DAC3A006B78EA /* Settings.swift */,
 				1AD929C02A5BEC22006B78EA /* BooleanSetting.swift */,
@@ -1425,6 +1417,8 @@
 		1AD929CE2A5C847D006B78EA /* WordGame */ = {
 			isa = PBXGroup;
 			children = (
+				1A93003E2A640F9D00EFDEA6 /* WordGameImpl */,
+				1A93004A2A640F9E00EFDEA6 /* WordGameImplTests */,
 				1A93005F2A64103500EFDEA6 /* SolvingTime */,
 				1AD92A1C2A5C8864006B78EA /* WordGame.swift */,
 				1AD92A1E2A5C8885006B78EA /* WordGameFactory.swift */,
@@ -1438,6 +1432,8 @@
 		1AD929EE2A5C84EA006B78EA /* WordPuzzle */ = {
 			isa = PBXGroup;
 			children = (
+				1A9300122A640D4200EFDEA6 /* WordPuzzleImpl */,
+				1A93001E2A640D4400EFDEA6 /* WordPuzzleImplTests */,
 				1AD92A082A5C8542006B78EA /* WordPuzzle.swift */,
 				1AD92A0A2A5C86E9006B78EA /* WordPuzzleLetter.swift */,
 				1AD92A0C2A5C86F8006B78EA /* WordPuzzleFactory.swift */,
@@ -1468,6 +1464,8 @@
 		1AD92A332A5C8AD3006B78EA /* WordProvider */ = {
 			isa = PBXGroup;
 			children = (
+				1AD92A552A5C8B1B006B78EA /* WordProviderSQLiteImpl */,
+				1AD92A612A5C8B1C006B78EA /* WordProviderSQLiteImplTests */,
 				1AD92A4D2A5C8AF5006B78EA /* WordProvider.swift */,
 			);
 			path = WordProvider;
@@ -1506,6 +1504,8 @@
 		1AD92A992A60590F006B78EA /* WordGameGameplay */ = {
 			isa = PBXGroup;
 			children = (
+				1A9300712A64117E00EFDEA6 /* WordGameGameplayImpl */,
+				1A93007D2A64117F00EFDEA6 /* WordGameGameplayImplTests */,
 				1AD92AB32A605936006B78EA /* WordGameGameplay.swift */,
 				1A9301272A644F8F00EFDEA6 /* WordGameGameplayFactory.swift */,
 				1AD92AB52A605946006B78EA /* WordGameGameplayPresenter.swift */,
