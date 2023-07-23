@@ -1,0 +1,7 @@
+xcassets:
+  - inputs: Images.xcassets
+    outputs:
+      - templateName: swift5
+        output: Images.swift
+        params:
+          enumName: Images
