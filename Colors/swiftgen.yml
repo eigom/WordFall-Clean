@@ -1,8 +1,8 @@
 xcassets:
-  - inputs: Images.xcassets
+  - inputs: Colors.xcassets
     outputs:
       - templateName: swift5
-        output: Images.swift
+        output: Colors.swift
         params:
-          enumName: Image
+          enumName: Color
           publicAccess: true
