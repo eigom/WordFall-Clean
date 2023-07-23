@@ -1275,20 +1275,10 @@
 		1AB6C31829D6BDA300A00872 = {
 			isa = PBXGroup;
 			children = (
-				1AB92FF82A55C0E800F82E54 /* WordFall_iOS */,
-				1AB930092A55C0EC00F82E54 /* WordFall_iOSTests */,
-				1AB930132A55C0EF00F82E54 /* WordFall_iOSUITests */,
-				1AD92A332A5C8AD3006B78EA /* WordProvider */,
-				1AD929EE2A5C84EA006B78EA /* WordPuzzle */,
-				1AD929CE2A5C847D006B78EA /* WordGame */,
-				1AD92A992A60590F006B78EA /* WordGameGameplay */,
-				1A607EF52A56A968007C6150 /* Purchasing */,
-				1AD929602A588F07006B78EA /* Settings */,
-				1ACFEB2C2A6BC12D006AA897 /* Texts */,
-				1ACFEB7B2A6D5EA9006AA897 /* Colors */,
-				1ACFEB4E2A6D5054006AA897 /* Images */,
-				1AB6C43829D9A42600A00872 /* SQLite */,
-				1AB6C44429D9A42700A00872 /* SQLiteTests */,
+				1ACFEBA12A6D62F2006AA897 /* App */,
+				1ACFEBA42A6D6568006AA897 /* Assets */,
+				1ACFEBA32A6D641D006AA897 /* Core */,
+				1ACFEBA52A6D65B3006AA897 /* Lib */,
 				1A4982722A3727210057828E /* Common */,
 				1A49827E2A3727220057828E /* CommonTests */,
 				1AB6C32229D6BDA300A00872 /* Products */,
@@ -1436,6 +1426,56 @@
 				1ACFEB952A6D5ED8006AA897 /* Colors.xcassets */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		1ACFEBA12A6D62F2006AA897 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1ACFEBA22A6D6308006AA897 /* iOS */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1ACFEBA22A6D6308006AA897 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1AB92FF82A55C0E800F82E54 /* WordFall_iOS */,
+				1AB930092A55C0EC00F82E54 /* WordFall_iOSTests */,
+				1AB930132A55C0EF00F82E54 /* WordFall_iOSUITests */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		1ACFEBA32A6D641D006AA897 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1AD92A332A5C8AD3006B78EA /* WordProvider */,
+				1AD929EE2A5C84EA006B78EA /* WordPuzzle */,
+				1AD929CE2A5C847D006B78EA /* WordGame */,
+				1AD92A992A60590F006B78EA /* WordGameGameplay */,
+				1A607EF52A56A968007C6150 /* Purchasing */,
+				1AD929602A588F07006B78EA /* Settings */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1ACFEBA42A6D6568006AA897 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1ACFEB2C2A6BC12D006AA897 /* Texts */,
+				1ACFEB7B2A6D5EA9006AA897 /* Colors */,
+				1ACFEB4E2A6D5054006AA897 /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		1ACFEBA52A6D65B3006AA897 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1AB6C43829D9A42600A00872 /* SQLite */,
+				1AB6C44429D9A42700A00872 /* SQLiteTests */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		1AD928EC2A58032E006B78EA /* PurchasingStoreKitImpl */ = {
@@ -2798,7 +2838,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen config run --config Texts/swiftgen.yml\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen config run --config Assets/Texts/swiftgen.yml\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
 		1ACFEB712A6D528B006AA897 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2817,7 +2857,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen config run --config Images/Images_iOS/swiftgen.yml\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen config run --config Assets/Images/Images_iOS/swiftgen.yml\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
 		1ACFEB972A6D5FA1006AA897 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2836,7 +2876,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen config run --config Colors/swiftgen.yml\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen config run --config Assets/Colors/swiftgen.yml\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -4338,7 +4378,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WordFall_iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/iOS/WordFall_iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -4369,7 +4409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WordFall_iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/iOS/WordFall_iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 3Z3949Y4B2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
